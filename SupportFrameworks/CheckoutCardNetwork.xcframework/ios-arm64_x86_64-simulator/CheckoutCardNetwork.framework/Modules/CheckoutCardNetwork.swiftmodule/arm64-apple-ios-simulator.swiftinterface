@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutCardNetwork
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public struct CheckoutCardService : CheckoutCardNetwork.CardService {
+  public static var version: CheckoutCardNetwork.CardServiceVersion
+  public static var authenticationLenght: Swift.Double
+  public var logger: CheckoutCardNetwork.NetworkLogger? {
+    get
+    set
+  }
+  public init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
+  public func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  public func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  public func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  public func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecurePropertiesResult) -> Swift.Void))
+  public func getCards(sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardListResult) -> Swift.Void))
+}
+final public class ConsoleLogger : CheckoutCardNetwork.NetworkLogger {
+  public init()
+  final public func log(error: Swift.Error, additionalInfo: [Swift.String : Swift.String])
+  final public func log(_ message: Swift.String...)
+  @objc deinit
+}
+public protocol CardService {
+  typealias SecureResult = Swift.Result<UIKit.UIView, CheckoutCardNetwork.CardNetworkError>
+  typealias SecurePropertiesResult = Swift.Result<(pan: UIKit.UIView, securityCode: UIKit.UIView), CheckoutCardNetwork.CardNetworkError>
+  typealias CardListResult = Swift.Result<[CheckoutCardNetwork.Card], CheckoutCardNetwork.CardNetworkError>
+  static var version: CheckoutCardNetwork.CardServiceVersion { get }
+  var logger: CheckoutCardNetwork.NetworkLogger? { get set }
+  init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
+  func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecurePropertiesResult) -> Swift.Void))
+  func getCards(sessionToken: Swift.String, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
+}
+public struct Card : Swift.Decodable, Swift.Equatable {
+  public let id: Swift.String
+  public let displayName: Swift.String
+  public let expiryDate: CheckoutCardNetwork.CardExpiryDate
+  public let panLast4Digits: Swift.String
+  public let state: CheckoutCardNetwork.CardState
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheckoutCardNetwork.Card, b: CheckoutCardNetwork.Card) -> Swift.Bool
+}
+public struct CardExpiryDate : Swift.Equatable {
+  public let month: Swift.String
+  public let year: Swift.String
+  public static func == (a: CheckoutCardNetwork.CardExpiryDate, b: CheckoutCardNetwork.CardExpiryDate) -> Swift.Bool
+}
+public enum CardNetworkEnvironment : Swift.String {
+  case sandbox
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CardNetworkError : Swift.Error, Swift.Equatable {
+  case authenticationFailure
+  case deviceNotSupported
+  case insecureDevice
+  case invalidRequest(hint: Swift.String)
+  case invalidRequestInput
+  case misconfigured(hint: Swift.String)
+  case serverIssue
+  case unauthenticated
+  public static func == (a: CheckoutCardNetwork.CardNetworkError, b: CheckoutCardNetwork.CardNetworkError) -> Swift.Bool
+}
+public struct CardServiceVersion {
+  public let name: Swift.String
+  public let number: Swift.String
+}
+public enum CardState : Swift.String, Swift.Decodable {
+  case active
+  case inactive
+  case suspended
+  case revoked
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol NetworkLogger : AnyObject {
+  func log(error: Swift.Error, additionalInfo: [Swift.String : Swift.String])
+  func log(_ message: Swift.String...)
+}
+public enum OperationResult : Swift.Equatable {
+  case success
+  case failure(CheckoutCardNetwork.CardNetworkError)
+  public static func == (a: CheckoutCardNetwork.OperationResult, b: CheckoutCardNetwork.OperationResult) -> Swift.Bool
+}
+public struct PanViewConfiguration {
+  public init(font: UIKit.UIFont, textColor: UIKit.UIColor, formatSeparator: Swift.String)
+}
+public struct PinViewConfiguration {
+  public init(font: UIKit.UIFont, textColor: UIKit.UIColor)
+}
+public struct SecurityCodeViewConfiguration {
+  public init(font: UIKit.UIFont, textColor: UIKit.UIColor)
+}
+extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.Equatable {}
+extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.Hashable {}
+extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.RawRepresentable {}
+extension CheckoutCardNetwork.CardState : Swift.Equatable {}
+extension CheckoutCardNetwork.CardState : Swift.Hashable {}
+extension CheckoutCardNetwork.CardState : Swift.RawRepresentable {}

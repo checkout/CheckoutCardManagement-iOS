@@ -1,0 +1,3574 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.Environment.Type) -> CheckoutEventLoggerKit.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "CheckoutEventLoggerKit.Environment",
+                    "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "CheckoutEventLoggerKit.Environment",
+                        "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit11EnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO7sandboxyA2CmF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.Environment.Type) -> CheckoutEventLoggerKit.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "CheckoutEventLoggerKit.Environment",
+                    "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "CheckoutEventLoggerKit.Environment",
+                        "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO10productionyA2CmF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CheckoutEventLoggerKit.Environment",
+                "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CheckoutEventLoggerKit.Environment",
+                "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit11EnvironmentO9hashValueSivp",
+            "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO9hashValueSivp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit11EnvironmentO9hashValueSivg",
+                "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO9hashValueSivg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CheckoutEventLoggerKit11EnvironmentO",
+        "mangledName": "$s22CheckoutEventLoggerKit11EnvironmentO",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_AnyDecodable",
+        "printedName": "_AnyDecodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyDecodableP5valueypvp",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodableP5valueypvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit13_AnyDecodableP5valueypvg",
+                "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodableP5valueypvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyDecodable>",
+                "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyDecodable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyDecodablePyxqd__Sgclufc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodablePyxqd__Sgclufc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CheckoutEventLoggerKit._AnyDecodable>",
+            "sugared_genericSig": "<Self, T where Self : CheckoutEventLoggerKit._AnyDecodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyDecodablePAAE4fromxs7Decoder_p_tKcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodablePAAE4fromxs7Decoder_p_tKcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyDecodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyDecodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CheckoutEventLoggerKit13_AnyDecodableP",
+        "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodableP",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "UsableFromInline"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyCodable",
+        "printedName": "AnyCodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableV5valueypvp",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV5valueypvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV5valueypvg",
+                "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV5valueypvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCodable",
+                "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableVyACxSgclufc",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableVyACxSgclufc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCodable",
+                "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCodable",
+                "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV2eeoiySbAC_ACtFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableV11descriptionSSvp",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV11descriptionSSvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV11descriptionSSvg",
+                "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV11descriptionSSvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableV16debugDescriptionSSvp",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV16debugDescriptionSSvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit10AnyCodableV16debugDescriptionSSvg",
+                "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV16debugDescriptionSSvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(customEquality:customEncoding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any, Any) -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any, Any)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any, inout Swift.SingleValueEncodingContainer) throws -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any, inout Swift.SingleValueEncodingContainer)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InOut",
+                        "printedName": "inout Swift.SingleValueEncodingContainer"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit10AnyCodableV3add14customEquality0H8EncodingySbyp_yptc_Sbyp_s011SingleValueJ9Container_pztKctFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV3add14customEquality0H8EncodingySbyp_yptc_Sbyp_s011SingleValueJ9Container_pztKctFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CheckoutEventLoggerKit10AnyCodableV",
+        "mangledName": "$s22CheckoutEventLoggerKit10AnyCodableV",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_AnyEncodable",
+            "printedName": "_AnyEncodable",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodableP",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_AnyDecodable",
+            "printedName": "_AnyDecodable",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyDecodableP",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyDecodableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByNilLiteral",
+            "printedName": "ExpressibleByNilLiteral",
+            "usr": "s:s23ExpressibleByNilLiteralP",
+            "mangledName": "$ss23ExpressibleByNilLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByBooleanLiteral",
+            "printedName": "ExpressibleByBooleanLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "BooleanLiteralType",
+                "printedName": "BooleanLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByBooleanLiteralP",
+            "mangledName": "$ss27ExpressibleByBooleanLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "IntegerLiteralType",
+                "printedName": "IntegerLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByFloatLiteral",
+            "printedName": "ExpressibleByFloatLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "FloatLiteralType",
+                "printedName": "FloatLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByFloatLiteralP",
+            "mangledName": "$ss25ExpressibleByFloatLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_AnyEncodable",
+        "printedName": "_AnyEncodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodableP5valueypvp",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodableP5valueypvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit13_AnyEncodableP5valueypvg",
+                "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodableP5valueypvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+                "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePyxqd__Sgclufc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePyxqd__Sgclufc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self, T where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE6encode2toys7Encoder_p_tKF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nilLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE10nilLiteralxyt_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE10nilLiteralxyt_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(booleanLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE14booleanLiteralxSb_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE14booleanLiteralxSb_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(integerLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE14integerLiteralxSi_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE14integerLiteralxSi_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(floatLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE12floatLiteralxSd_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE12floatLiteralxSd_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(extendedGraphemeClusterLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE30extendedGraphemeClusterLiteralxSS_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE30extendedGraphemeClusterLiteralxSS_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE13stringLiteralxSS_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE13stringLiteralxSS_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(arrayLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE12arrayLiteralxypd_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE12arrayLiteralxypd_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionaryLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[(Swift.AnyHashable, Any)]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.AnyHashable, Any)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit13_AnyEncodablePAAE17dictionaryLiteralxs0E8HashableV_yptd_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodablePAAE17dictionaryLiteralxs0E8HashableV_yptd_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit._AnyEncodable>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit._AnyEncodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CheckoutEventLoggerKit13_AnyEncodableP",
+        "mangledName": "$s22CheckoutEventLoggerKit13_AnyEncodableP",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "UsableFromInline"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RemoteProcessorMetadata",
+        "printedName": "RemoteProcessorMetadata",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(productIdentifier:productVersion:environment:appPackageName:appPackageVersion:appInstallId:deviceName:platform:osVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environment14appPackageName0lmJ00L9InstallId06deviceN08platform02osJ0ACSS_S8Stcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environment14appPackageName0lmJ00L9InstallId06deviceN08platform02osJ0ACSS_S8Stcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(productIdentifier:productVersion:environment:appPackageName:appPackageVersion:deviceName:platform:osVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environment14appPackageName0lmJ006deviceN08platform02osJ0ACSS_S7Stcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environment14appPackageName0lmJ006deviceN08platform02osJ0ACSS_S7Stcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit23RemoteProcessorMetadataV2eeoiySbAC_ACtFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(productIdentifier:productVersion:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environmentACSS_S2Stcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit23RemoteProcessorMetadataV17productIdentifier0H7Version11environmentACSS_S2Stcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV",
+        "mangledName": "$s22CheckoutEventLoggerKit23RemoteProcessorMetadataV",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Event",
+        "printedName": "Event",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "typeIdentifier",
+            "printedName": "typeIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit0B0V14typeIdentifierSSvp",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V14typeIdentifierSSvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V14typeIdentifierSSvg",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V14typeIdentifierSSvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "time",
+            "printedName": "time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit0B0V4time10Foundation4DateVvp",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V4time10Foundation4DateVvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V4time10Foundation4DateVvg",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V4time10Foundation4DateVvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "monitoringLevel",
+            "printedName": "monitoringLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit0B0V15monitoringLevelAA010MonitoringF0Ovp",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V15monitoringLevelAA010MonitoringF0Ovp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V15monitoringLevelAA010MonitoringF0Ovg",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V15monitoringLevelAA010MonitoringF0Ovg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "properties",
+            "printedName": "properties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : CheckoutEventLoggerKit.AnyCodable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyCodable",
+                    "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                    "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvp",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : CheckoutEventLoggerKit.AnyCodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyCodable",
+                        "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                        "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvg",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : CheckoutEventLoggerKit.AnyCodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyCodable",
+                        "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                        "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvs",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvs",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvM",
+                "mangledName": "$s22CheckoutEventLoggerKit0B0V10propertiesSDySSAA10AnyCodableVGvM",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(typeIdentifier:time:monitoringLevel:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "CheckoutEventLoggerKit.Event",
+                "usr": "s:22CheckoutEventLoggerKit0B0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : CheckoutEventLoggerKit.AnyCodable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyCodable",
+                    "printedName": "CheckoutEventLoggerKit.AnyCodable",
+                    "usr": "s:22CheckoutEventLoggerKit10AnyCodableV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit0B0V14typeIdentifier4time15monitoringLevel10propertiesACSS_10Foundation4DateVAA010MonitoringI0OSDySSAA10AnyCodableVGtcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V14typeIdentifier4time15monitoringLevel10propertiesACSS_10Foundation4DateVAA010MonitoringI0OSDySSAA10AnyCodableVGtcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "CheckoutEventLoggerKit.Event",
+                "usr": "s:22CheckoutEventLoggerKit0B0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "CheckoutEventLoggerKit.Event",
+                "usr": "s:22CheckoutEventLoggerKit0B0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0B0V2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit0B0V2eeoiySbAC_ACtFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CheckoutEventLoggerKit0B0V",
+        "mangledName": "$s22CheckoutEventLoggerKit0B0V",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CheckoutEventLogging",
+        "printedName": "CheckoutEventLogging",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "CheckoutEventLoggerKit.Event",
+                "usr": "s:22CheckoutEventLoggerKit0B0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP3log5eventyAA0B0V_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP3log5eventyAA0B0V_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(metadata:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP3add8metadata5valueySS_SStF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP3add8metadata5valueySS_SStF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(metadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP6remove8metadataySS_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP6remove8metadataySS_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearMetadata",
+            "printedName": "clearMetadata()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP13clearMetadatayyF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP13clearMetadatayyF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLocalProcessor",
+            "printedName": "enableLocalProcessor(monitoringLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP20enableLocalProcessor15monitoringLevelyAA010MonitoringJ0O_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP20enableLocalProcessor15monitoringLevelyAA010MonitoringJ0O_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableRemoteProcessor",
+            "printedName": "enableRemoteProcessor(environment:remoteProcessorMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CheckoutEventLoggerKit.Environment",
+                "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP21enableRemoteProcessor11environment06remoteH8MetadatayAA11EnvironmentO_AA0ghK0VtF",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP21enableRemoteProcessor11environment06remoteH8MetadatayAA11EnvironmentO_AA0ghK0VtF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "sugared_genericSig": "<Self where Self : CheckoutEventLoggerKit.CheckoutEventLogging>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP",
+        "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CheckoutEventLogger",
+        "printedName": "CheckoutEventLogger",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "MetadataKey",
+            "printedName": "MetadataKey",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "correlationID",
+                "printedName": "correlationID",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey.Type) -> CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MetadataKey",
+                        "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey",
+                        "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MetadataKey",
+                            "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey",
+                            "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO13correlationIDyA2EmF",
+                "mangledName": "$s22CheckoutEventLoggerKit0abC0C11MetadataKeyO13correlationIDyA2EmF",
+                "moduleName": "CheckoutEventLoggerKit"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MetadataKey",
+                        "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey",
+                        "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueAESgSS_tcfc",
+                "mangledName": "$s22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueAESgSS_tcfc",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueSSvp",
+                "mangledName": "$s22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueSSvp",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueSSvg",
+                    "mangledName": "$s22CheckoutEventLoggerKit0abC0C11MetadataKeyO8rawValueSSvg",
+                    "moduleName": "CheckoutEventLoggerKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C11MetadataKeyO",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C11MetadataKeyO",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(productName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CheckoutEventLogger",
+                "printedName": "CheckoutEventLoggerKit.CheckoutEventLogger",
+                "usr": "s:22CheckoutEventLoggerKit0abC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C11productNameACSS_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C11productNameACSS_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLocalProcessor",
+            "printedName": "enableLocalProcessor(monitoringLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C20enableLocalProcessor15monitoringLevelyAA010MonitoringI0O_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C20enableLocalProcessor15monitoringLevelyAA010MonitoringI0O_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableRemoteProcessor",
+            "printedName": "enableRemoteProcessor(environment:remoteProcessorMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CheckoutEventLoggerKit.Environment",
+                "usr": "s:22CheckoutEventLoggerKit11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RemoteProcessorMetadata",
+                "printedName": "CheckoutEventLoggerKit.RemoteProcessorMetadata",
+                "usr": "s:22CheckoutEventLoggerKit23RemoteProcessorMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C21enableRemoteProcessor11environment06remoteG8MetadatayAA11EnvironmentO_AA0fgJ0VtF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C21enableRemoteProcessor11environment06remoteG8MetadatayAA11EnvironmentO_AA0fgJ0VtF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(metadata:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C3add8metadata5valueySS_SStF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C3add8metadata5valueySS_SStF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(metadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C6remove8metadataySS_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C6remove8metadataySS_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearMetadata",
+            "printedName": "clearMetadata()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C13clearMetadatayyF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C13clearMetadatayyF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "CheckoutEventLoggerKit.Event",
+                "usr": "s:22CheckoutEventLoggerKit0B0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit0abC0C3log5eventyAA0B0V_tF",
+            "mangledName": "$s22CheckoutEventLoggerKit0abC0C3log5eventyAA0B0V_tF",
+            "moduleName": "CheckoutEventLoggerKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22CheckoutEventLoggerKit0abC0C",
+        "mangledName": "$s22CheckoutEventLoggerKit0abC0C",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CheckoutEventLogging",
+            "printedName": "CheckoutEventLogging",
+            "usr": "s:22CheckoutEventLoggerKit0aB7LoggingP",
+            "mangledName": "$s22CheckoutEventLoggerKit0aB7LoggingP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MonitoringLevel",
+        "printedName": "MonitoringLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.MonitoringLevel.Type) -> CheckoutEventLoggerKit.MonitoringLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO5debugyA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO5debugyA2CmF",
+            "moduleName": "CheckoutEventLoggerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.MonitoringLevel.Type) -> CheckoutEventLoggerKit.MonitoringLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO4infoyA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO4infoyA2CmF",
+            "moduleName": "CheckoutEventLoggerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.MonitoringLevel.Type) -> CheckoutEventLoggerKit.MonitoringLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO5erroryA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO5erroryA2CmF",
+            "moduleName": "CheckoutEventLoggerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "warn",
+            "printedName": "warn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutEventLoggerKit.MonitoringLevel.Type) -> CheckoutEventLoggerKit.MonitoringLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO4warnyA2CmF",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO4warnyA2CmF",
+            "moduleName": "CheckoutEventLoggerKit"
+          },
+          {
+            "kind": "Function",
+            "name": "<",
+            "printedName": "<(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringLevel",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO1loiySbAC_ACtFZ",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO1loiySbAC_ACtFZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutEventLoggerKit.MonitoringLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "CheckoutEventLoggerKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO8rawValueSSvp",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO8rawValueSSvp",
+            "moduleName": "CheckoutEventLoggerKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO8rawValueSSvg",
+                "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO8rawValueSSvg",
+                "moduleName": "CheckoutEventLoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CheckoutEventLoggerKit.MonitoringLevel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MonitoringLevel",
+                    "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                    "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO8allCasesSayACGvpZ",
+            "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO8allCasesSayACGvpZ",
+            "moduleName": "CheckoutEventLoggerKit",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CheckoutEventLoggerKit.MonitoringLevel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO8allCasesSayACGvgZ",
+                "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO8allCasesSayACGvgZ",
+                "moduleName": "CheckoutEventLoggerKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO",
+        "mangledName": "$s22CheckoutEventLoggerKit15MonitoringLevelO",
+        "moduleName": "CheckoutEventLoggerKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CheckoutEventLoggerKit.MonitoringLevel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MonitoringLevel",
+                        "printedName": "CheckoutEventLoggerKit.MonitoringLevel",
+                        "usr": "s:22CheckoutEventLoggerKit15MonitoringLevelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSONEncoder",
+        "printedName": "JSONEncoder",
+        "declKind": "Class",
+        "usr": "s:10Foundation11JSONEncoderC",
+        "mangledName": "$s10Foundation11JSONEncoderC",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TopLevelEncoder",
+            "printedName": "TopLevelEncoder",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Output",
+                "printedName": "Output",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine15TopLevelEncoderP",
+            "mangledName": "$s7Combine15TopLevelEncoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSONDecoder",
+        "printedName": "JSONDecoder",
+        "declKind": "Class",
+        "usr": "s:10Foundation11JSONDecoderC",
+        "mangledName": "$s10Foundation11JSONDecoderC",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TopLevelDecoder",
+            "printedName": "TopLevelDecoder",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Input",
+                "printedName": "Input",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine15TopLevelDecoderP",
+            "mangledName": "$s7Combine15TopLevelDecoderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserDefaults",
+        "printedName": "UserDefaults",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSUserDefaults",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSUserDefaults",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Bundle",
+        "printedName": "Bundle",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSBundle",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSBundle",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogURLSessionDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 144,
+      "length": 29,
+      "value": "\"CheckoutEventLoggerKit.CheckoutLogURLSessionDelegate\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Codability\/AnyCodable.swift",
+      "kind": "Array",
+      "offset": 4157,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 5,
+      "value": "\"1.0\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 28,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ssZZZZZ\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1964,
+      "length": 13,
+      "value": "\"specversion\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1964,
+      "length": 13,
+      "value": "\"specversion\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2860,
+      "length": 10,
+      "value": "\"loglevel\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2860,
+      "length": 10,
+      "value": "\"loglevel\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Codability\/AnyEncodable.swift",
+      "kind": "Array",
+      "offset": 9246,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1517,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/Processors\/CheckoutLogProcessor\/CheckoutLogNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1517,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/SDKAppID\/SDKAppIDProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 12,
+      "value": "\"sdk_app_id\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/SDKAppID\/SDKAppIDProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 737,
+      "length": 42,
+      "value": "\"CheckoutEventLoggerKit.isNotFreshInstall\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/CheckoutEventLogger.swift",
+      "kind": "Array",
+      "offset": 323,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/CheckoutEventLogger.swift",
+      "kind": "Dictionary",
+      "offset": 371,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/CheckoutEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 15,
+      "value": "\"CorrelationId\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/checkout-sdk-event-logger-ios\/CheckoutEventLoggerKit\/CheckoutEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 15,
+      "value": "\"CorrelationId\""
+    }
+  ]
+}
