@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CheckoutCardNetwork
+//import CheckoutCardNetwork
 import CheckoutEventLoggerKit
 
 /// Environment for the data source
@@ -18,14 +18,14 @@ public enum CardManagerEnvironment: String {
     /// Production environment meant for the real world
     case production
     
-    func networkEnvironment() -> CardNetworkEnvironment {
-        switch self {
-        case .sandbox:
-            return .sandbox
-        case .production:
-            return .production
-        }
-    }
+//    func networkEnvironment() -> CardNetworkEnvironment {
+//        switch self {
+//        case .sandbox:
+//            return .sandbox
+//        case .production:
+//            return .production
+//        }
+//    }
     
     func loggingEnvironment() -> CheckoutEventLoggerKit.Environment {
         switch self {

@@ -20,11 +20,11 @@ let package = Package(
             name: "CheckoutCardManagement",
             dependencies: [
                 "CheckoutEventLoggerKit",
-                "CheckoutCardNetwork",
+//                "CheckoutCardNetwork",
             ]),
-        .binaryTarget(
-            name: "CheckoutCardNetwork",
-            path: "SupportFrameworks/CheckoutCardNetwork.xcframework"),
+//        .binaryTarget(
+//            name: "CheckoutCardNetwork",
+//            path: "SupportFrameworks/CheckoutCardNetwork.xcframework"),
         .binaryTarget(
             name: "CheckoutEventLoggerKit",
             path: "SupportFrameworks/CheckoutEventLoggerKit.xcframework"),

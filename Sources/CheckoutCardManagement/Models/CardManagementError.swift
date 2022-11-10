@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CheckoutCardNetwork
+//import CheckoutCardNetwork
 
 /// Errors encountered in the running of the management services
 public enum CardManagementError: Error, Equatable {
@@ -47,29 +47,29 @@ public enum CardManagementError: Error, Equatable {
     
 }
 
-extension CardManagementError {
-    
-    static func from(_ networkError: CardNetworkError) -> Self {
-        switch networkError {
-        case .unauthenticated:
-            return .unauthenticated
-        case .authenticationFailure:
-            return .authenticationFailure
-        case .serverIssue:
-            return .connectionIssue
-        case .deviceNotSupported:
-            return .deviceNotSupported
-        case .insecureDevice:
-            return .insecureDevice
-        case .invalidRequest(hint: let hint):
-            return .configurationIssue(hint: hint)
-        case .misconfigured(hint: let hint):
-            return .configurationIssue(hint: hint)
-        case .invalidRequestInput:
-            return .invalidRequestInput
-        @unknown default:
-            return .configurationIssue(hint: "Unsuported network error")
-        }
-    }
-    
-}
+//extension CardManagementError {
+//    
+//    static func from(_ networkError: CardNetworkError) -> Self {
+//        switch networkError {
+//        case .unauthenticated:
+//            return .unauthenticated
+//        case .authenticationFailure:
+//            return .authenticationFailure
+//        case .serverIssue:
+//            return .connectionIssue
+//        case .deviceNotSupported:
+//            return .deviceNotSupported
+//        case .insecureDevice:
+//            return .insecureDevice
+//        case .invalidRequest(hint: let hint):
+//            return .configurationIssue(hint: hint)
+//        case .misconfigured(hint: let hint):
+//            return .configurationIssue(hint: hint)
+//        case .invalidRequestInput:
+//            return .invalidRequestInput
+//        @unknown default:
+//            return .configurationIssue(hint: "Unsuported network error")
+//        }
+//    }
+//    
+//}

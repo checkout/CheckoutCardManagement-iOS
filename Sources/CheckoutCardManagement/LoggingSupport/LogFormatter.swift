@@ -32,10 +32,10 @@ enum LogFormatter {
         switch event {
         case .initialized: return "card_management_initialised"
         case .cardList: return "card_list"
-        case .getPin: return "card_pin"
-        case .getPan: return "card_pan"
-        case .getCVV: return "card_cvv"
-        case .getPanCVV: return "card_pan_cvv"
+//        case .getPin: return "card_pin"
+//        case .getPan: return "card_pan"
+//        case .getCVV: return "card_cvv"
+//        case .getPanCVV: return "card_pan_cvv"
         case .failure: return "failure"
         }
     }
@@ -44,11 +44,11 @@ enum LogFormatter {
     static private func monitoringLevel(for event: LogEvent) -> MonitoringLevel {
         switch event {
         case .initialized,
-                .cardList,
-                .getPin,
-                .getPan,
-                .getCVV,
-                .getPanCVV:
+                .cardList:
+//                .getPin,
+//                .getPan,
+//                .getCVV,
+//                .getPanCVV:
             return .info
         case .failure:
             return .warn
@@ -66,14 +66,14 @@ enum LogFormatter {
             ]
         case .cardList(let suffixes):
             dictionary = ["suffix_ids": AnyCodable(suffixes)]
-        case .getPin(let idLast4, let state),
-                .getPan(let idLast4, let state),
-                .getCVV(let idLast4, let state),
-                .getPanCVV(let idLast4, let state):
-            dictionary = [
-                "suffix_id": AnyCodable(idLast4),
-                "card_state": AnyCodable(state.rawValue)
-            ]
+//        case .getPin(let idLast4, let state),
+//                .getPan(let idLast4, let state),
+//                .getCVV(let idLast4, let state),
+//                .getPanCVV(let idLast4, let state):
+//            dictionary = [
+//                "suffix_id": AnyCodable(idLast4),
+//                "card_state": AnyCodable(state.rawValue)
+//            ]
         case .failure(let source, let error):
             dictionary = [
                 "source": AnyCodable(source),

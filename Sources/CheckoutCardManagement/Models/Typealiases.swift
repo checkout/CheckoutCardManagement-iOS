@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import CheckoutCardNetwork
+//import CheckoutCardNetwork
 
 /// Expiry date for a card
-public typealias CardExpiryDate = CheckoutCardNetwork.CardExpiryDate
+//public typealias CardExpiryDate = CheckoutCardNetwork.CardExpiryDate
 
 /// State for a card
-public typealias CardState = CheckoutCardNetwork.CardState
+//public typealias CardState = CheckoutCardNetwork.CardState
