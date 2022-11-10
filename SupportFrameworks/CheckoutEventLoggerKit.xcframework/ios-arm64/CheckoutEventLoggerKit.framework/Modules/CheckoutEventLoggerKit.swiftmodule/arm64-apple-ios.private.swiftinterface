@@ -1,28 +1,37 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutEventLoggerKit
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutEventLoggerKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-public enum Environment {
-  case sandbox
-  case production
-  public static func == (a: CheckoutEventLoggerKit.Environment, b: CheckoutEventLoggerKit.Environment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
+final public class CheckoutEventLogger : CheckoutEventLoggerKit.CheckoutEventLogging {
+  public enum MetadataKey : Swift.String {
+    case correlationID
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
   }
+  public init(productName: Swift.String)
+  final public func enableLocalProcessor(monitoringLevel: CheckoutEventLoggerKit.MonitoringLevel)
+  final public func enableRemoteProcessor(environment: CheckoutEventLoggerKit.Environment, remoteProcessorMetadata: CheckoutEventLoggerKit.RemoteProcessorMetadata)
+  final public func add(metadata metadataKey: Swift.String, value: Swift.String)
+  final public func remove(metadata metadataKey: Swift.String)
+  final public func clearMetadata()
+  final public func log(event: CheckoutEventLoggerKit.Event)
+  @objc deinit
 }
-@usableFromInline
-internal protocol _AnyDecodable {
-  var value: Any { get }
-  init<T>(_ value: T?)
-}
-extension CheckoutEventLoggerKit._AnyDecodable {
-  public init(from decoder: Swift.Decoder) throws
+public protocol CheckoutEventLogging {
+  func log(event: CheckoutEventLoggerKit.Event)
+  func add(metadata: Swift.String, value: Swift.String)
+  func remove(metadata: Swift.String)
+  func clearMetadata()
+  func enableLocalProcessor(monitoringLevel: CheckoutEventLoggerKit.MonitoringLevel)
+  func enableRemoteProcessor(environment: CheckoutEventLoggerKit.Environment, remoteProcessorMetadata: CheckoutEventLoggerKit.RemoteProcessorMetadata)
 }
 public struct AnyCodable : Swift.Codable {
   public let value: Any
@@ -70,6 +79,14 @@ extension CheckoutEventLoggerKit.AnyCodable {
   public static func add(customEquality: @escaping (_ lhs: Any, _ rhs: Any) -> Swift.Bool, customEncoding: @escaping (_ value: Any, _ container: inout Swift.SingleValueEncodingContainer) throws -> Swift.Bool)
 }
 @usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension CheckoutEventLoggerKit._AnyDecodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+@usableFromInline
 internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
@@ -87,10 +104,14 @@ extension CheckoutEventLoggerKit._AnyEncodable {
   public init(arrayLiteral elements: Any...)
   public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
 }
-public struct RemoteProcessorMetadata : Swift.Equatable {
-  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String, appPackageName: Swift.String, appPackageVersion: Swift.String, appInstallId: Swift.String, deviceName: Swift.String, platform: Swift.String, osVersion: Swift.String)
-  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String, appPackageName: Swift.String, appPackageVersion: Swift.String, deviceName: Swift.String, platform: Swift.String, osVersion: Swift.String)
-  public static func == (a: CheckoutEventLoggerKit.RemoteProcessorMetadata, b: CheckoutEventLoggerKit.RemoteProcessorMetadata) -> Swift.Bool
+public enum Environment {
+  case sandbox
+  case production
+  public static func == (a: CheckoutEventLoggerKit.Environment, b: CheckoutEventLoggerKit.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct Event : Swift.Equatable {
   public let typeIdentifier: Swift.String
@@ -99,35 +120,6 @@ public struct Event : Swift.Equatable {
   public var properties: [Swift.String : CheckoutEventLoggerKit.AnyCodable]
   public init(typeIdentifier: Swift.String, time: Foundation.Date, monitoringLevel: CheckoutEventLoggerKit.MonitoringLevel, properties: [Swift.String : CheckoutEventLoggerKit.AnyCodable])
   public static func == (a: CheckoutEventLoggerKit.Event, b: CheckoutEventLoggerKit.Event) -> Swift.Bool
-}
-extension CheckoutEventLoggerKit.RemoteProcessorMetadata {
-  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String)
-}
-public protocol CheckoutEventLogging {
-  func log(event: CheckoutEventLoggerKit.Event)
-  func add(metadata: Swift.String, value: Swift.String)
-  func remove(metadata: Swift.String)
-  func clearMetadata()
-  func enableLocalProcessor(monitoringLevel: CheckoutEventLoggerKit.MonitoringLevel)
-  func enableRemoteProcessor(environment: CheckoutEventLoggerKit.Environment, remoteProcessorMetadata: CheckoutEventLoggerKit.RemoteProcessorMetadata)
-}
-final public class CheckoutEventLogger : CheckoutEventLoggerKit.CheckoutEventLogging {
-  public enum MetadataKey : Swift.String {
-    case correlationID
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(productName: Swift.String)
-  final public func enableLocalProcessor(monitoringLevel: CheckoutEventLoggerKit.MonitoringLevel)
-  final public func enableRemoteProcessor(environment: CheckoutEventLoggerKit.Environment, remoteProcessorMetadata: CheckoutEventLoggerKit.RemoteProcessorMetadata)
-  final public func add(metadata metadataKey: Swift.String, value: Swift.String)
-  final public func remove(metadata metadataKey: Swift.String)
-  final public func clearMetadata()
-  final public func log(event: CheckoutEventLoggerKit.Event)
-  @objc deinit
 }
 public enum MonitoringLevel : Swift.String, Swift.CaseIterable, Swift.Comparable {
   case debug
@@ -145,10 +137,18 @@ public enum MonitoringLevel : Swift.String, Swift.CaseIterable, Swift.Comparable
     get
   }
 }
-extension CheckoutEventLoggerKit.Environment : Swift.Equatable {}
-extension CheckoutEventLoggerKit.Environment : Swift.Hashable {}
+extension CheckoutEventLoggerKit.RemoteProcessorMetadata {
+  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String)
+}
+public struct RemoteProcessorMetadata : Swift.Equatable {
+  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String, appPackageName: Swift.String, appPackageVersion: Swift.String, appInstallId: Swift.String, deviceName: Swift.String, platform: Swift.String, osVersion: Swift.String)
+  public init(productIdentifier: Swift.String, productVersion: Swift.String, environment: Swift.String, appPackageName: Swift.String, appPackageVersion: Swift.String, deviceName: Swift.String, platform: Swift.String, osVersion: Swift.String)
+  public static func == (a: CheckoutEventLoggerKit.RemoteProcessorMetadata, b: CheckoutEventLoggerKit.RemoteProcessorMetadata) -> Swift.Bool
+}
 extension CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey : Swift.Equatable {}
 extension CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey : Swift.Hashable {}
 extension CheckoutEventLoggerKit.CheckoutEventLogger.MetadataKey : Swift.RawRepresentable {}
+extension CheckoutEventLoggerKit.Environment : Swift.Equatable {}
+extension CheckoutEventLoggerKit.Environment : Swift.Hashable {}
 extension CheckoutEventLoggerKit.MonitoringLevel : Swift.Hashable {}
 extension CheckoutEventLoggerKit.MonitoringLevel : Swift.RawRepresentable {}
