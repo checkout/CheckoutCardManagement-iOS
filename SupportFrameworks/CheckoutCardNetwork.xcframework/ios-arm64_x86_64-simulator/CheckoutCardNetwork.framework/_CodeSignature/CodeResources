@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/SecureDisplay.framework/Info.plist</key>
+		<data>
+		oUfaDA/THPponHsNHwAmsGzdkyo=
+		</data>
+		<key>Frameworks/SecureDisplay.framework/SecureDisplay</key>
+		<data>
+		R62xQXjBgig0khpkD1wrp9huksA=
+		</data>
+		<key>Frameworks/SecureDisplay.framework/_CodeSignature/CodeResources</key>
+		<data>
+		K27XBUpIiEoGbFXa4USnqvHuDJI=
+		</data>
 		<key>Headers/CheckoutCardNetwork-Swift.h</key>
 		<data>
 		UeV4gTuJbsGQPYEi1wumkbLT73o=
@@ -30,7 +42,7 @@
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Cmhu6wFH92CD+wZ0l7ShXsJIfc8=
+		I4URaJXe4XYvfCZabaBvhca6j44=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,11 +62,32 @@
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x47ZUu8mZ59tOmv3EfkHYP8mv2M=
+		Cx6cCZWz/HGer6dMx86uWZ++ZQg=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/SecureDisplay.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zM6cW0w5GVSQ/OMuz+h0XeBXWxxrKv92Ye27CY7zrNM=
+			</data>
+		</dict>
+		<key>Frameworks/SecureDisplay.framework/SecureDisplay</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p42muzXFoIgTs0Jbt3Oxq/N9KDNuyTTJbYU94SXjesI=
+			</data>
+		</dict>
+		<key>Frameworks/SecureDisplay.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			51QrJJJkMjcc5KyKZpxwJk5KCyINFoQmFHy1sQ4Eqwg=
+			</data>
+		</dict>
 		<key>Headers/CheckoutCardNetwork-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -94,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y1uu+Types9lKmlSyfAjpEpbJBJ/iqZ2iDvA/SCTnVk=
+			wSAWQOGAI380WlqyRGy+uaYj3gPSQQUeWc30hASafxU=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -129,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSQHAceXxHZauX2P6cZKAB4jDLCJktBSQJkm+5RXCtM=
+			kuBcgwIBo/nTvvV9Bs/z7/76y4HNAvEYiO8R6CeaVow=
 			</data>
 		</dict>
 	</dict>
