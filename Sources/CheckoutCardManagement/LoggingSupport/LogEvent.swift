@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import CheckoutCardNetwork
+import CheckoutCardNetwork
 import CheckoutEventLoggerKit
 
 /// Analytics event wrappers
@@ -19,16 +19,16 @@ enum LogEvent {
     case cardList(idSuffixes: [String])
     
     /// Describe a successful call to retrieve a pin
-//    case getPin(idLast4: String, cardState: CardState)
+    case getPin(idLast4: String, cardState: CardState)
     
     /// Describe a successful call to retrieve a card number
-//    case getPan(idLast4: String, cardState: CardState)
+    case getPan(idLast4: String, cardState: CardState)
     
     /// Describe a successful call to retrieve a security code
-//    case getCVV(idLast4: String, cardState: CardState)
+    case getCVV(idLast4: String, cardState: CardState)
     
     /// Describe a successful call to retrieve a pan and a security code
-//    case getPanCVV(idLast4: String, cardState: CardState)
+    case getPanCVV(idLast4: String, cardState: CardState)
     
     /// Describe an unexpected but non critical failure
     case failure(source: String, error: Error)
