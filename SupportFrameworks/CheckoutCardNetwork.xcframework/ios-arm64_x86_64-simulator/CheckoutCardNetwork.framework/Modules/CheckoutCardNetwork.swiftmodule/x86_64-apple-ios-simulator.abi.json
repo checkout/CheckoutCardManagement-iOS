@@ -1426,6 +1426,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SecureDisplay",
+        "printedName": "SecureDisplay",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "FakeResponse",
         "printedName": "FakeResponse",
@@ -1921,10 +1931,7 @@
         "usr": "s:19CheckoutCardNetwork12FakeResponseC",
         "mangledName": "$s19CheckoutCardNetwork12FakeResponseC",
         "moduleName": "CheckoutCardNetwork",
-        "isOpen": true,
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "isOpen": true
       },
       {
         "kind": "Import",
@@ -6394,7 +6401,7 @@
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
       "kind": "Dictionary",
-      "offset": 285,
+      "offset": 283,
       "length": 3,
       "value": "[]"
     },
