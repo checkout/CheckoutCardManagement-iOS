@@ -7,12 +7,12 @@
 
 import UIKit
 import CheckoutEventLoggerKit
-//import CheckoutCardNetwork
+import CheckoutCardNetwork
 
 /// Interface required for Card object to share properties with its owner in a delegate pattern
 protocol CardManager: AnyObject {
     /// Service enabling interactions with outside services
-//    var cardService: CardService { get }
+    var cardService: CardService { get }
     /// Analytics logger enabling tracking events
     var logger: CheckoutEventLogging? { get }
     /// Design system to guide any secure view UI
@@ -36,7 +36,7 @@ public final class CheckoutCardManager: CardManager {
     public typealias CardListResultCompletion = ((CardListResult) -> Void)
     
     /// Service enabling interactions with outside services
-//    let cardService: CardService
+    let cardService: CardService
     /// Design system to guide any secure view UI
     let designSystem: CardManagementDesignSystem
     /// Analytics logger and dispatcher for tracked events
@@ -48,17 +48,17 @@ public final class CheckoutCardManager: CardManager {
     /// Enable the functionality using the provided design system for secure UI components
     public init(designSystem: CardManagementDesignSystem, environment: CardManagerEnvironment) {
         self.designSystem = designSystem
-//        self.cardService = CheckoutCardService(environment: environment.networkEnvironment())
+        self.cardService = CheckoutCardService(environment: environment.networkEnvironment())
         self.logger = CheckoutEventLogger(productName: Constants.productName)
         
         setupRemoteLogging(environment: environment)
         logInitialization()
     }
     
-    internal init(//service: CardService,
+    internal init(service: CardService,
                   designSystem: CardManagementDesignSystem,
                   logger: CheckoutEventLogging? = nil) {
-//        self.cardService = service
+        self.cardService = service
         self.designSystem = designSystem
         self.logger = logger
         
@@ -82,26 +82,25 @@ public final class CheckoutCardManager: CardManager {
             return
         }
         let startTimestamp = Date()
-//        cardService.getCards(sessionToken: sessionToken) { [weak self] in
-//            switch $0 {
-//            case .success(let cards):
-//                let cards = cards.compactMap {
-////                    Card(networkCard: $0, manager: self)
-//                    Card(manager: self)
-//                }
-//                let cardsSuffixes: [String] = cards.compactMap { $0.partIdentifier }
-//                self?.logger?.log(.cardList(idSuffixes: cardsSuffixes), startedAt: startTimestamp)
-//                completionHandler(.success(cards))
-//            case .failure(let networkError):
-//                self?.logger?.log(.failure(source: "Get Cards", error: networkError), startedAt: startTimestamp)
-//                completionHandler(.failure(.from(networkError)))
-//            }
-//        }
+        cardService.getCards(sessionToken: sessionToken) { [weak self] in
+            switch $0 {
+            case .success(let cards):
+                let cards = cards.compactMap {
+                    Card(networkCard: $0, manager: self)
+                }
+                let cardsSuffixes: [String] = cards.compactMap { $0.partIdentifier }
+                self?.logger?.log(.cardList(idSuffixes: cardsSuffixes), startedAt: startTimestamp)
+                completionHandler(.success(cards))
+            case .failure(let networkError):
+                self?.logger?.log(.failure(source: "Get Cards", error: networkError), startedAt: startTimestamp)
+                completionHandler(.failure(.from(networkError)))
+            }
+        }
     }
     
     private func setupRemoteLogging(environment: CardManagerEnvironment) {
-//        let serviceVersion = type(of: cardService).version
-        let networkVersion = "123" //"\(serviceVersion.name)-\(serviceVersion.number)"
+        let serviceVersion = type(of: cardService).version
+        let networkVersion = "\(serviceVersion.name)-\(serviceVersion.number)"
         let loggingMetadata = RemoteProcessorMetadata(productIdentifier: Constants.productName,
                                                       productVersion: networkVersion,
                                                       environment: environment.rawValue)

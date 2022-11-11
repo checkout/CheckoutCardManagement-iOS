@@ -5,7 +5,7 @@
 //  Created by Alex Ioja-Yang on 08/06/2022.
 //
 
-//import CheckoutCardNetwork
+import CheckoutCardNetwork
 
 /// General card details
 public final class Card {
@@ -14,13 +14,13 @@ public final class Card {
     public let panLast4Digits: String
 
     /// Expiry date for the card
-//    public let expiryDate: CardExpiryDate
+    public let expiryDate: CardExpiryDate
 
     /// Name of the cardholder
     public let cardHolderName: String
 
     /// Current state of the card
-//    public internal(set) var state: CardState
+    public internal(set) var state: CardState
 
     /// Identifier used to identify object for external operations
     public let id: String
@@ -33,27 +33,27 @@ public final class Card {
     /// Minimal partial identifier for logging purposes
     internal var partIdentifier: String { String(id.suffix(4)) }
 
-    init(//networkCard: CheckoutCardNetwork.Card,
+    init(networkCard: CheckoutCardNetwork.Card,
          manager: CardManager?) {
-        self.id = ""//networkCard.id
-        self.panLast4Digits = ""// networkCard.panLast4Digits
-//        self.expiryDate = networkCard.expiryDate
-//        self.state = networkCard.state
-        self.cardHolderName = ""//networkCard.displayName
+        self.id = networkCard.id
+        self.panLast4Digits = networkCard.panLast4Digits
+        self.expiryDate = networkCard.expiryDate
+        self.state = networkCard.state
+        self.cardHolderName = networkCard.displayName
         self.manager = manager
     }
 
     init(id: String,
          panLast4Digits: String,
-//         expiryDate: CardExpiryDate,
+         expiryDate: CardExpiryDate,
          cardHolderName: String,
-//         state: CardState = .inactive,
+         state: CardState = .inactive,
          manager: CardManager?) {
         self.id = id
         self.panLast4Digits = panLast4Digits
-//        self.expiryDate = expiryDate
+        self.expiryDate = expiryDate
         self.cardHolderName = cardHolderName
-//        self.state = state
+        self.state = state
         self.manager = manager
     }
 
