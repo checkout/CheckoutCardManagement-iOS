@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/SecureDisplay.framework/Info.plist</key>
+		<data>
+		oUfaDA/THPponHsNHwAmsGzdkyo=
+		</data>
+		<key>Frameworks/SecureDisplay.framework/SecureDisplay</key>
+		<data>
+		Gh492k9urRiQMSY6E3/GeKTVgNs=
+		</data>
+		<key>Frameworks/SecureDisplay.framework/_CodeSignature/CodeResources</key>
+		<data>
+		K27XBUpIiEoGbFXa4USnqvHuDJI=
+		</data>
 		<key>Headers/CheckoutCardNetwork-Swift.h</key>
 		<data>
 		UeV4gTuJbsGQPYEi1wumkbLT73o=
@@ -55,6 +67,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/SecureDisplay.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zM6cW0w5GVSQ/OMuz+h0XeBXWxxrKv92Ye27CY7zrNM=
+			</data>
+		</dict>
+		<key>Frameworks/SecureDisplay.framework/SecureDisplay</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H06KaVef5vm1WfY1Vz5mvqojrX0hdbR1XtLKwjrUJUA=
+			</data>
+		</dict>
+		<key>Frameworks/SecureDisplay.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			51QrJJJkMjcc5KyKZpxwJk5KCyINFoQmFHy1sQ4Eqwg=
+			</data>
+		</dict>
 		<key>Headers/CheckoutCardNetwork-Swift.h</key>
 		<dict>
 			<key>hash2</key>
