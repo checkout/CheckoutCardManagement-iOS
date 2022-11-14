@@ -68,7 +68,7 @@ extension CardManagementError {
         case .invalidRequestInput:
             return .invalidRequestInput
         @unknown default:
-            return .configurationIssue(hint: "Unsuported network error")
+             return .configurationIssue(hint: "Unsuported network error")
         }
     }
     
