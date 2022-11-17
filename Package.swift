@@ -14,19 +14,21 @@ let package = Package(
             targets: ["CheckoutCardManagement"]),
     ],
     dependencies: [
+        .package(
+            url: "https://github.com/checkout/checkout-event-logger-ios-framework",
+            from: "1.2.1"),
     ],
     targets: [
         .target(
             name: "CheckoutCardManagement",
             dependencies: [
-                "CheckoutEventLoggerKit",
+                .product(
+                    name: "CheckoutEventLoggerKit",
+                    package: "checkout-event-logger-ios-framework"),
                 "CheckoutCardNetwork",
             ]),
         .binaryTarget(
             name: "CheckoutCardNetwork",
             path: "SupportFrameworks/CheckoutCardNetwork.xcframework"),
-        .binaryTarget(
-            name: "CheckoutEventLoggerKit",
-            path: "SupportFrameworks/CheckoutEventLoggerKit.xcframework"),
     ]
 )
