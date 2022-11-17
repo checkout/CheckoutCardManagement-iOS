@@ -5,7 +5,7 @@
 //  Created by Alex Ioja-Yang on 16/06/2022.
 //
 
-import UIKit
+import Foundation
 
 public extension Card {
     
