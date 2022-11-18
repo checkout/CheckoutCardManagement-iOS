@@ -96,4 +96,4 @@ Changing environments
 When CheckoutCardManagement-iOS is using the ‘Stub’ framework, it does not look at the environment config as all the data being returned is ‘mock’ data.
 When consuming our SDK with non Stub, the environemnt config will allow you to select different environments as required.
 
-Note that testing in Sandbox and Production requires you to be set-up operationally with our Issuing service. For CKO issuing clients, please email ___ for any questions.
+Note that testing in Sandbox and Production requires you to be set-up operationally with our Issuing service. For CKO issuing clients, please email issuing_operations@checkout.com for any questions.
