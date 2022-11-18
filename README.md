@@ -1,6 +1,6 @@
 # What is the CheckoutCardManagement-iOS SDK?
 
-Our SDK is a first step at integrating with our full issuing-as-a-service solution. It works in the same way as our real production SDK will do, but is currently powered by an internal ‘Stub’ framework, which returns random data. This means there’s no backend integration required for the ‘Stub’ version of CheckoutCardManagement-iOS. 
+Our SDK is a first step at integrating with our full Issuing Product solution. It works in the same way as our real production SDK will do, but is currently powered by an internal ‘Stub’ framework, which returns random data. This means there’s no backend integration required for the ‘Stub’ version of CheckoutCardManagement-iOS. 
 
 The public interface remains the same no matter whether it’s fake/mocked data, as in the case of ‘Stub’, or real data. This means you have a small switch from **Stub → Sandbox → Production**. 
 
