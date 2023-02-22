@@ -7,6 +7,7 @@
 
 import Foundation
 import CheckoutEventLoggerKit
+import CheckoutCardNetwork
 
 extension CheckoutEventLogging {
     
@@ -15,4 +16,12 @@ extension CheckoutEventLogging {
         log(event: LogFormatter.build(event: event, startedAt: date))
     }
     
+}
+
+extension CheckoutEventLogger: NetworkLogger {
+    
+    public func log(error: Error, additionalInfo: [String : String]) {
+        log(event: LogFormatter.build(event: .failure(source: additionalInfo["source"] ?? "", error: error),
+                                      extraProperties: additionalInfo))
+    }
 }

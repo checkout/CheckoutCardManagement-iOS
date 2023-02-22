@@ -10,6 +10,9 @@ import CheckoutCardNetwork
 /// General card details
 public final class Card {
 
+    /// Current state of the card
+    public internal(set) var state: CardState
+    
     /// Last 4 digits from the long card number
     public let panLast4Digits: String
 
@@ -17,10 +20,7 @@ public final class Card {
     public let expiryDate: CardExpiryDate
 
     /// Name of the cardholder
-    public let cardHolderName: String
-
-    /// Current state of the card
-    public internal(set) var state: CardState
+    public let cardholderName: String
 
     /// Identifier used to identify object for external operations
     public let id: String
@@ -39,7 +39,7 @@ public final class Card {
         self.panLast4Digits = networkCard.panLast4Digits
         self.expiryDate = networkCard.expiryDate
         self.state = networkCard.state
-        self.cardHolderName = networkCard.displayName
+        self.cardholderName = networkCard.displayName
         self.manager = manager
     }
 
@@ -52,7 +52,7 @@ public final class Card {
         self.id = id
         self.panLast4Digits = panLast4Digits
         self.expiryDate = expiryDate
-        self.cardHolderName = cardHolderName
+        self.cardholderName = cardHolderName
         self.state = state
         self.manager = manager
     }
