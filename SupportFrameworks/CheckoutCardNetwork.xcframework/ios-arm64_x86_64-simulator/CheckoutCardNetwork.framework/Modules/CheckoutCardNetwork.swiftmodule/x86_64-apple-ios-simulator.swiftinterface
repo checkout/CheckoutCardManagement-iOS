@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutCardNetwork
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -7,19 +7,35 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-public struct CheckoutCardService : CheckoutCardNetwork.CardService {
+public struct ProvisioningConfiguration : Swift.Codable {
+  public let issuerID: Swift.String
+  public let serviceRSAExponent: Foundation.Data
+  public let serviceRSAModulus: Foundation.Data
+  public let serviceURLString: Swift.String
+  public let digitalServiceURLString: Swift.String
+  public init(issuerID: Swift.String, serviceRSAExponent: Foundation.Data, serviceRSAModulus: Foundation.Data, serviceURLString: Swift.String, digitalServiceURLString: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+final public class CheckoutCardService : CheckoutCardNetwork.CardService {
   public static var version: CheckoutCardNetwork.CardServiceVersion
   public static var authenticationLenght: Swift.Double
-  public var logger: CheckoutCardNetwork.NetworkLogger? {
+  final public var logger: CheckoutCardNetwork.NetworkLogger? {
     get
     set
   }
   public init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
-  public func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
-  public func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
-  public func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
-  public func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecurePropertiesResult) -> Swift.Void))
-  public func getCards(sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardListResult) -> Swift.Void))
+  final public func isTokenValid(_ token: CheckoutCardNetwork.Token) -> Swift.Bool
+  final public func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  final public func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  final public func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecureResult) -> Swift.Void))
+  final public func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.SecurePropertiesResult) -> Swift.Void))
+  final public func activateCard(cardID: Swift.String, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  final public func suspendCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardSuspendReason?, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  final public func revokeCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardRevokeReason?, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  final public func getCards(sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardListResult) -> Swift.Void))
+  final public func addCardToAppleWallet(cardID: Swift.String, cardholderID: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  @objc deinit
 }
 final public class ConsoleLogger : CheckoutCardNetwork.NetworkLogger {
   public init()
@@ -34,11 +50,16 @@ public protocol CardService {
   static var version: CheckoutCardNetwork.CardServiceVersion { get }
   var logger: CheckoutCardNetwork.NetworkLogger? { get set }
   init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
-  func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
-  func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
-  func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
-  func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: Swift.String, completionHandler: @escaping ((Self.SecurePropertiesResult) -> Swift.Void))
-  func getCards(sessionToken: Swift.String, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
+  func isTokenValid(_ token: CheckoutCardNetwork.Token) -> Swift.Bool
+  func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
+  func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.SecurePropertiesResult) -> Swift.Void))
+  func activateCard(cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  func suspendCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardSuspendReason?, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  func revokeCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardRevokeReason?, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
+  func getCards(sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
+  func addCardToAppleWallet(cardID: Swift.String, cardholderID: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, token: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
 }
 public struct Card : Swift.Decodable, Swift.Equatable {
   public let id: Swift.String
@@ -72,7 +93,19 @@ public enum CardNetworkError : Swift.Error, Swift.Equatable {
   case misconfigured(hint: Swift.String)
   case serverIssue
   case unauthenticated
+  case secureOperationsFailure
+  case parsingFailure
+  case pushProvisioningFailure
   public static func == (a: CheckoutCardNetwork.CardNetworkError, b: CheckoutCardNetwork.CardNetworkError) -> Swift.Bool
+}
+public enum CardRevokeReason : Swift.String {
+  case lost
+  case stolen
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct CardServiceVersion {
   public let name: Swift.String
@@ -91,7 +124,6 @@ public enum CardState : Swift.String, Swift.Decodable {
 }
 public protocol NetworkLogger : AnyObject {
   func log(error: Swift.Error, additionalInfo: [Swift.String : Swift.String])
-  func log(_ message: Swift.String...)
 }
 public enum OperationResult : Swift.Equatable {
   case success
@@ -107,9 +139,25 @@ public struct PinViewConfiguration {
 public struct SecurityCodeViewConfiguration {
   public init(font: UIKit.UIFont, textColor: UIKit.UIColor)
 }
+public typealias Token = Swift.String
+public enum CardSuspendReason : Swift.String {
+  case lost
+  case stolen
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.Equatable {}
 extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.Hashable {}
 extension CheckoutCardNetwork.CardNetworkEnvironment : Swift.RawRepresentable {}
+extension CheckoutCardNetwork.CardRevokeReason : Swift.Equatable {}
+extension CheckoutCardNetwork.CardRevokeReason : Swift.Hashable {}
+extension CheckoutCardNetwork.CardRevokeReason : Swift.RawRepresentable {}
 extension CheckoutCardNetwork.CardState : Swift.Equatable {}
 extension CheckoutCardNetwork.CardState : Swift.Hashable {}
 extension CheckoutCardNetwork.CardState : Swift.RawRepresentable {}
+extension CheckoutCardNetwork.CardSuspendReason : Swift.Equatable {}
+extension CheckoutCardNetwork.CardSuspendReason : Swift.Hashable {}
+extension CheckoutCardNetwork.CardSuspendReason : Swift.RawRepresentable {}

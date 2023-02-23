@@ -557,6 +557,374 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProvisioningConfiguration",
+        "printedName": "ProvisioningConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "issuerID",
+            "printedName": "issuerID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV8issuerIDSSvp",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV8issuerIDSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV8issuerIDSSvg",
+                "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV8issuerIDSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceRSAExponent",
+            "printedName": "serviceRSAExponent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV18serviceRSAExponent10Foundation4DataVvp",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV18serviceRSAExponent10Foundation4DataVvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV18serviceRSAExponent10Foundation4DataVvg",
+                "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV18serviceRSAExponent10Foundation4DataVvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceRSAModulus",
+            "printedName": "serviceRSAModulus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV17serviceRSAModulus10Foundation4DataVvp",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV17serviceRSAModulus10Foundation4DataVvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV17serviceRSAModulus10Foundation4DataVvg",
+                "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV17serviceRSAModulus10Foundation4DataVvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceURLString",
+            "printedName": "serviceURLString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV16serviceURLStringSSvp",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV16serviceURLStringSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV16serviceURLStringSSvg",
+                "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV16serviceURLStringSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "digitalServiceURLString",
+            "printedName": "digitalServiceURLString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV23digitalServiceURLStringSSvp",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV23digitalServiceURLStringSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV23digitalServiceURLStringSSvg",
+                "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV23digitalServiceURLStringSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(issuerID:serviceRSAExponent:serviceRSAModulus:serviceURLString:digitalServiceURLString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningConfiguration",
+                "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV8issuerID18serviceRSAExponent0H10RSAModulus0H9URLString014digitalServiceK0ACSS_10Foundation4DataVAKS2Stcfc",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV8issuerID18serviceRSAExponent0H10RSAModulus0H9URLString014digitalServiceK0ACSS_10Foundation4DataVAKS2Stcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningConfiguration",
+                "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV",
+        "mangledName": "$s19CheckoutCardNetwork25ProvisioningConfigurationV",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -583,12 +951,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvpZ",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvpZ",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvpZ",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvpZ",
             "moduleName": "CheckoutCardNetwork",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -608,11 +977,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvgZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvgZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvgZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvgZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -633,11 +1005,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvsZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvsZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvsZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvsZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -652,11 +1027,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvMZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV7versionAA0bD7VersionVvMZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvMZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC7versionAA0bD7VersionVvMZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -674,12 +1052,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvpZ",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvpZ",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvpZ",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvpZ",
             "moduleName": "CheckoutCardNetwork",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -699,11 +1078,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvgZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvgZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvgZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvgZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -724,11 +1106,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvsZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvsZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvsZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvsZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -743,11 +1128,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvMZ",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV20authenticationLenghtSdvMZ",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvMZ",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC20authenticationLenghtSdvMZ",
                 "moduleName": "CheckoutCardNetwork",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -773,11 +1161,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvp",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvp",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvp",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -804,10 +1193,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvg",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvg",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvg",
                 "moduleName": "CheckoutCardNetwork",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -836,10 +1228,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvs",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvs",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvs",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvs",
                 "moduleName": "CheckoutCardNetwork",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -854,10 +1249,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvM",
-                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV6loggerAA0C6Logger_pSgvM",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvM",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6loggerAA0C6Logger_pSgvM",
                 "moduleName": "CheckoutCardNetwork",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -871,7 +1269,7 @@
                 "kind": "TypeNominal",
                 "name": "CheckoutCardService",
                 "printedName": "CheckoutCardNetwork.CheckoutCardService",
-                "usr": "s:19CheckoutCardNetwork0aB7ServiceV"
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC"
               },
               {
                 "kind": "TypeNominal",
@@ -881,13 +1279,42 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV11environmentAcA0bC11EnvironmentO_tcfc",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV11environmentAcA0bC11EnvironmentO_tcfc",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC11environmentAcA0bC11EnvironmentO_tcfc",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC11environmentAcA0bC11EnvironmentO_tcfc",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isTokenValid",
+            "printedName": "isTokenValid(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC12isTokenValidySbSSF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC12isTokenValidySbSSF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -951,10 +1378,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV10displayPin03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV10displayPin03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC10displayPin03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10displayPin03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1022,10 +1450,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1093,10 +1522,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV19displaySecurityCode03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0fg4ViewI0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV19displaySecurityCode03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0fg4ViewI0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC19displaySecurityCode03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0fg4ViewI0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC19displaySecurityCode03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0fg4ViewI0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1183,10 +1613,195 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "activateCard",
+            "printedName": "activateCard(cardID:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC08activateB06cardID12sessionToken17completionHandlerySS_SSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC08activateB06cardID12sessionToken17completionHandlerySS_SSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suspendCard",
+            "printedName": "suspendCard(cardID:reason:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardSuspendReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSuspendReason",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                    "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC07suspendB06cardID6reason12sessionToken17completionHandlerySS_AA0B13SuspendReasonOSgSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC07suspendB06cardID6reason12sessionToken17completionHandlerySS_AA0B13SuspendReasonOSgSSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCard",
+            "printedName": "revokeCard(cardID:reason:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardRevokeReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardRevokeReason",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                    "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC06revokeB06cardID6reason12sessionToken17completionHandlerySS_AA0B12RevokeReasonOSgSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC06revokeB06cardID6reason12sessionToken17completionHandlerySS_AA0B12RevokeReasonOSgSSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1250,21 +1865,87 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceV8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCardToAppleWallet",
+            "printedName": "addCardToAppleWallet(cardID:cardholderID:configuration:token:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningConfiguration",
+                "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:19CheckoutCardNetwork0aB7ServiceV",
-        "mangledName": "$s19CheckoutCardNetwork0aB7ServiceV",
+        "declKind": "Class",
+        "usr": "s:19CheckoutCardNetwork0aB7ServiceC",
+        "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC",
         "moduleName": "CheckoutCardNetwork",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "RawDocComment"
         ],
@@ -1848,6 +2529,141 @@
           },
           {
             "kind": "Function",
+            "name": "activateCard",
+            "printedName": "activateCard(cardID:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork12FakeResponseC08activateB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "mangledName": "$s19CheckoutCardNetwork12FakeResponseC08activateB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "moduleName": "CheckoutCardNetwork",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suspendCard",
+            "printedName": "suspendCard(cardID:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork12FakeResponseC07suspendB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "mangledName": "$s19CheckoutCardNetwork12FakeResponseC07suspendB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "moduleName": "CheckoutCardNetwork",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCard",
+            "printedName": "revokeCard(cardID:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork12FakeResponseC06revokeB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "mangledName": "$s19CheckoutCardNetwork12FakeResponseC06revokeB06cardID17completionHandlerySS_yAA15OperationResultOctFZ",
+            "moduleName": "CheckoutCardNetwork",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getCards",
             "printedName": "getCards(completionHandler:)",
             "children": [
@@ -2256,6 +3072,37 @@
           },
           {
             "kind": "Function",
+            "name": "isTokenValid",
+            "printedName": "isTokenValid(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP12isTokenValidySbSSF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP12isTokenValidySbSSF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "displayPin",
             "printedName": "displayPin(forCard:displayConfiguration:singleUseToken:completionHandler:)",
             "children": [
@@ -2571,6 +3418,196 @@
           },
           {
             "kind": "Function",
+            "name": "activateCard",
+            "printedName": "activateCard(cardID:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP08activateB06cardID12sessionToken17completionHandlerySS_SSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP08activateB06cardID12sessionToken17completionHandlerySS_SSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suspendCard",
+            "printedName": "suspendCard(cardID:reason:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardSuspendReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSuspendReason",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                    "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP07suspendB06cardID6reason12sessionToken17completionHandlerySS_AA0B13SuspendReasonOSgSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP07suspendB06cardID6reason12sessionToken17completionHandlerySS_AA0B13SuspendReasonOSgSSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCard",
+            "printedName": "revokeCard(cardID:reason:sessionToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardRevokeReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardRevokeReason",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                    "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP06revokeB06cardID6reason12sessionToken17completionHandlerySS_AA0B12RevokeReasonOSgSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP06revokeB06cardID6reason12sessionToken17completionHandlerySS_AA0B12RevokeReasonOSgSSyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getCards",
             "printedName": "getCards(sessionToken:completionHandler:)",
             "children": [
@@ -2629,6 +3666,72 @@
             "declKind": "Func",
             "usr": "s:19CheckoutCardNetwork0B7ServiceP8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
             "mangledName": "$s19CheckoutCardNetwork0B7ServiceP8getCards12sessionToken17completionHandlerySS_ys6ResultOySayAA0B0VGAA0bC5ErrorOGctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCardToAppleWallet",
+            "printedName": "addCardToAppleWallet(cardID:cardholderID:configuration:token:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningConfiguration",
+                "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
+                "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
             "moduleName": "CheckoutCardNetwork",
             "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
             "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
@@ -2746,6 +3849,126 @@
                 "declKind": "Accessor",
                 "usr": "s:19CheckoutCardNetwork0B0V12cardholderIDSSvg",
                 "mangledName": "$s19CheckoutCardNetwork0B0V12cardholderIDSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardProductID",
+            "printedName": "cardProductID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B0V13cardProductIDSSSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B0V13cardProductIDSSSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B0V13cardProductIDSSSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B0V13cardProductIDSSSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientID",
+            "printedName": "clientID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B0V8clientIDSSSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B0V8clientIDSSSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B0V8clientIDSSSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B0V8clientIDSSSgvg",
                 "moduleName": "CheckoutCardNetwork",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2934,6 +4157,50 @@
           },
           {
             "kind": "Var",
+            "name": "isSingleUse",
+            "printedName": "isSingleUse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B0V11isSingleUseSbvp",
+            "mangledName": "$s19CheckoutCardNetwork0B0V11isSingleUseSbvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B0V11isSingleUseSbvg",
+                "mangledName": "$s19CheckoutCardNetwork0B0V11isSingleUseSbvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "reference",
             "printedName": "reference",
             "children": [
@@ -2957,7 +4224,8 @@
             "mangledName": "$s19CheckoutCardNetwork0B0V9referenceSSSgvp",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3029,6 +4297,126 @@
                 "declKind": "Accessor",
                 "usr": "s:19CheckoutCardNetwork0B0V4typeAA0B4TypeOvg",
                 "mangledName": "$s19CheckoutCardNetwork0B0V4typeAA0B4TypeOvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingCurrency",
+            "printedName": "billingCurrency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B0V15billingCurrencySSSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B0V15billingCurrencySSSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B0V15billingCurrencySSSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B0V15billingCurrencySSSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuingCountry",
+            "printedName": "issuingCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B0V14issuingCountrySSSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B0V14issuingCountrySSSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B0V14issuingCountrySSSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B0V14issuingCountrySSSgvg",
                 "moduleName": "CheckoutCardNetwork",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3186,7 +4574,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:cardholderID:displayName:panLast4Digits:state:reference:type:createdOn:lastModifiedOn:expiryDate:)",
+            "printedName": "init(id:cardholderID:cardProductID:clientID:displayName:panLast4Digits:state:isSingleUse:reference:type:billingCurrency:issuingCountry:createdOn:lastModifiedOn:expiryDate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3207,6 +4595,36 @@
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3231,6 +4649,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
@@ -3242,6 +4667,36 @@
                 "printedName": "CheckoutCardNetwork.CardType",
                 "hasDefaultArg": true,
                 "usr": "s:19CheckoutCardNetwork0B4TypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3266,8 +4721,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19CheckoutCardNetwork0B0V2id12cardholderID11displayName14panLast4Digits5state9reference4type9createdOn012lastModifiedP010expiryDateACSS_S3SAA0B5StateOSSAA0B4TypeO10Foundation0T0VAtA0b6ExpiryT0Vtcfc",
-            "mangledName": "$s19CheckoutCardNetwork0B0V2id12cardholderID11displayName14panLast4Digits5state9reference4type9createdOn012lastModifiedP010expiryDateACSS_S3SAA0B5StateOSSAA0B4TypeO10Foundation0T0VAtA0b6ExpiryT0Vtcfc",
+            "usr": "s:19CheckoutCardNetwork0B0V2id12cardholderID011cardProductF006clientF011displayName14panLast4Digits5state11isSingleUse9reference4type15billingCurrency14issuingCountry9createdOn012lastModifiedZ010expiryDateACSS_S2SSgASS2SAA0B5StateOSbSSAA0B4TypeOA2S10Foundation4DateVAzA0B10ExpiryDateVtcfc",
+            "mangledName": "$s19CheckoutCardNetwork0B0V2id12cardholderID011cardProductF006clientF011displayName14panLast4Digits5state11isSingleUse9reference4type15billingCurrency14issuingCountry9createdOn012lastModifiedZ010expiryDateACSS_S2SSgASS2SAA0B5StateOSbSSAA0B4TypeOA2S10Foundation4DateVAzA0B10ExpiryDateVtcfc",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "AccessControl"
@@ -4104,6 +5559,126 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "secureOperationsFailure",
+            "printedName": "secureOperationsFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.Type) -> CheckoutCardNetwork.CardNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardNetworkError",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO23secureOperationsFailureyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23secureOperationsFailureyA2CmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parsingFailure",
+            "printedName": "parsingFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.Type) -> CheckoutCardNetwork.CardNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardNetworkError",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO14parsingFailureyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO14parsingFailureyA2CmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushProvisioningFailure",
+            "printedName": "pushProvisioningFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.Type) -> CheckoutCardNetwork.CardNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardNetworkError",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO23pushProvisioningFailureyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23pushProvisioningFailureyA2CmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -4165,6 +5740,215 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardRevokeReason",
+        "printedName": "CardRevokeReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lost",
+            "printedName": "lost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardRevokeReason.Type) -> CheckoutCardNetwork.CardRevokeReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardRevokeReason",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                    "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardRevokeReason",
+                        "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                        "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO4lostyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO4lostyA2CmF",
+            "moduleName": "CheckoutCardNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "stolen",
+            "printedName": "stolen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardRevokeReason.Type) -> CheckoutCardNetwork.CardRevokeReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardRevokeReason",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                    "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardRevokeReason",
+                        "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                        "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO6stolenyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO6stolenyA2CmF",
+            "moduleName": "CheckoutCardNetwork"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardRevokeReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardRevokeReason",
+                    "printedName": "CheckoutCardNetwork.CardRevokeReason",
+                    "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO8rawValueACSgSS_tcfc",
+            "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO8rawValueACSgSS_tcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO8rawValueSSvp",
+            "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO8rawValueSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO8rawValueSSvg",
+                "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO8rawValueSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19CheckoutCardNetwork0B12RevokeReasonO",
+        "mangledName": "$s19CheckoutCardNetwork0B12RevokeReasonO",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -4901,44 +6685,6 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "log",
-            "printedName": "log(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0C6LoggerP3logyySSd_tF",
-            "mangledName": "$s19CheckoutCardNetwork0C6LoggerP3logyySSd_tF",
-            "moduleName": "CheckoutCardNetwork",
-            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.NetworkLogger>",
-            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.NetworkLogger>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -5604,6 +7350,225 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardSuspendReason",
+        "printedName": "CardSuspendReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lost",
+            "printedName": "lost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardSuspendReason.Type) -> CheckoutCardNetwork.CardSuspendReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSuspendReason",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                    "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardSuspendReason",
+                        "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                        "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO4lostyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO4lostyA2CmF",
+            "moduleName": "CheckoutCardNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "stolen",
+            "printedName": "stolen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardSuspendReason.Type) -> CheckoutCardNetwork.CardSuspendReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSuspendReason",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                    "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardSuspendReason",
+                        "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                        "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO6stolenyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO6stolenyA2CmF",
+            "moduleName": "CheckoutCardNetwork"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CheckoutCardNetwork.CardSuspendReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSuspendReason",
+                    "printedName": "CheckoutCardNetwork.CardSuspendReason",
+                    "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO8rawValueACSgSS_tcfc",
+            "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO8rawValueACSgSS_tcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO8rawValueSSvp",
+            "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO8rawValueSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO8rawValueSSvg",
+                "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO8rawValueSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19CheckoutCardNetwork0B13SuspendReasonO",
+        "mangledName": "$s19CheckoutCardNetwork0B13SuspendReasonO",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5617,6 +7582,33 @@
         "name": "String",
         "printedName": "String",
         "children": [
+          {
+            "kind": "Function",
+            "name": "getCardholderIDFromToken",
+            "printedName": "getCardholderIDFromToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS19CheckoutCardNetworkE24getCardholderIDFromTokenSSSgyF",
+            "mangledName": "$sSS19CheckoutCardNetworkE24getCardholderIDFromTokenSSSgyF",
+            "moduleName": "CheckoutCardNetwork",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "toDate",
@@ -5643,6 +7635,47 @@
             "moduleName": "CheckoutCardNetwork",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insert",
+            "printedName": "insert(_:at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS19CheckoutCardNetworkE6insert_2atySS_SaySiGtF",
+            "mangledName": "$sSS19CheckoutCardNetworkE6insert_2atySS_SaySiGtF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
           }
         ],
         "declKind": "Struct",
@@ -6373,21 +8406,21 @@
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 397,
       "length": 10,
       "value": "\"SianStub\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 417,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 600,
       "length": 3,
       "value": "180"
     },
@@ -6415,163 +8448,268 @@
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 3007,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2104,
+      "offset": 3052,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2148,
+      "offset": 3187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2195,
+      "offset": 3234,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3326,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2287,
+      "offset": 3371,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2499,
+      "offset": 3682,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2511,
+      "offset": 3694,
       "length": 6,
       "value": "\"2055\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2976,
+      "offset": 4366,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 4411,
+      "length": 17,
+      "value": "\"card_product_id\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4453,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4492,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 4534,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3102,
+      "offset": 4575,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 4619,
       "length": 11,
       "value": "\"last_four\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3179,
+      "offset": 4652,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3254,
+      "offset": 4688,
+      "length": 15,
+      "value": "\"is_single_use\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4776,
+      "length": 18,
+      "value": "\"billing_currency\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4825,
+      "length": 17,
+      "value": "\"issuing_country\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4868,
       "length": 12,
       "value": "\"created_on\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3297,
+      "offset": 4911,
       "length": 18,
       "value": "\"last_modified_on\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 2976,
+      "offset": 4366,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 4411,
+      "length": 17,
+      "value": "\"card_product_id\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4453,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4492,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 4534,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3102,
+      "offset": 4575,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 4619,
       "length": 11,
       "value": "\"last_four\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3179,
+      "offset": 4652,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3254,
+      "offset": 4688,
+      "length": 15,
+      "value": "\"is_single_use\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4776,
+      "length": 18,
+      "value": "\"billing_currency\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4825,
+      "length": 17,
+      "value": "\"issuing_country\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 4868,
       "length": 12,
       "value": "\"created_on\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
-      "offset": 3297,
+      "offset": 4911,
       "length": 18,
       "value": "\"last_modified_on\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 15,
+      "value": "\"reported_lost\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 17,
+      "value": "\"reported_stolen\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 15,
+      "value": "\"reported_lost\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 17,
+      "value": "\"reported_stolen\""
     },
     {
       "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/String+Extensions.swift",
@@ -6586,6 +8724,41 @@
       "offset": 361,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 16,
+      "value": "\"suspected_lost\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 18,
+      "value": "\"suspected_stolen\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 16,
+      "value": "\"suspected_lost\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 18,
+      "value": "\"suspected_stolen\""
+    },
+    {
+      "filePath": "\/Users\/alexiojayang\/Desktop\/projects\/SianStub-iOS\/SianStub\/PublicAPIs\/UILabel+Extensions.swift",
+      "kind": "Array",
+      "offset": 197,
+      "length": 14,
+      "value": "[4, 8, 12, 16]"
     }
   ]
 }
