@@ -30,7 +30,7 @@ enum LogEvent {
     /// Describe a successful call to retrieve a pan and a security code
     case getPanCVV(idLast4: String, cardState: CardState)
     
-    /// Describe a successfull event where a card state was completed
+    /// Describe a successfull event where a card state change was completed
     case stateManagement(idLast4: String, originalState: CardState, requestedState: CardState, reason: String?)
     
     /// Describe a Push Provisioning event
