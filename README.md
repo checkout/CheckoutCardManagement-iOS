@@ -59,6 +59,51 @@ cardManager.getCards { result in
     }
 }
 ```
+
+
+
+### Retrieve SecureData for one of the cards
+<sub>Example covers PIN, but the same flow and similar APIs are valid for PAN, CVV, PAN + CVV</sub>
+
+These calls are subject to unique Strong Customer Authentication flow prior to every individual call. Only on completion of such a specific authentication, a single use token may be requested to continue executing the request.
+
+```swift
+let singleUseToken = retrieveSingleUseToken(generatedFor: reauthenticatedUser)
+
+// Request sensitive data via the card object
+card.getPin(singleUseToken: singleUseToken) { result in
+    switch result {
+    case .success(let pinView):
+        // received an UI component we can now display to the user
+    case .failure(let error):
+        // received an error. It should document what went wrong
+    }
+}
+```
+
+
+
+### Perform a card lifecycle change
+<sub>Used to activate, suspend or revoke cards (change the card state)</sub>
+
+```swift
+// We would recommend when looking to change the state of a card to validate 
+//   the new state to be requested is possible for the current card.
+let canActivateCard = card.possibleStateChanges.contains(.active)
+
+// You can then call the respective associated method for the new state
+card.activate { result in
+    switch result {
+    case .success:
+        // The call was successful and the `state` is now `active`
+    case .failure(let error):
+        // Failed to change card state, check the error object
+    }
+}
+// Other card lifecycle APIs are `.suspend` and `.revoke`, 
+//   each receiving optional reasons for the requested operation
+```
+
 Note: card states. There are 4 different card states, which apply to both virtual and physical cards. They are:
 | State      | Meaning |
 | ----------- | ----------- |
@@ -69,24 +114,12 @@ Note: card states. There are 4 different card states, which apply to both virtua
 
 
 
-### Retrieve a PIN for one of the cards
-<sub>The flow is similar for other sensitive information, like the long card number (PAN), or the security code (CVV)</sub>
+### Push Provisioning
 
-```swift
-// Authenticate your user for this request and on success, request a sensitive data specific token from your backend
-// Not relevant when using Stub
-let singleUseToken = retrieveSensitiveDataToken(generatedFor: reauthenticatedUser)
+The Push Provisioning feature adds the desired card to a digital wallet, in this case the Apple Wallet, from the mobile application.
 
-// Using an index from the list of cards (for example from user UI selection), request the PIN for that card
-cards[selectedIndex].getPin(singleUseToken: singleUseToken) { result in
-    switch result {
-    case .success(let pinView):
-        // received an UI component we can now display to the user
-    case .failure(let error):
-        // received an error. It should document what went wrong
-    }
-}
-```
+This feature can be accessed by `card.provision(/* required parameters */)`. Note that this action is not possible using our Stub environment, but the API is expected to be be kept once releasing a Sandbox & Production eligible version.
+
 
 
 ### Moving to Sandbox and Production

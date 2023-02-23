@@ -36,6 +36,8 @@ enum LogFormatter {
         case .getPan: return "card_pan"
         case .getCVV: return "card_cvv"
         case .getPanCVV: return "card_pan_cvv"
+        case .stateManagement: return "card_state_change"
+        case .pushProvisioning: return "push_provisioning"
         case .failure: return "failure"
         }
     }
@@ -48,7 +50,9 @@ enum LogFormatter {
                 .getPin,
                 .getPan,
                 .getCVV,
-                .getPanCVV:
+                .getPanCVV,
+                .stateManagement,
+                .pushProvisioning:
             return .info
         case .failure:
             return .warn
@@ -73,6 +77,20 @@ enum LogFormatter {
             dictionary = [
                 "suffix_id": AnyCodable(idLast4),
                 "card_state": AnyCodable(state.rawValue)
+            ]
+        case .stateManagement(let idLast4, let originalState, let requestedState, let reason):
+            dictionary = [
+                "suffix_id": AnyCodable(idLast4),
+                "from": AnyCodable(originalState.rawValue),
+                "to": AnyCodable(requestedState.rawValue)
+            ]
+            if let reason {
+                dictionary["reason"] = AnyCodable(reason)
+            }
+        case .pushProvisioning(let last4CardID, let last4CardholderID):
+            dictionary = [
+                "card": AnyCodable(last4CardID),
+                "cardholder": AnyCodable(last4CardholderID)
             ]
         case .failure(let source, let error):
             dictionary = [

@@ -9,7 +9,7 @@ import Foundation
 
 enum Constants {
     /// Version of the SDK in use
-    static let productVersion = "0.1.1"
+    static let productVersion = "0.2.0"
     
     /// Product name for logging
     static let productName = "issuing-ios-sdk"

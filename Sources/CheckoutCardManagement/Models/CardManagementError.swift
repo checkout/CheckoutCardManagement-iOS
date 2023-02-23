@@ -45,6 +45,14 @@ public enum CardManagementError: Error, Equatable {
     /// The session is not authenticated. Provide a session token via `logInSession` and retry.
     case unauthenticated
     
+    /// There was a problem that prevented securely retrieving information
+    case unableToPerformSecureOperation
+    
+    /// Requested to change card to an unavailable state
+    case invalidStateRequested
+    
+    /// Failed to complete Push Provisioning request
+    case pushProvisioningFailure
 }
 
 extension CardManagementError {
@@ -67,8 +75,12 @@ extension CardManagementError {
             return .configurationIssue(hint: hint)
         case .invalidRequestInput:
             return .invalidRequestInput
-        @unknown default:
-            return .configurationIssue(hint: "Unsuported network error")
+        case .secureOperationsFailure:
+            return .unableToPerformSecureOperation
+        case .parsingFailure:
+            return .connectionIssue
+        case .pushProvisioningFailure:
+            return .pushProvisioningFailure
         }
     }
     

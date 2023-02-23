@@ -15,8 +15,11 @@ protocol CardManager: AnyObject {
     var cardService: CardService { get }
     /// Analytics logger enabling tracking events
     var logger: CheckoutEventLogging? { get }
+    /// Generic token used for non sensitive calls
+    var sessionToken: String? { get }
     /// Design system to guide any secure view UI
     var designSystem: CardManagementDesignSystem { get }
+    
 }
 
 /// Access gateway into the Card Management functionality
@@ -41,15 +44,18 @@ public final class CheckoutCardManager: CardManager {
     let designSystem: CardManagementDesignSystem
     /// Analytics logger and dispatcher for tracked events
     let logger: CheckoutEventLogging?
-    
     /// Generic token used for non sensitive calls
-    private var sessionToken: String?
+    var sessionToken: String?
     
     /// Enable the functionality using the provided design system for secure UI components
     public init(designSystem: CardManagementDesignSystem, environment: CardManagerEnvironment) {
+        let logger = CheckoutEventLogger(productName: Constants.productName)
+        let service = CheckoutCardService(environment: environment.networkEnvironment())
+        service.logger = logger
+        
         self.designSystem = designSystem
-        self.cardService = CheckoutCardService(environment: environment.networkEnvironment())
-        self.logger = CheckoutEventLogger(productName: Constants.productName)
+        self.cardService = service
+        self.logger = logger
         
         setupRemoteLogging(environment: environment)
         logInitialization()
@@ -66,8 +72,12 @@ public final class CheckoutCardManager: CardManager {
     }
     
     /// Store provided token to use on network calls
-    public func logInSession(token: String) {
+    public func logInSession(token: String) -> Bool {
+        guard cardService.isTokenValid(token) else {
+            return false
+        }
         sessionToken = token
+        return true
     }
     
     /// Remove current token from future calls
