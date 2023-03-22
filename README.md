@@ -26,7 +26,7 @@ CheckoutCardManagement-iOS SDK supports 3 environments: Stub, Sandbox & Producti
 - **CheckoutCardManager**. This library powers Sandbox & Production environments, and requires onboarding with our operations team. During onboarding, you will need to receive client credentials, which you will then need to handle on your backend for authentication. You will be expected to manage SCA capabilities as part of accessing our SDK's functionality.
 - **CheckoutCardManagerStub**. This library powers Stub and is the quickest way to try the APIs in your app. Your mobile team can integrate this way whilst waiting for legal & contractual arrangements to take place, or for your backend colleagues to get integration ready on their side.
     - in this version you can provide empty strings instead of tokens as no network call leaves the device and we provide mock data.
-> **_IMPORTANT FACT:_**  Changing from CheckoutCardManagerStub to CheckoutCardManager is as simple as updating the `import CheckoutCardManagerStub` to `import CheckoutCardManager`. On Live versions you will be expected to start providing valid tokens that our backend services will be able to serve securely. 
+> **_IMPORTANT FACT:_**  Changing from CheckoutCardManagerStub to CheckoutCardManager is as simple as updating the `import CheckoutCardManagerStub` to `import CheckoutCardManager` - the public interfaces are exactly the same. On Live versions you will be expected to start providing valid tokens that our backend services will be able to serve securely. 
 
 ***
 # Features
@@ -87,7 +87,7 @@ cardManager.logIn(with: token)
 ```
 
 ### Get a list of cards
-Once you’ve authenticated your application and the cardholder, you can return a list of non-sensitive card data using `getCards`. This returns the **last 4 digits of the long card number** for our cards (also known as the Primary Account Number, or PAN), the **expiry date** of the card, the name of the **cardholder** associated with that card, the **state** of that card, and the unique ID for each card returned.
+Once you’ve authenticated your application and the cardholder, you can return a list of non-sensitive card data using `getCards` for that cardholder. This returns the **last 4 digits of the long card number** for our cards (also known as the Primary Account Number, or PAN), the **expiry date** of the card, the name of the **cardholder** associated with that card, the **state** of that card, and the unique ID for each card returned.
 
 ```Swift
 cardManager.getCards { result in
@@ -170,7 +170,7 @@ The UI Component protects the value and safely delivers it only to the user. The
 
 ### Push Provisioning
 Push Provisioning is the operation of adding a physical or virtual card to the digital wallet. On iOS this is the Apple Wallet. The operation is complex and requires interaction from many different entities, including Apple & Card Scheme (in our case, Mastercard). Push Provisioning is subject to onboarding and will only be testable in Production. For more details on setting up Push Provisioning, please speak to your operations contact.
-Code level, the call will look like:
+At the code level, the call will look like:
 ```Swift
 card.provision(cardholderID: "{id_of_cardholder_performing_operation}",
                configuration: ProvisioningConfiguration(/* */),
