@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "CheckoutCardManagement",
             targets: ["CheckoutCardManagement"]),
+        .library(
+            name: "CheckoutCardManagementStub",
+            targets: ["CheckoutCardManagementStub"]),
     ],
     dependencies: [
         .package(
@@ -27,8 +30,19 @@ let package = Package(
                     package: "checkout-event-logger-ios-framework"),
                 "CheckoutCardNetwork",
             ]),
+        .target(
+            name: "CheckoutCardManagementStub",
+            dependencies: [
+                .product(
+                    name: "CheckoutEventLoggerKit",
+                    package: "checkout-event-logger-ios-framework"),
+                "CheckoutCardNetworkStub",
+            ]),
         .binaryTarget(
             name: "CheckoutCardNetwork",
             path: "SupportFrameworks/CheckoutCardNetwork.xcframework"),
+        .binaryTarget(
+            name: "CheckoutCardNetworkStub",
+            path: "SupportFrameworks/CheckoutCardNetworkStub.xcframework"),
     ]
 )

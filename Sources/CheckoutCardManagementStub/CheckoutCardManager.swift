@@ -7,7 +7,7 @@
 
 import UIKit
 import CheckoutEventLoggerKit
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 /// Interface required for Card object to share properties with its owner in a delegate pattern
 protocol CardManager: AnyObject {
