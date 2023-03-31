@@ -147,7 +147,7 @@ if possibleNewStates.contains(.active) {
 // If valid, we can suspend card
 if possibleNewStates.contains(.suspended) {
     let reason: CardSuspendReason? = .lost
-    card.activate(reason: reason, completionHandler: cardStateChangeCompletion)
+    card.suspend(reason: reason, completionHandler: cardStateChangeCompletion)
 }
 
 // If valid we can revoke card
@@ -155,7 +155,7 @@ if possibleNewStates.contains(.revoked) {
     // This is a destructive and irreversible action, ensure your user is certain
     //     Once revoked, the card can no longer be activated!
     let reason: CardRevokeReason? = .lost
-    card.activate(reason: reason, completionHandler: cardStateChangeCompletion)
+    card.revoke(reason: reason, completionHandler: cardStateChangeCompletion)
 }
 ```
 
