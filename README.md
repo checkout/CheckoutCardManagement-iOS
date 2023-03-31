@@ -136,7 +136,7 @@ The API is attached to the card object, so you must first obtain it from the SDK
 
 Once you have the card object, we would also suggest using our `.possibleStateChanges` card API for an improved UX. You can then request the new state from the card object
 ```Swift
-// 1. We can retrieve possible new states for the card we want to update state of
+// We can retrieve possible new states for the card we want to update state of
 let possibleNewStates = card.possibleStateChanges
 
 // If valid, we can activate card
