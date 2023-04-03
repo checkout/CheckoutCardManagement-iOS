@@ -73,7 +73,7 @@ Each authentication session can be used to simultaneously generate multiple toke
 # Integration
 
 ### Import SDK
-We recommend using SPM to import the SDK into your app, as it's the easiest method:
+Use SPM to import the SDK into your app:
 
 1. In **Xcode**, select _File > Swift Packages > Add Package Dependency_.
 2. When prompted, enter `enter https://github.com/checkout/CheckoutCardManagement-iOS`.
@@ -176,7 +176,7 @@ Note: card states. There are 4 different card states, which apply to both virtua
 | ----------- | ----------- |
 | Active      | The card can process transactions as normal. By default, virtual cards are set to `active` on creation.   |
 | Suspended   | Card has been manually suspended by the cardholder; transactions are temporarily blocked. The card can be reactivated to allow for normal use.  |
-| Inactive    | The card is awaiting activation and is unusable until then. By default, physical cards are set to `inactive` on creation. Card's cannot transition to `inactive` from any other status.        |
+| Inactive    | The card is awaiting activation and is unusable until then. By default, physical cards are set to `inactive` on creation. Cards cannot transition to `inactive` from any other status.        |
 | Revoked     | Transactions are permanently blocked. The card cannot be reactivated from this status. |
 
 ### Retrieve Secure Data
