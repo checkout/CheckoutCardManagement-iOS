@@ -85,14 +85,14 @@ At this stage, you can choose to add the `CheckoutCardManagement` or `CheckoutCa
 ### Prepare card manager
 To start consuming SDK functionality, instantiate the main object, which enables access to the functionality:
 ```Swift
-// Should match the library imported at previous step, between CheckoutCardManagement and CheckoutCardManagementStub
+// The statement should match the library imported in the previous step
 import CheckoutCardManagement
 
 class YourObject {
-   // Customisasable UI properties for the secure components delivered
+   // Customizable UI properties for the secure components delivered by the SDK
    let cardManagerDesignSystem = CardManagementDesignSystem(font: .systemFont(ofSize: 22),
                                                             textColor: .blue)
-   // Core object enabling functionality 
+   // The core object through which the SDK's functionality is accessed 
    let cardManager = CheckoutCardManager(designSystem: cardManagerDesignSystem,
                                          environment: .sandbox)
 }
@@ -123,10 +123,10 @@ This returns the following card details:
 cardManager.getCards { result in
     switch result {
     case .success(let cards):
-        // received a list of cards that you can integrate inside your UI
-        // Card info contains: last 4 pan, expiry date, cardholder name, card state & id
+        // You'll receive a list of cards that you can integrate within your UI
+        // The card info includes the last 4 digits (PAN), expiry date, cardholder name, card state, and id
     case .failure(let error):
-        // received an error. Error should help document what went wrong
+        // If something goes wrong, you'll receive an error with more details
     }
 }
 ```
@@ -134,26 +134,26 @@ cardManager.getCards { result in
 ### Update card state
 The API is attached to the card object, so you must first obtain it from the SDK. 
 
-Once you have the card object, we would also suggest using our `.possibleStateChanges` card API for an improved UX. You can then request the new state from the card object
+Once you have the card object, we would also suggest using our `.possibleStateChanges` card API for an improved user experience. You can then request the new state from the card object.
 ```Swift
-// We can retrieve possible new states for the card we want to update state of
+// This will return a list of possible states that the card can be transitioned to
 let possibleNewStates = card.possibleStateChanges
 
-// If valid, we can activate card
+// We can activate the card, if the state was returned by possibleStateChanges
 if possibleNewStates.contains(.active) {
     card.activate(completionHandler: cardStateChangeCompletion)
 }
 
-// If valid, we can suspend card
+// We can suspend the card, if the state was returned by possibleStateChanges
 if possibleNewStates.contains(.suspended) {
     let reason: CardSuspendReason? = .lost
     card.suspend(reason: reason, completionHandler: cardStateChangeCompletion)
 }
 
-// If valid we can revoke card
+// We can revoke the card, if the state was returned by possibleStateChanges
 if possibleNewStates.contains(.revoked) {
-    // This is a destructive and irreversible action, ensure your user is certain
-    //     Once revoked, the card can no longer be activated!
+    // This is a destructive and irreversible action - once revoked, the card cannot be reactivated
+    // We recommended that you request UI confirmation that your user intended to perform this action     
     let reason: CardRevokeReason? = .lost
     card.revoke(reason: reason, completionHandler: cardStateChangeCompletion)
 }
@@ -164,9 +164,9 @@ Regardless of the new state requested, the same completion handler can be used:
 func cardStateChangeCompletion(_ result: CheckoutCardManager.OperationResult) {
     switch result {
     case .success:
-        // The card state has been updated as requested, both on backend and SDK
+        // Card state has been updated successfully, and will be reflected by both the backend and the SDK
     case .failure(let error):
-        // received an error. Error should help document what went wrong
+        // If something goes wrong, you'll receive an error with more details
     }
 }
 ```
@@ -182,20 +182,20 @@ Note: card states. There are 4 different card states, which apply to both virtua
 ### Retrieve Secure Data
 <sub> The following example covers PIN, but similar APIs are available for PAN, CVV, and PAN + CVV. The general flow remains the same.</sub>
 
-These calls are subject to a unique SCA flow prior to every individual call. Only on completion of a specific authentication can a single use token be requested and provided to the SDK, in order to continue executing the request.
+These calls are subject to a unique SCA flow prior to every individual call. Only on completion of a specific authentication can a single-use token be requested and provided to the SDK, in order to continue executing the request.
 
 In a Stub environment, you can provide any `String`.
 
-```swift
+```Swift
 let singleUseToken = "{Single_use_token_retrieved_from_your_backend_after_SCA}"
 
 // Request sensitive data via the card object
 card.getPin(singleUseToken: singleUseToken) { result in
     switch result {
     case .success(let pinView):
-        // received an UI component we can now display to the user
+        // If successfuly, you'll receive a UI component that you can display to the user
     case .failure(let error):
-        // received an error. It should document what went wrong
+        // If something goes wrong, you'll receive an error with more details
     }
 }
 ```
@@ -204,7 +204,7 @@ The UI component protects the value and safely delivers it to the user as the so
 ### Push Provisioning
 **Push Provisioning** is the operation of adding a physical or virtual card to a digital wallet. On iOS, this means adding a card to an Apple Wallet.
 
-Enabling this operation is highly complex as it requires interaction between multiple entities including you, Checkout.com, Apple, and the card scheme (in our case, Mastercard).  As such, push provisioning is subject to onboarding and will only be testable in your Production environment. For more details, speak to your operations contact.
+Enabling this operation is highly complex as it requires interaction between multiple entities including you, Checkout.com, Apple, and the card scheme (in our case, Mastercard).  As such, push provisioning is subject to onboarding and can only be tested in your Production environment. For more details, speak to your operations contact.
 
 A typical call may look as follows:
 ```Swift
@@ -213,11 +213,11 @@ card.provision(cardholderID: "{id_of_cardholder_performing_operation}",
                provisioningToken: "{specific_token_generated_for_operation}")
 ```
 
-There are some behaviors to keep in mind when attempting the push provisioning operation:
-- if you're using the `CheckoutCardManagement` library, calling it without completing proper onboarding will intentionally result in a crash.
+There are some behaviors to be aware of when you attempt a push provisioning operation:
+- if you're using the `CheckoutCardManagement` library, calling it without completing proper onboarding will result in an intentional crash.
 - if you're using the `CheckoutCardManagementStub` library, the operation will behave as expected, but no interaction with Apple Wallet, Checkout.com, or the card scheme will occur. Depending on which Checkout.com environment you're using with Stub, you will receive one of two results:
-    - sandbox - you'll receive a `pushProvisioningFailure` error, as push provisioning is only valid in a production environment
-    - production - you'll receive an `OperationResult` success message
+    - in the sandbox Checkout.com environment, you'll receive a `pushProvisioningFailure` error, as push provisioning is only valid in production
+    - in the production Checkout.com environment, you'll receive an `OperationResult` success message
 
 ***
 # Contact
