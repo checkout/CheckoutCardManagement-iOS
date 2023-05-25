@@ -155,7 +155,7 @@ struct CardDetailView: View {
         }
     }
 
-    func buttonConfig(for requestedState: CardState) -> ButtonStyle {
+    private func buttonConfig(for requestedState: CardState) -> ButtonStyle {
         switch requestedState {
         case .active:
             return (Constants.activateIcon, Constants.activateText, $isActivating)
@@ -209,7 +209,7 @@ struct CardDetailView: View {
         .disabled(isLoadingInProgress)
     }
 
-    enum Constants {
+    private enum Constants {
         static let panText = "Card Number"
         static let panPlaceholder = "•••• •••• •••• ••••"
         static let securityCodeText = "Security Code"

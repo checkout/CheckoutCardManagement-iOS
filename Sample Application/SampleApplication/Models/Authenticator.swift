@@ -36,8 +36,7 @@ struct Authenticator {
         AuthenticationValidator.isDeviceOwner { isDeviceOwner in
             guard isDeviceOwner else {
                 completionHandler(.failure(.authenticationFailure))
-                print("Please prove that you are the device owner." +
-                      "If you are on simulator, you can type anything and hit Enter")
+                print("SCA Failed! To pass make sure you provide any input to the check")
                 return
             }
             authenticate(completionHandler: completionHandler)
