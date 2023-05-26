@@ -34,7 +34,7 @@ extension AuthenticationViewModel {
     func authenticateButtonTapped() {
         viewState = .loading
 
-        authenticator.authenticateUser(checkDeviceOwnership: false) { [weak self] result in
+        authenticator.authenticateUser(performSCA: false) { [weak self] result in
             guard let self else { return }
 
             DispatchQueue.main.async {

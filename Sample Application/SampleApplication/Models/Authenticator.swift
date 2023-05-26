@@ -25,10 +25,10 @@ import CheckoutCardManagementStub
 struct Authenticator {
     private let networkClient: CheckoutNetworkClient = .init()
     
-    func authenticateUser(checkDeviceOwnership: Bool = true,
+    func authenticateUser(performSCA: Bool = true,
                           completionHandler: @escaping ((Result<String, CardManagementError>) -> Void)) {
         
-        guard checkDeviceOwnership else {
+        guard performSCA else {
             authenticate(completionHandler: completionHandler)
             return
         }

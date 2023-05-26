@@ -209,7 +209,7 @@ struct CardDetailView: View {
         .disabled(isLoadingInProgress)
     }
 
-    private enum Constants {
+    enum Constants {
         static let panText = "Card Number"
         static let panPlaceholder = "•••• •••• •••• ••••"
         static let securityCodeText = "Security Code"
