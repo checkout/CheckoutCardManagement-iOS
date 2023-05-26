@@ -7,6 +7,8 @@ There are two environments to use; *Stub* and *Live*. The sample app works with 
 
  - Search for `AuthenticationCredentials` file and `update all the properties` with your own
  - Go to `Project` -> `Package Dependencies` and then re-add `CheckoutCardManagement`SDK but select the non-stub variation this time
+ - 
+<img width="648" alt="Screenshot 2023-05-26 at 12 18 40" src="https://github.com/checkout/CheckoutCardManagement-iOS/assets/125963311/341b776c-278d-414e-8bf8-3f471aab668f">
 
 ### Where To Look At
 
