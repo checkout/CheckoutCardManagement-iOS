@@ -19,7 +19,7 @@ extension CardDetailView {
                 .background(Color(Detail.backgroundColor))
                 .foregroundColor(isDestructive ? Color(Detail.destructiveColor) : Color(Detail.defaultTextColor))
                 .cornerRadius(12)
-                .font(Font(DesignSystem.CardDesign.Font.buttonText))
+                .font(Font(DesignSystem.Font.buttonText))
         }
     }
 

@@ -15,7 +15,11 @@ enum NetworkEndpoint: NetworkPath {
     func url() -> URL {
         switch self {
         case .authentication:
+#if canImport(CheckoutCardManagementStub)
             return URL(string: "https://api.sandbox.checkout.com/issuing/access/connect/token")!
+#else
+            return URL(string: "https://api.checkout.com/issuing/access/connect/token")!
+#endif
         }
 
     }

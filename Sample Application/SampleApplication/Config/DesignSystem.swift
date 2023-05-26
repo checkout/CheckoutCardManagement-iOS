@@ -12,8 +12,6 @@ enum DesignSystem {
     enum AuthenticationScreenDesign {
         static let buttonBackgroundColor = UIColor(hexString: "#EDF5FF")
         static let buttonTextColor = UIColor(hexString: "#2E6CF6")
-        static let buttonFont = UIFont.boldSystemFont(ofSize: 17)
-        static let titleFont = UIFont.boldSystemFont(ofSize: 28)
     }
 
     enum CardManagement {
@@ -34,12 +32,6 @@ enum DesignSystem {
         static let border: BorderStyle = .init(color: UIColor(hexString: "#FFFFFF"), width: 2)
         static let companyLogoName = "CompanyLogo"
         static let cardIssuerLogoName = "MastercardLogo"
-
-        enum Font {
-            static let title = UIFont.systemFont(ofSize: 15)
-            static let subtitle = UIFont.systemFont(ofSize: 13)
-            static let buttonText = UIFont.systemFont(ofSize: 14, weight: .semibold)
-        }
     }
 
     enum CardDetailDesign {
@@ -52,5 +44,16 @@ enum DesignSystem {
     enum Color {
         static let darkText = UIColor(hexString: "#272932")
         static let lightText = UIColor(hexString: "#727272")
+    }
+
+    enum Font {
+        static let boldSubtitle = UIFont.boldSystemFont(ofSize: 17)
+        static let boldTitle = UIFont.boldSystemFont(ofSize: 28)
+
+        static let title = UIFont.systemFont(ofSize: 15)
+        static let subtitle = UIFont.systemFont(ofSize: 13)
+        static let body = UIFont.systemFont(ofSize: 11)
+        
+        static let buttonText = UIFont.systemFont(ofSize: 14, weight: .semibold)
     }
 }

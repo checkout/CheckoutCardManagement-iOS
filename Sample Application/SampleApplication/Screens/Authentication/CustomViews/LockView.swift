@@ -20,7 +20,7 @@ struct LockView: View {
     var body: some View {
         ZStack {
             Image(systemName: isUnlocked ? Constants.Image.unlocked : Constants.Image.locked)
-                .font(.system(size: Constants.Font.size))
+                .font(.system(size: 35))
                 .foregroundColor(isUnlocked ? .green : .red)
                 .transition(.opacity)
                 .rotation3DEffect(.degrees(isUnlocked ? Constants.Animation.unlockedRotation : Constants.Animation.lockedRotation),
@@ -47,10 +47,6 @@ extension LockView {
             static let lockedRotation: CGFloat = 0
             static let unlockedRotation: CGFloat = 360
             static let axis: CGFloat = 1
-        }
-
-        enum Font {
-            static let size: CGFloat = 35
         }
     }
 }

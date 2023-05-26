@@ -17,7 +17,7 @@ struct ErrorView: View {
                 .cornerRadius(20)
                 .layoutPriority(-1)
             Text(text)
-                .fontWeight(.semibold)
+                .font(Font(DesignSystem.Font.boldSubtitle))
                 .foregroundColor(.white)
                 .padding(EdgeInsets(top: 24, leading: 32, bottom: 24, trailing: 32))
         }

@@ -23,7 +23,7 @@ struct AuthenticationView: View {
         VStack {
             Spacer(minLength: Constants.Size.spacer)
             Text(Constants.Strings.authenticationRequired)
-                .font(Font(DesignSystem.AuthenticationScreenDesign.titleFont))
+                .font(Font(DesignSystem.Font.boldTitle))
                 .multilineTextAlignment(.center)
             Spacer(minLength: Constants.Size.spacer)
 
@@ -81,7 +81,7 @@ struct AuthenticationView: View {
             .frame(maxWidth: .infinity)
             .background(Color(DesignSystem.AuthenticationScreenDesign.buttonBackgroundColor))
             .foregroundColor(Color(DesignSystem.AuthenticationScreenDesign.buttonTextColor))
-            .font(Font(DesignSystem.AuthenticationScreenDesign.buttonFont))
+            .font(Font(DesignSystem.Font.boldSubtitle))
             .cornerRadius(25)
             .padding(32)
     }

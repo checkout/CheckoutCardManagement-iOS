@@ -49,14 +49,14 @@ struct CardView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     Text(card.last4DigitsDisplay)
-                        .font(.system(size: 11))
+                        .font(Font(DesignSystem.Font.body))
                         .foregroundColor(.init(white: 1, opacity: 0.5))
                 }
             }
             Spacer()
             HStack {
                 Text(card.stateDisplay)
-                    .font(.system(size: 13))
+                    .font(Font(DesignSystem.Font.subtitle))
                     .foregroundColor(.white)
                 Spacer()
                 Image(design.cardIssuerLogoName)

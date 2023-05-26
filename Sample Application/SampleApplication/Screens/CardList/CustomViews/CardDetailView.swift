@@ -140,7 +140,7 @@ struct CardDetailView: View {
             Text(Constants.expiryDateText)
                 .titleStyle()
             Text(card.expiryDateDisplay)
-                .font(.system(size: 15))
+                .font(Font(DesignSystem.Font.title))
                 .foregroundColor(Color(Detail.defaultTextColor))
                 .frame(height: Constants.infoRowHeight)
 
