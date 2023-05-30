@@ -22,6 +22,7 @@ final class AuthenticationViewModel: ObservableObject {
 
     @Published var viewState: ViewState = .initial
     @Published var authenticationRecord: AuthenticationRecord = .init()
+    @Published var errorMessage: String?
 
     private let authenticator: Authenticator
 
@@ -44,10 +45,16 @@ extension AuthenticationViewModel {
                     self.authenticationRecord.state = .authenticated(accessToken: accessToken)
                     self.viewState = .loaded
 
-                case .failure:
+                case .failure(let error):
                     self.authenticationRecord.state = .notAuthenticated
+                    self.errorMessage = error.localizedDescription
+                    self.viewState = .initial
                 }
             }
         }
+    }
+
+    func errorMessageTapped() {
+        errorMessage = nil
     }
 }

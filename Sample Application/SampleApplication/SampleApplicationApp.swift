@@ -13,11 +13,13 @@ import CheckoutCardManagement
 import CheckoutCardManagementStub
 #endif
 
+let environment: CardManagerEnvironment = .production
+
 @main
 struct SampleApplicationApp: App {
     var body: some Scene {
         WindowGroup {
-            let cardManager = CheckoutCardManager(demoEnvironment: .sandbox)
+            let cardManager = CheckoutCardManager(demoEnvironment: environment)
             CardListView(viewModel: CardListViewModel(cardManager: cardManager))
         }
     }

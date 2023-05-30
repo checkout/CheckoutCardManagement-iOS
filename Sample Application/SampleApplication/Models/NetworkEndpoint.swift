@@ -6,21 +6,18 @@
 //
 
 import Foundation
+import CheckoutCardManagement
 import CheckoutNetwork
 
 enum NetworkEndpoint: NetworkPath {
-
     case authentication
 
     func url() -> URL {
         switch self {
         case .authentication:
-#if canImport(CheckoutCardManagementStub)
-            return URL(string: "https://api.sandbox.checkout.com/issuing/access/connect/token")!
-#else
-            return URL(string: "https://api.checkout.com/issuing/access/connect/token")!
-#endif
+            return environment == .production ?
+            URL(string: "https://api.checkout.com/issuing/access/connect/token")! :
+            URL(string: "https://api.sandbox.checkout.com/issuing/access/connect/token")!
         }
-
     }
 }

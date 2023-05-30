@@ -20,36 +20,42 @@ struct AuthenticationView: View {
     }
 
     var body: some View {
-        VStack {
-            Spacer(minLength: Constants.Size.spacer)
-            Text(Constants.Strings.authenticationRequired)
-                .font(Font(DesignSystem.Font.boldTitle))
-                .multilineTextAlignment(.center)
-            Spacer(minLength: Constants.Size.spacer)
-
-            switch viewModel.viewState {
-            case .initial:
-                viewGroup(shouldCircleSpin: false,
-                          shouldUnlock: false,
-                          buttonText: Constants.Strings.authenticate,
-                          buttonAction: viewModel.authenticateButtonTapped)
-
-            case .loading:
-                viewGroup(shouldCircleSpin: true,
-                          shouldUnlock: false,
-                          buttonText: Constants.Strings.authenticating)
-
-            case .loaded:
-                viewGroup(shouldCircleSpin: false,
-                          shouldUnlock: true,
-                          buttonText: Constants.Strings.authenticated,
-                          animationsCompleted: {
-                    dismiss()
-                })
+        ZStack {
+            VStack {
+                Spacer(minLength: Constants.Size.spacer)
+                Text(Constants.Strings.authenticationRequired)
+                    .font(Font(DesignSystem.Font.boldTitle))
+                    .multilineTextAlignment(.center)
+                Spacer(minLength: Constants.Size.spacer)
+                
+                switch viewModel.viewState {
+                case .initial:
+                    viewGroup(shouldCircleSpin: false,
+                              shouldUnlock: false,
+                              buttonText: Constants.Strings.authenticate,
+                              buttonAction: viewModel.authenticateButtonTapped)
+                    
+                case .loading:
+                    viewGroup(shouldCircleSpin: true,
+                              shouldUnlock: false,
+                              buttonText: Constants.Strings.authenticating)
+                    
+                case .loaded:
+                    viewGroup(shouldCircleSpin: false,
+                              shouldUnlock: true,
+                              buttonText: Constants.Strings.authenticated,
+                              animationsCompleted: {
+                        dismiss()
+                    })
+                }
             }
-        }
-        .onAppear {
-            updateViewModel()
+            .onAppear {
+                updateViewModel()
+            }
+
+            if let message = viewModel.errorMessage {
+                errorView(message: message)
+            }
         }
     }
 
@@ -88,6 +94,17 @@ struct AuthenticationView: View {
 
     private func updateViewModel() {
         viewModel.authenticationRecord = authenticationRecord
+    }
+
+    @ViewBuilder
+    private func errorView(message: String) -> some View {
+        VStack {
+            ErrorView(text: message)
+            Spacer()
+        }
+        .onTapGesture {
+            viewModel.errorMessageTapped()
+        }
     }
 }
 

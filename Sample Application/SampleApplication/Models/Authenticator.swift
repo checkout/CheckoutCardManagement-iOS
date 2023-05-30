@@ -26,30 +26,33 @@ struct Authenticator {
     private let networkClient: CheckoutNetworkClient = .init()
     
     func authenticateUser(performSCA: Bool = true,
-                          completionHandler: @escaping ((Result<String, CardManagementError>) -> Void)) {
+                          completionHandler: @escaping ((Result<String, Error>) -> Void)) {
         
         guard performSCA else {
-            authenticate(completionHandler: completionHandler)
+            authenticate(isSingleUse: performSCA,
+                         completionHandler: completionHandler)
             return
         }
         
         AuthenticationValidator.isDeviceOwner { isDeviceOwner in
             guard isDeviceOwner else {
-                completionHandler(.failure(.authenticationFailure))
+                completionHandler(.failure(CardManagementError.authenticationFailure))
                 print("SCA Failed! To pass make sure you provide any input to the check")
                 return
             }
-            authenticate(completionHandler: completionHandler)
+            authenticate(isSingleUse: performSCA,
+                         completionHandler: completionHandler)
         }
     }
     
-    private func authenticate(completionHandler: @escaping ((Result<String, CardManagementError>) -> Void)) {
+    private func authenticate(isSingleUse: Bool,
+                              completionHandler: @escaping ((Result<String, Error>) -> Void)) {
         
 #if canImport(CheckoutCardManagementStub)
         completionHandler(.success("ANY_TOKEN"))
 #else
         let authenticationCredentials = Configuration.makeAuthenticationCredentials(cardholderID: AuthenticationCredentials.cardholderID,
-                                                                                    isSingleUse: true)
+                                                                                    isSingleUse: isSingleUse)
         guard let serializedBody = authenticationCredentials.serialized(),
               let authenticationData = serializedBody.data(using: .utf8),
               let authenticateConfig = try? RequestConfiguration(path: NetworkEndpoint.authentication,
@@ -57,7 +60,7 @@ struct Authenticator {
                                                                  customHeaders: [:],
                                                                  bodyData: authenticationData,
                                                                  mimeType: .urlEncodedForm) else {
-            completionHandler(.failure(.configurationIssue(hint: "Could not create authentication request")))
+            completionHandler(.failure(CardManagementError.configurationIssue(hint: "Could not create authentication request")))
             return
         }
         
@@ -65,8 +68,9 @@ struct Authenticator {
             switch authenticationResult {
             case .success(let token):
                 completionHandler(.success(token.accessToken))
-            case .failure:
-                completionHandler(.failure(.authenticationFailure))
+            case .failure(let error):
+                print(error.localizedDescription)
+                completionHandler(.failure(error))
             }
         }
 #endif
