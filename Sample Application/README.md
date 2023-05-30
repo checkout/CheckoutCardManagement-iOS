@@ -2,13 +2,17 @@
 
 Our sample app showcases how to integrate our [Checkout.com's Issuing SDK](https://github.com/checkout/CheckoutCardManagement-iOS)
 
+#### This sample application must be run on Rosetta simulators
+
 ### How to Use
 There are two environments to use; *Stub* and *Live*. The sample app works with Stub by default, whereby Stub returns mocked data for testing purposes. If you want to switch to the Live version, you need to do the following:
 
  - Search for `AuthenticationCredentials` file and `update all the properties` with your own
  - Go to `Project` -> `Package Dependencies` and then re-add `CheckoutCardManagement`SDK but select the non-stub variation this time
- - 
+ 
 <img width="648" alt="Screenshot 2023-05-26 at 12 18 40" src="https://github.com/checkout/CheckoutCardManagement-iOS/assets/125963311/341b776c-278d-414e-8bf8-3f471aab668f">
+
+#### Live environment branches into two network environments: *sandbox* and *production*. To switch between them, go to the `SampleApplicationApp.swift` file and edit the `environment` property. Change the credentials in `Credentials.swift` file accordingly.
 
 ### Where To Look At
 
