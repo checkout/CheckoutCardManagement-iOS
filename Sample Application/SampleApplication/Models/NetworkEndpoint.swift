@@ -9,6 +9,13 @@ import Foundation
 import CheckoutCardManagement
 import CheckoutNetwork
 
+/*
+Below endpoints are just for sampling purposes and
+your own backend services should provide a token on request.
+ 
+Please see the detailed note in the Authenticator.swift file.
+*/
+
 enum NetworkEndpoint: NetworkPath {
     case authentication
 

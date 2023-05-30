@@ -13,7 +13,7 @@ import CheckoutCardManagement
 import CheckoutCardManagementStub
 #endif
 
-let environment: CardManagerEnvironment = .production
+let environment: CardManagerEnvironment = .sandbox
 
 @main
 struct SampleApplicationApp: App {

@@ -15,11 +15,12 @@ import CheckoutCardManagementStub
 #endif
 
 /*
- Where documented, you are required to perform StrongCustomAuthentication (SCA)
+ Where documented, you are required to perform Strong Customer Authentication (SCA)
  in accordance to your company's policies and processes.
  The sample project integrates directly with CKO backend for token creation in order to enable the flows,
  but in a live application this is expected to occur from your backend to CKO backend and not be performed via your application.
- Hence you can assess CheckoutNetwork as a network wrapper that you will not use.
+
+ In addition, you can assess CheckoutNetwork as a network wrapper that you will not use.
  */
 
 struct Authenticator {
