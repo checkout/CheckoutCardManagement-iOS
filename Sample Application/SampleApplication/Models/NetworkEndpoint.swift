@@ -6,8 +6,13 @@
 //
 
 import Foundation
-import CheckoutCardManagement
 import CheckoutNetwork
+
+#if canImport(CheckoutCardManagement)
+import CheckoutCardManagement
+#elseif canImport(CheckoutCardManagementStub)
+import CheckoutCardManagementStub
+#endif
 
 /*
 Below endpoints are just for sampling purposes and

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BBC8C9229FBC509002AA8FB /* CardListViewModel+LayoutCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC8C9129FBC508002AA8FB /* CardListViewModel+LayoutCalculations.swift */; };
-		1615C0B42A27A1BF00218D72 /* CheckoutCardManagementStub in Frameworks */ = {isa = PBXBuildFile; productRef = 1615C0B32A27A1BF00218D72 /* CheckoutCardManagementStub */; };
 		16262FDA29D477D500C60EA4 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16262FD929D477D500C60EA4 /* DesignSystem.swift */; };
 		16262FDC29D4963400C60EA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16262FDB29D4963400C60EA4 /* Credentials.swift */; };
 		164129BE29DAB9D900BA3848 /* AuthenticationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164129BD29DAB9D900BA3848 /* AuthenticationRecord.swift */; };
@@ -29,12 +28,13 @@
 		16725FD42A1CCE9E00910DC5 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725FD32A1CCE9E00910DC5 /* Authenticator.swift */; };
 		16725FD62A1CD83200910DC5 /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16725FD52A1CD83200910DC5 /* NetworkEndpoint.swift */; };
 		16925A542A1FA96200C44AAF /* AuthenticationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16925A532A1FA96200C44AAF /* AuthenticationValidator.swift */; };
+		16D74E5C2A27AE4B005F2157 /* CheckoutNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 16D74E5B2A27AE4B005F2157 /* CheckoutNetwork */; };
+		16D74E5F2A27AE67005F2157 /* CheckoutCardManagementStub in Frameworks */ = {isa = PBXBuildFile; productRef = 16D74E5E2A27AE67005F2157 /* CheckoutCardManagementStub */; };
 		16F7C87929C22A9000ECB801 /* SampleApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7C87829C22A9000ECB801 /* SampleApplicationApp.swift */; };
 		16F7C87D29C22A9200ECB801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F7C87C29C22A9200ECB801 /* Assets.xcassets */; };
 		16F7C89529C22A9200ECB801 /* SampleApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7C89429C22A9200ECB801 /* SampleApplicationUITests.swift */; };
 		16F7C89729C22A9200ECB801 /* SampleApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7C89629C22A9200ECB801 /* SampleApplicationUITestsLaunchTests.swift */; };
 		16F7C8A829C22BA200ECB801 /* SwiftJWT in Frameworks */ = {isa = PBXBuildFile; productRef = 16F7C8A729C22BA200ECB801 /* SwiftJWT */; };
-		16F7C8AB29C22BF500ECB801 /* CheckoutNetworkFakeClient in Frameworks */ = {isa = PBXBuildFile; productRef = 16F7C8AA29C22BF500ECB801 /* CheckoutNetworkFakeClient */; };
 		16FBC2A129EE92AB00808FE1 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBC2A029EE92AB00808FE1 /* UIColor+Extensions.swift */; };
 		16FBC2A629EE9F8B00808FE1 /* BorderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBC2A529EE9F8B00808FE1 /* BorderStyle.swift */; };
 		16FBC2A829EE9FAD00808FE1 /* DesignableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBC2A729EE9FAD00808FE1 /* DesignableText.swift */; };
@@ -100,9 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F7C8AB29C22BF500ECB801 /* CheckoutNetworkFakeClient in Frameworks */,
 				16F7C8A829C22BA200ECB801 /* SwiftJWT in Frameworks */,
-				1615C0B42A27A1BF00218D72 /* CheckoutCardManagementStub in Frameworks */,
+				16D74E5C2A27AE4B005F2157 /* CheckoutNetwork in Frameworks */,
+				16D74E5F2A27AE67005F2157 /* CheckoutCardManagementStub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +191,20 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		16D74E5A2A27AE4B005F2157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16F7C86C29C22A9000ECB801 = {
 			isa = PBXGroup;
 			children = (
 				16F7C87729C22A9000ECB801 /* SampleApplication */,
 				16F7C89329C22A9200ECB801 /* SampleApplicationUITests */,
 				16F7C87629C22A9000ECB801 /* Products */,
+				16D74E5A2A27AE4B005F2157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,8 +288,8 @@
 			name = SampleApplication;
 			packageProductDependencies = (
 				16F7C8A729C22BA200ECB801 /* SwiftJWT */,
-				16F7C8AA29C22BF500ECB801 /* CheckoutNetworkFakeClient */,
-				1615C0B32A27A1BF00218D72 /* CheckoutCardManagementStub */,
+				16D74E5B2A27AE4B005F2157 /* CheckoutNetwork */,
+				16D74E5E2A27AE67005F2157 /* CheckoutCardManagementStub */,
 			);
 			productName = SampleApplication;
 			productReference = 16F7C87529C22A9000ECB801 /* SampleApplication.app */;
@@ -336,7 +344,7 @@
 			packageReferences = (
 				16F7C8A629C22BA200ECB801 /* XCRemoteSwiftPackageReference "Swift-JWT" */,
 				16F7C8A929C22BF500ECB801 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */,
-				1615C0B22A27A1BF00218D72 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */,
+				16D74E5D2A27AE67005F2157 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */,
 			);
 			productRefGroup = 16F7C87629C22A9000ECB801 /* Products */;
 			projectDirPath = "";
@@ -703,7 +711,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1615C0B22A27A1BF00218D72 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */ = {
+		16D74E5D2A27AE67005F2157 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:checkout/CheckoutCardManagement-iOS.git";
 			requirement = {
@@ -730,20 +738,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1615C0B32A27A1BF00218D72 /* CheckoutCardManagementStub */ = {
+		16D74E5B2A27AE4B005F2157 /* CheckoutNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1615C0B22A27A1BF00218D72 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */;
+			package = 16F7C8A929C22BF500ECB801 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */;
+			productName = CheckoutNetwork;
+		};
+		16D74E5E2A27AE67005F2157 /* CheckoutCardManagementStub */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16D74E5D2A27AE67005F2157 /* XCRemoteSwiftPackageReference "CheckoutCardManagement-iOS" */;
 			productName = CheckoutCardManagementStub;
 		};
 		16F7C8A729C22BA200ECB801 /* SwiftJWT */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 16F7C8A629C22BA200ECB801 /* XCRemoteSwiftPackageReference "Swift-JWT" */;
 			productName = SwiftJWT;
-		};
-		16F7C8AA29C22BF500ECB801 /* CheckoutNetworkFakeClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16F7C8A929C22BF500ECB801 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */;
-			productName = CheckoutNetworkFakeClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
