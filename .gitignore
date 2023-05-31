@@ -17,7 +17,7 @@ DerivedData/
 Packages/
 Package.pins
 Package.resolved
-*.xcodeproj
+/*.xcodeproj
 .swiftpm
 .DS_Store
 /Packages
