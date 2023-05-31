@@ -10,15 +10,15 @@ import SwiftUI
 struct AuthenticationView: View {
     @State private var isCircleSpinning: Bool = false
     @State private var isUnlocked: Bool = false
-
+    
     @ObservedObject private var viewModel: AuthenticationViewModel
     @EnvironmentObject private var authenticationRecord: AuthenticationRecord
     @Environment(\.dismiss) var dismiss
-
+    
     init(viewModel: AuthenticationViewModel) {
         self.viewModel = viewModel
     }
-
+    
     var body: some View {
         ZStack {
             VStack {
@@ -52,33 +52,33 @@ struct AuthenticationView: View {
             .onAppear {
                 updateViewModel()
             }
-
+            
             if let message = viewModel.errorMessage {
                 errorView(message: message)
             }
         }
     }
-
+    
     @ViewBuilder
     private func viewGroup(shouldCircleSpin: Bool,
                            shouldUnlock: Bool,
                            buttonText: String,
                            buttonAction: (() -> Void)? = nil,
                            animationsCompleted: (() -> Void)? = nil) -> some View {
-
+        
         ZStack {
             SpinningCircleView(isAnimating: $isCircleSpinning)
                 .onAppear {
                     isCircleSpinning = shouldCircleSpin
                 }
-
+            
             LockView(isUnlocked: $isUnlocked,
                      animationsCompleted: animationsCompleted)
             .onAppear {
                 isUnlocked = shouldUnlock
             }
         }
-
+        
         Button(action: buttonAction ?? {}) {
             Text(buttonText)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -91,11 +91,11 @@ struct AuthenticationView: View {
             .cornerRadius(25)
             .padding(32)
     }
-
+    
     private func updateViewModel() {
         viewModel.authenticationRecord = authenticationRecord
     }
-
+    
     @ViewBuilder
     private func errorView(message: String) -> some View {
         VStack {
@@ -116,7 +116,7 @@ extension AuthenticationView {
             static let authenticating = "Authenticating..."
             static let authenticated = "Authenticated"
         }
-
+        
         enum Size {
             static let spacer: CGFloat = 35
         }
@@ -125,7 +125,7 @@ extension AuthenticationView {
 
 struct AuthenticationView_Previews: PreviewProvider {
     @State static var authenticationRecord: AuthenticationRecord = .init()
-
+    
     static var previews: some View {
         AuthenticationView(viewModel: AuthenticationViewModel())
             .environmentObject(authenticationRecord)

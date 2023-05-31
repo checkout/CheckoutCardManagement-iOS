@@ -8,8 +8,8 @@
 import Foundation
 
 enum Configuration {
-
-    static func makeAuthenticationCredentials(cardholderID: String?,
+    
+    static func makeAuthenticationCredentials(cardholderID: String,
                                               isSingleUse: Bool) -> AuthenticationRequestCredentials {
         AuthenticationRequestCredentials(
             grantType: "client_credentials",
@@ -18,5 +18,5 @@ enum Configuration {
             cardholderID: cardholderID,
             isSingleUse: isSingleUse)
     }
-
+    
 }

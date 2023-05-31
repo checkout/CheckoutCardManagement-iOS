@@ -9,12 +9,9 @@ import SwiftUI
 import PassKit
 
 struct AddToWalletButtonView: UIViewRepresentable {
-
     func makeUIView(context: Context) -> PKAddPassButton {
         PKAddPassButton()
     }
-
-    func updateUIView(_ uiView: PKAddPassButton, context: Context) {
-    }
-
+    
+    func updateUIView(_ uiView: PKAddPassButton, context: Context) {}
 }

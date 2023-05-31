@@ -36,9 +36,9 @@ extension AuthenticationViewModel {
         viewState = .loading
 
         authenticator.authenticateUser(performSCA: false) { [weak self] result in
-            guard let self else { return }
-
             DispatchQueue.main.async {
+                guard let self else { return }
+                
                 switch result {
                 case .success(let accessToken):
 

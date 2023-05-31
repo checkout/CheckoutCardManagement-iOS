@@ -13,6 +13,5 @@ struct ViewWrapper: UIViewRepresentable {
         wrapped
     }
 
-    func updateUIView(_ uiView: UIView, context: Context) {
-    }
+    func updateUIView(_ uiView: UIView, context: Context) {}
 }
