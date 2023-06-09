@@ -11,6 +11,26 @@ import CheckoutCardNetwork
 /// Errors encountered in the running of the management services
 public enum CardManagementError: Error, Equatable {
     
+    /// Contain more detailed push provisioning failures
+    public enum PushProvisioningFailure: Error, Equatable {
+        /// User has cancelled the operation at some point during the flow
+        case cancelled
+
+        /// The configuration used to setup Push Provisioning was rejected
+        case configurationFailure
+
+        /// The flow has failed during the execution
+        case operationFailure
+        
+        static func from(_ networkError: CardNetworkError.PushProvisioningFailure) -> Self {
+            switch networkError {
+            case .cancelled: return .cancelled
+            case .configurationFailure: return .configurationFailure
+            case .operationFailure: return .operationFailure
+            }
+        }
+    }
+    
     /// The authentication of the session has failed. Functionality will not be available until a successful authentication takes place
     case authenticationFailure
     
@@ -52,7 +72,7 @@ public enum CardManagementError: Error, Equatable {
     case invalidStateRequested
     
     /// Failed to complete Push Provisioning request
-    case pushProvisioningFailure
+    case pushProvisioningFailure(failure: PushProvisioningFailure)
 }
 
 extension CardManagementError {
@@ -79,8 +99,8 @@ extension CardManagementError {
             return .unableToPerformSecureOperation
         case .parsingFailure:
             return .connectionIssue
-        case .pushProvisioningFailure:
-            return .pushProvisioningFailure
+        case .pushProvisioningFailure(let failure):
+            return .pushProvisioningFailure(failure: .from(failure))
         }
     }
     
