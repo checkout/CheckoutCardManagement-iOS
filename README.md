@@ -36,6 +36,11 @@ When you're ready to migrate from the Stub environment, simply update the import
 In the Live version of your app, you'll be expected to provide valid tokens in your requests, which our backend services will serve securely.
 
 ***
+# Sample Application
+
+Refer to [our sample application](https://github.com/checkout/CheckoutCardManagement-iOS/tree/main/Sample%20Application) for a guidance of integration.
+
+***
 # Features
 
 ### Easy to integrate
