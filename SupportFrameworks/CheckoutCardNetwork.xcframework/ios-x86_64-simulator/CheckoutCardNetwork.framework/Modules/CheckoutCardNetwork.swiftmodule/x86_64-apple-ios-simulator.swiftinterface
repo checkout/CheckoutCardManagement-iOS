@@ -1,15 +1,17 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutCardNetwork
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutCardNetwork
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers final public class CheckoutCardService : CheckoutCardNetwork.CardService {
+  final public func aNewFunctionForTestPurposes(completion: @escaping (CheckoutCardNetwork.CheckoutCardService.ANewType) -> Swift.Void)
   public static var version: CheckoutCardNetwork.CardServiceVersion
-  weak final public var logger: CheckoutCardNetwork.NetworkLogger? {
+  weak final public var logger: (any CheckoutCardNetwork.NetworkLogger)? {
     get
     set
   }
@@ -21,7 +23,7 @@ import _StringProcessing
 }
 public struct CardCreationModel : Swift.Encodable {
   public init(type: CheckoutCardNetwork.CardType, cardholderID: Swift.String, lifetime: Swift.Int?, reference: Swift.String?, cardProductID: Swift.String?, displayName: Swift.String, shippingInstructions: CheckoutCardNetwork.CardShippingInstructions?, isSingleUse: Swift.Bool?, isCreatedActive: Swift.Bool)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct SecurityCodeViewConfiguration {
   public init(font: UIKit.UIFont, textColor: UIKit.UIColor)
@@ -34,8 +36,9 @@ public protocol CardService {
   typealias SecurePropertiesResult = Swift.Result<(pan: UIKit.UIView, securityCode: UIKit.UIView), CheckoutCardNetwork.CardNetworkError>
   typealias CardResult = Swift.Result<CheckoutCardNetwork.Card, CheckoutCardNetwork.CardNetworkError>
   typealias CardListResult = Swift.Result<[CheckoutCardNetwork.Card], CheckoutCardNetwork.CardNetworkError>
+  typealias ANewType = Swift.Result<CheckoutCardNetwork.Card, CheckoutCardNetwork.CardNetworkError>
   static var version: CheckoutCardNetwork.CardServiceVersion { get }
-  var logger: CheckoutCardNetwork.NetworkLogger? { get set }
+  var logger: (any CheckoutCardNetwork.NetworkLogger)? { get set }
   init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
   func isTokenValid(_ token: CheckoutCardNetwork.Token) -> Swift.Bool
   func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.SecureResult) -> Swift.Void))
@@ -47,6 +50,7 @@ public protocol CardService {
   func revokeCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardRevokeReason?, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
   func getCards(sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
   func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
+  func aNewFunctionForTestPurposes(completion: @escaping (Self.ANewType) -> Swift.Void)
   func addCardToAppleWallet(cardID: Swift.String, cardholderID: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, token: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
 }
 public struct CardServiceVersion {
@@ -58,12 +62,12 @@ public struct PanViewConfiguration {
 }
 public struct CardShippingInstructions : Swift.Encodable {
   public init(recipient: Swift.String, address: CheckoutCardNetwork.CardShippingInstructions.Address, comments: Swift.String?)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension CheckoutCardNetwork.CardShippingInstructions {
   public struct Address : Swift.Encodable {
     public init(addressLine1: Swift.String, addressLine2: Swift.String?, city: Swift.String, state: Swift.String?, postCode: Swift.String, countryCode: Swift.String)
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
   }
 }
 public struct Card : Swift.Decodable, Swift.Equatable {
@@ -72,7 +76,7 @@ public struct Card : Swift.Decodable, Swift.Equatable {
   public let expiryDate: CheckoutCardNetwork.CardExpiryDate
   public let panLast4Digits: Swift.String
   public let state: CheckoutCardNetwork.CardState
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
   public static func == (a: CheckoutCardNetwork.Card, b: CheckoutCardNetwork.Card) -> Swift.Bool
 }
 public enum CardType : Swift.String, Swift.Codable {
@@ -91,8 +95,8 @@ public struct ProvisioningConfiguration : Swift.Codable {
   public let serviceURLString: Swift.String
   public let digitalServiceURLString: Swift.String
   public init(issuerID: Swift.String, serviceRSAExponent: Foundation.Data, serviceRSAModulus: Foundation.Data, serviceURLString: Swift.String, digitalServiceURLString: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum CardSuspendReason : Swift.String {
   case lost
@@ -156,7 +160,7 @@ extension CheckoutCardNetwork.CheckoutCardService {
 }
 public protocol NetworkLogger : AnyObject {
   var sessionID: Swift.String { get }
-  func log(error: Swift.Error, additionalInfo: [Swift.String : Swift.String])
+  func log(error: any Swift.Error, additionalInfo: [Swift.String : Swift.String])
 }
 public typealias Token = Swift.String
 public enum OperationResult : Swift.Equatable {
