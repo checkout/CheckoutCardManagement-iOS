@@ -1896,6 +1896,59 @@
         "printedName": "CheckoutCardService",
         "children": [
           {
+            "kind": "Function",
+            "name": "aNewFunctionForTestPurposes",
+            "printedName": "aNewFunctionForTestPurposes(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CheckoutCardNetworkStub.Card, CheckoutCardNetworkStub.CardNetworkError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CheckoutCardNetworkStub.Card, CheckoutCardNetworkStub.CardNetworkError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Card",
+                        "printedName": "CheckoutCardNetworkStub.Card",
+                        "usr": "s:23CheckoutCardNetworkStub0B0V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23CheckoutCardNetworkStub0aB7ServiceC27aNewFunctionForTestPurposes10completionyys6ResultOyAA0B0VAA0bC5ErrorOGc_tF",
+            "mangledName": "$s23CheckoutCardNetworkStub0aB7ServiceC27aNewFunctionForTestPurposes10completionyys6ResultOyAA0B0VAA0bC5ErrorOGc_tF",
+            "moduleName": "CheckoutCardNetworkStub",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "version",
             "printedName": "version",
@@ -3863,6 +3916,59 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "aNewFunctionForTestPurposes",
+            "printedName": "aNewFunctionForTestPurposes(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CheckoutCardNetworkStub.Card, CheckoutCardNetworkStub.CardNetworkError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CheckoutCardNetworkStub.Card, CheckoutCardNetworkStub.CardNetworkError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Card",
+                        "printedName": "CheckoutCardNetworkStub.Card",
+                        "usr": "s:23CheckoutCardNetworkStub0B0V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23CheckoutCardNetworkStub0B7ServiceP27aNewFunctionForTestPurposes10completionyys6ResultOyAA0B0VAA0bC5ErrorOGc_tF",
+            "mangledName": "$s23CheckoutCardNetworkStub0B7ServiceP27aNewFunctionForTestPurposes10completionyys6ResultOyAA0B0VAA0bC5ErrorOGc_tF",
+            "moduleName": "CheckoutCardNetworkStub",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetworkStub.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetworkStub.CardService>",
+            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -10738,6 +10844,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -11354,469 +11467,854 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 393,
+      "offset": 484,
       "length": 10,
       "value": "\"SianStub\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 504,
       "length": 7,
       "value": "\"1.0.1\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 683,
       "length": 3,
       "value": "180"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardLifetime.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/CheckoutCardService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1083,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardLifetime.swift",
       "kind": "StringLiteral",
       "offset": 150,
       "length": 8,
       "value": "\"Months\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"suspected_lost\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 18,
       "value": "\"suspected_stolen\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"suspected_lost\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 18,
       "value": "\"suspected_stolen\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
       "kind": "Dictionary",
       "offset": 274,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 6,
+      "value": "\"%04d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 643,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 4,
+      "value": "9990"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1495,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2604,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2810,
+      "length": 6,
+      "value": "\"%03d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2833,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2837,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3873,
+      "length": 6,
+      "value": "\"%03d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3896,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3900,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 6089,
+      "length": 6,
+      "value": "\"%04d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6112,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6116,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6212,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6426,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6533,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6561,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6592,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6621,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7002,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7213,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7228,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7237,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7251,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7510,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7539,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7551,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7626,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7644,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7648,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7651,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
       "kind": "StringLiteral",
       "offset": 7930,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/MockData\/MockData.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 8175,
+      "length": 6,
+      "value": "\"%04d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8198,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8202,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 8339,
+      "length": 3,
+      "value": "\"e\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8399,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8419,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8449,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8469,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 8535,
+      "length": 6,
+      "value": "\"%02d\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8558,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8562,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9272,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/FakeResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9276,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/MockData\/MockData.swift",
       "kind": "Array",
       "offset": 278,
       "length": 1292,
       "value": "[\"Lizette Branch\", \"Noriko Squires\", \"Julian Agnew\", \"Senaida Walling\", \"Asa Henning\", \"Regine Shull\", \"Buena Eggleston\", \"Delois Klinger\", \"Stefany Manson\", \"Jackelyn Fugate\", \"Christopher Reich\", \"Frida Meacham\", \"Lynwood Bragg\", \"Jewel Horsley\", \"Cherry Chung\", \"Talisha Pimentel\", \"Alda Fincher\", \"Amparo Parnell\", \"Royce Ketchum\", \"Laci Hutson\", \"Trinity Ocasio\", \"Leonarda Marin\", \"Rolande Weeks\", \"Malvina Tolbert\", \"Mallie Gaddis\", \"Lakita Homer\", \"Corrie Uribe\", \"Lessie Pagan\", \"Earline Raley\", \"Georgeann Lovelace\", \"Porsha Blodgett\", \"Marquitta Montez\", \"Barbie Tipton\", \"Rubie Mobley\", \"Rosette Mullen\", \"Annett Seymore\", \"Jenice Benton\", \"Stefanie Moyer\", \"Danica Turpin\", \"Rey Fritz\", \"Valentina Crain\", \"Numbers Romano\", \"Skye Caballero\", \"Luciana Duarte\", \"Kendall Mcgregor\", \"Dalila Fraley\", \"Marine Lincoln\", \"Antionette Frantz\", \"Lynnette Nesmith\", \"Odell Bermudez\"]"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 15,
       "value": "\"reported_lost\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 17,
       "value": "\"reported_stolen\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 15,
       "value": "\"reported_lost\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 17,
       "value": "\"reported_stolen\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/UILabel+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/UILabel+Extensions.swift",
       "kind": "Array",
       "offset": 193,
       "length": 14,
       "value": "[4, 8, 12, 16]"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/MockLogic\/ConsoleLogger.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/UILabel+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 733,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/ConsoleLogger.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 16,
       "value": "\"Network Stub -\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/MockLogic\/ConsoleLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 485,
+      "length": 6,
+      "value": "\"\n\n\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 20,
       "value": "\"shipping_recipient\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 18,
       "value": "\"shipping_address\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 20,
       "value": "\"additional_comment\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 20,
       "value": "\"shipping_recipient\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 18,
       "value": "\"shipping_address\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 20,
       "value": "\"additional_comment\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 15,
       "value": "\"address_line1\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2384,
       "length": 15,
       "value": "\"address_line2\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2473,
       "length": 5,
       "value": "\"zip\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 15,
       "value": "\"address_line1\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2384,
       "length": 15,
       "value": "\"address_line2\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2473,
       "length": 5,
       "value": "\"zip\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/String+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/String+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/String+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/String+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2076,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 2167,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 2852,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 2867,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 2876,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "kind": "StringLiteral",
+      "offset": 2890,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2931,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2976,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3111,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3158,
       "length": 6,
       "value": "\"1234\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "BooleanLiteral",
       "offset": 3250,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3295,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3606,
       "length": 4,
       "value": "\"01\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3618,
       "length": 6,
       "value": "\"2055\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4331,
       "length": 17,
       "value": "\"card_product_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4373,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4412,
       "length": 14,
       "value": "\"display_name\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4454,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4539,
       "length": 11,
       "value": "\"last_four\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4572,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4608,
       "length": 15,
       "value": "\"is_single_use\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4696,
       "length": 18,
       "value": "\"billing_currency\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4745,
       "length": 17,
       "value": "\"issuing_country\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4788,
       "length": 12,
       "value": "\"created_on\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4831,
       "length": 18,
       "value": "\"last_modified_on\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4331,
       "length": 17,
       "value": "\"card_product_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4373,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4412,
       "length": 14,
       "value": "\"display_name\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4454,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4539,
       "length": 11,
       "value": "\"last_four\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4572,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4608,
       "length": 15,
       "value": "\"is_single_use\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4696,
       "length": 18,
       "value": "\"billing_currency\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4745,
       "length": 17,
       "value": "\"issuing_country\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4788,
       "length": 12,
       "value": "\"created_on\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/SianStub-iOS\/SianStub\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4831,
       "length": 18,
