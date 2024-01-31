@@ -1,0 +1,41 @@
+name: Run SonarCloud Analysis
+on:
+  push:
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches:
+      - 'main'
+      - 'develop'
+      - 'release/*'
+  schedule:
+    - cron: '34 2 * * 0'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and analyze
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+        # Initializes the SonarCloud tools for scanning.
+      - name: Install sonar-scanner and build-wrapper
+        uses: SonarSource/sonarcloud-github-c-cpp@v2
+
+        # Executes the SonarScanner to analyze the project.
+      - name: Run sonar-scanner
+        env:
+          # Sets environment variables required for the analysis
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: sh .github/scripts/run_sonar.sh
