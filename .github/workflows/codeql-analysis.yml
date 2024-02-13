@@ -45,10 +45,19 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         queries: security-and-quality
-
-    - name: Build
+        debug: true
+          
+    # Build and analyze each scheme separately
+    - name: Build and analyze CheckoutCardManagement
       run: |
-        xcodebuild -scheme CheckoutCardManagement -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
+          xcodebuild -scheme CheckoutCardManagement -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+    - name: Build and analyze CheckoutCardManagementStub
+      run: |
+          xcodebuild -scheme CheckoutCardManagementStub -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=latest"
+
+    # Perform analysis on the code
+    - name: Analyze code with CodeQL
+      uses: github/codeql-action/analyze@v2
+      with:
+          database: ${{ github.workspace }}
