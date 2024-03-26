@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "CheckoutCardManagement-iOS",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v13),
     ],
     products: [
         .library(
@@ -15,6 +15,9 @@ let package = Package(
         .library(
             name: "CheckoutCardManagementStub",
             targets: ["CheckoutCardManagementStub"]),
+        .library(
+            name: "CheckoutOOBSDK",
+            targets: ["CheckoutOOBSDK"]),
     ],
     dependencies: [
         .package(
@@ -44,5 +47,8 @@ let package = Package(
         .binaryTarget(
             name: "CheckoutCardNetworkStub",
             path: "SupportFrameworks/CheckoutCardNetworkStub.xcframework"),
+        .binaryTarget(
+            name: "CheckoutOOBSDK",
+            path: "SupportFrameworks/CheckoutOOBSDK.xcframework"),
     ]
 )
