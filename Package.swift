@@ -11,7 +11,10 @@ let package = Package(
   products: [
     .library(
       name: "CheckoutCardManagement",
-      targets: ["CheckoutCardManagement", "CheckoutCardManagementStub"]),
+      targets: ["CheckoutCardManagement"]),
+    .library(
+      name: "CheckoutCardManagementStub",
+      targets: ["CheckoutCardManagementStub"]),
     .library(
       name: "CheckoutOOBSDK",
       targets: ["CheckoutOOBSDK"]),
