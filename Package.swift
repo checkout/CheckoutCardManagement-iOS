@@ -15,11 +15,17 @@ let package = Package(
         .library(
             name: "CheckoutCardManagementStub",
             targets: ["CheckoutCardManagementStub"]),
+        .library(
+            name: "CheckoutOOBSDK",
+            targets: ["CheckoutOOBSDK"])
     ],
     dependencies: [
         .package(
-            url: "https://github.com/checkout/checkout-event-logger-ios-framework",
-            from: "1.2.1"),
+            url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
+            from: "1.2.4"),
+        .package(
+            url: "https://github.com/checkout/NetworkClient-iOS.git",
+            from: "1.1.1"),
     ],
     targets: [
         .target(
@@ -44,5 +50,8 @@ let package = Package(
         .binaryTarget(
             name: "CheckoutCardNetworkStub",
             path: "SupportFrameworks/CheckoutCardNetworkStub.xcframework"),
+        .binaryTarget(
+            name: "CheckoutOOBSDK",
+            path: "SupportFrameworks/CheckoutOOBSDK.xcframework"),
     ]
 )
