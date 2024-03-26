@@ -54,7 +54,6 @@ extension CheckoutOOBSDK.CheckoutOOB {
 extension CheckoutOOBSDK.CheckoutOOB {
   public enum Environment : Swift.String, Swift.Equatable {
     case sandbox
-    case qa
     case production
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String

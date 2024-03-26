@@ -1151,46 +1151,6 @@
               },
               {
                 "kind": "Var",
-                "name": "qa",
-                "printedName": "qa",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(CheckoutOOBSDK.CheckoutOOB.Environment.Type) -> CheckoutOOBSDK.CheckoutOOB.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "CheckoutOOBSDK.CheckoutOOB.Environment",
-                        "usr": "s:14CheckoutOOBSDK0A3OOBV11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "CheckoutOOBSDK.CheckoutOOB.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "CheckoutOOBSDK.CheckoutOOB.Environment",
-                            "usr": "s:14CheckoutOOBSDK0A3OOBV11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:14CheckoutOOBSDK0A3OOBV11EnvironmentO2qayA2EmF",
-                "mangledName": "$s14CheckoutOOBSDK0A3OOBV11EnvironmentO2qayA2EmF",
-                "moduleName": "CheckoutOOBSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
                 "name": "production",
                 "printedName": "production",
                 "children": [
@@ -2997,14 +2957,14 @@
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 218,
+      "offset": 225,
       "length": 7,
-      "value": "\"0.2.0\""
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 285,
+      "offset": 292,
       "length": 13,
       "value": "\"oob-ios-sdk\""
     },
@@ -3403,14 +3363,7 @@
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/Network\/Models\/Environment+BaseURL.swift",
       "kind": "StringLiteral",
-      "offset": 288,
-      "length": 44,
-      "value": "\"https:\/\/issuing-int.cko-qa.ckotech.co\/api\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/Network\/Models\/Environment+BaseURL.swift",
-      "kind": "StringLiteral",
-      "offset": 369,
+      "offset": 296,
       "length": 35,
       "value": "\"https:\/\/api.checkout.com\/issuing\/\""
     },
