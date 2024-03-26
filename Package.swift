@@ -22,10 +22,13 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework.git",
-            from: "1.2.4"),
+            exact: "1.2.4"),
         .package(
             url: "https://github.com/checkout/NetworkClient-iOS.git",
-            from: "1.1.1"),
+            exact: "1.1.1"),
+        .package(
+            url: "https://github.com/Kitura/Swift-JWT.git",
+            exact: "4.0.1")
     ],
     targets: [
         .target(

@@ -10,7 +10,6 @@
 		0BBC8C9229FBC509002AA8FB /* CardListViewModel+LayoutCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC8C9129FBC508002AA8FB /* CardListViewModel+LayoutCalculations.swift */; };
 		16262FDA29D477D500C60EA4 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16262FD929D477D500C60EA4 /* DesignSystem.swift */; };
 		16262FDC29D4963400C60EA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16262FDB29D4963400C60EA4 /* Credentials.swift */; };
-		162749172BB33A2600984219 /* CheckoutNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 162749162BB33A2600984219 /* CheckoutNetwork */; };
 		164129BE29DAB9D900BA3848 /* AuthenticationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164129BD29DAB9D900BA3848 /* AuthenticationRecord.swift */; };
 		1658CCB029D2ED6D000AB6F6 /* SpinningCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658CC9629D2ED6C000AB6F6 /* SpinningCircleView.swift */; };
 		1658CCB129D2ED6D000AB6F6 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658CC9729D2ED6C000AB6F6 /* LockView.swift */; };
@@ -100,7 +99,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F7C8A829C22BA200ECB801 /* SwiftJWT in Frameworks */,
-				162749172BB33A2600984219 /* CheckoutNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +284,6 @@
 			name = SampleApplication;
 			packageProductDependencies = (
 				16F7C8A729C22BA200ECB801 /* SwiftJWT */,
-				162749162BB33A2600984219 /* CheckoutNetwork */,
 			);
 			productName = SampleApplication;
 			productReference = 16F7C87529C22A9000ECB801 /* SampleApplication.app */;
@@ -340,7 +337,6 @@
 			mainGroup = 16F7C86C29C22A9000ECB801;
 			packageReferences = (
 				16F7C8A629C22BA200ECB801 /* XCRemoteSwiftPackageReference "Swift-JWT" */,
-				162749152BB33A2600984219 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */,
 			);
 			productRefGroup = 16F7C87629C22A9000ECB801 /* Products */;
 			projectDirPath = "";
@@ -707,14 +703,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		162749152BB33A2600984219 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/checkout/NetworkClient-iOS";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
-			};
-		};
 		16F7C8A629C22BA200ECB801 /* XCRemoteSwiftPackageReference "Swift-JWT" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kitura/Swift-JWT.git";
@@ -726,11 +714,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		162749162BB33A2600984219 /* CheckoutNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 162749152BB33A2600984219 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */;
-			productName = CheckoutNetwork;
-		};
 		16F7C8A729C22BA200ECB801 /* SwiftJWT */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 16F7C8A629C22BA200ECB801 /* XCRemoteSwiftPackageReference "Swift-JWT" */;
