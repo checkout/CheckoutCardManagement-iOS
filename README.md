@@ -2,6 +2,7 @@
 - [What is the CheckoutCardManagement-iOS SDK?](#What-is-the-CheckoutCardManagement-iOS-SDK)
 - [Environments](#Environments)
   - [Migrating from Stub to Sandbox and Production](#Migrating_from_Stub_to_Sandbox_and_Production)
+- [Sample Application](#Sample-application)
 - [Features](#Features)
 - [Requirements](#Requirements)
 - [Integration](#Integration)
@@ -12,6 +13,7 @@
   - [Update card state](#Update-card-state)
   - [Retrieve Secure Data](#Retrieve-secure-data)
   - [Push Provisioning](#Push-provisioning)
+- [Out of Band (OOB) Authentication](##checkout-out-of-band-oob-authentication-sdk)
 - [Contact](#Contact)
 ***
 
@@ -225,6 +227,10 @@ There are some behaviors to be aware of when you attempt a push provisioning ope
 - if you're using the `CheckoutCardManagementStub` library, the operation will behave as expected, but no interaction with Apple Wallet, Checkout.com, or the card scheme will occur. Depending on which Checkout.com environment you're using with Stub, you will receive one of two results:
   - in the sandbox Checkout.com environment, you'll receive a `pushProvisioningFailure` error, as push provisioning is only valid in production
   - in the production Checkout.com environment, you'll receive an `OperationResult` success message
+
+***
+# Checkout Out of Band (OOB) Authentication SDK
+Please find documentation [here](https://github.com/checkout/CheckoutCardManagement-iOS/blob/main/.github/partial-readmes/OOB-SDK-README.md).
 
 ***
 # Contact
