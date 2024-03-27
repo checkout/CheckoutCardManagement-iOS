@@ -86,6 +86,9 @@ extension CheckoutOOBSDK.CheckoutOOB {
     }
   }
 }
+public enum Constants {
+  public static let productVersion: Swift.String
+}
 extension CheckoutOOBSDK.CheckoutOOB {
   public enum InternalError : Foundation.LocalizedError, Swift.Equatable {
     case network(CheckoutNetwork.CheckoutNetworkError)

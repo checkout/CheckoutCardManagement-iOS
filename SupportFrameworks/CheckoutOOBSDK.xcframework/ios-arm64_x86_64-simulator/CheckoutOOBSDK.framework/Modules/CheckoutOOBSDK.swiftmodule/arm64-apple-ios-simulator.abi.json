@@ -183,6 +183,68 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "productVersion",
+            "printedName": "productVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14CheckoutOOBSDK9ConstantsO14productVersionSSvpZ",
+            "mangledName": "$s14CheckoutOOBSDK9ConstantsO14productVersionSSvpZ",
+            "moduleName": "CheckoutOOBSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14CheckoutOOBSDK9ConstantsO14productVersionSSvgZ",
+                "mangledName": "$s14CheckoutOOBSDK9ConstantsO14productVersionSSvgZ",
+                "moduleName": "CheckoutOOBSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14CheckoutOOBSDK9ConstantsO",
+        "mangledName": "$s14CheckoutOOBSDK9ConstantsO",
+        "moduleName": "CheckoutOOBSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CheckoutNetwork",
         "printedName": "CheckoutNetwork",
@@ -2949,24 +3011,24 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 152,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 187,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 292,
+      "offset": 254,
       "length": 13,
       "value": "\"oob-ios-sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/OOB-iOS\/OOB-iOS\/Sources\/CheckoutOOB\/Models\/Errors\/InternalError.swift",
