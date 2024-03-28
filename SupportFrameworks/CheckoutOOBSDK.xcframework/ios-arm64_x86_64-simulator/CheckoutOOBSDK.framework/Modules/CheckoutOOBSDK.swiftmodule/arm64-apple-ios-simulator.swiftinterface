@@ -1,0 +1,150 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutOOBSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CheckoutNetwork
+import Foundation
+import LocalAuthentication
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension CheckoutOOBSDK.CheckoutOOB {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func registerDevice(with deviceRegistration: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration) async throws
+  #endif
+}
+extension CheckoutOOBSDK.CheckoutOOB.DeviceRegistration : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB.PhoneNumber : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB.Locale : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum Locale : Swift.String {
+    case english
+    case french
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public struct Authentication : Swift.Equatable {
+    public init(token: Swift.String, cardID: Swift.String, transactionID: Swift.String, method: CheckoutOOBSDK.CheckoutOOB.Method, decision: CheckoutOOBSDK.CheckoutOOB.Decision) throws
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.Authentication, b: CheckoutOOBSDK.CheckoutOOB.Authentication) -> Swift.Bool
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum Decision : Swift.String, Swift.Equatable {
+    case accepted
+    case declined
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum Environment : Swift.String, Swift.Equatable {
+    case sandbox
+    case production
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public struct DeviceRegistration : Swift.Equatable {
+    public init(token: Swift.String, cardID: Swift.String, applicationID: Swift.String, phoneNumber: CheckoutOOBSDK.CheckoutOOB.PhoneNumber, locale: CheckoutOOBSDK.CheckoutOOB.Locale) throws
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration, b: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration) -> Swift.Bool
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum ConfigurationError : Foundation.LocalizedError, Swift.Equatable {
+    case invalidCardID
+    case invalidTransactionID
+    case invalidToken
+    case invalidApplicationID
+    case invalidPhoneCountryCode
+    case invalidPhoneNumber
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.ConfigurationError, b: CheckoutOOBSDK.CheckoutOOB.ConfigurationError) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum Constants {
+  public static let productVersion: Swift.String
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum InternalError : Foundation.LocalizedError, Swift.Equatable {
+    case network(CheckoutNetwork.CheckoutNetworkError)
+    case configuration(CheckoutOOBSDK.CheckoutOOB.ConfigurationError)
+    case cardNotFound
+    public var errorDescription: Swift.String? {
+      get
+    }
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.InternalError, b: CheckoutOOBSDK.CheckoutOOB.InternalError) -> Swift.Bool
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public enum Method : Swift.String, Swift.Equatable {
+    case biometrics
+    case login
+    case other
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension CheckoutNetwork.ErrorReason : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB.Authentication : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB.Decision : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB.Method : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func authenticatePayment(with paymentAuthentication: CheckoutOOBSDK.CheckoutOOB.Authentication) async throws
+  #endif
+}
+public struct CheckoutOOB {
+  public init(environment: CheckoutOOBSDK.CheckoutOOB.Environment)
+}
+extension CheckoutOOBSDK.CheckoutOOB {
+  public struct PhoneNumber : Swift.Equatable {
+    public init(countryCode: Swift.String, number: Swift.String) throws
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.PhoneNumber, b: CheckoutOOBSDK.CheckoutOOB.PhoneNumber) -> Swift.Bool
+  }
+}
+extension CheckoutOOBSDK.CheckoutOOB.Locale : Swift.Equatable {}
+extension CheckoutOOBSDK.CheckoutOOB.Locale : Swift.Hashable {}
+extension CheckoutOOBSDK.CheckoutOOB.Locale : Swift.RawRepresentable {}
+extension CheckoutOOBSDK.CheckoutOOB.Decision : Swift.Hashable {}
+extension CheckoutOOBSDK.CheckoutOOB.Decision : Swift.RawRepresentable {}
+extension CheckoutOOBSDK.CheckoutOOB.Environment : Swift.Hashable {}
+extension CheckoutOOBSDK.CheckoutOOB.Environment : Swift.RawRepresentable {}
+extension CheckoutOOBSDK.CheckoutOOB.ConfigurationError : Swift.Hashable {}
+extension CheckoutOOBSDK.CheckoutOOB.Method : Swift.Hashable {}
+extension CheckoutOOBSDK.CheckoutOOB.Method : Swift.RawRepresentable {}
