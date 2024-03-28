@@ -44,14 +44,17 @@ Import the SDK into your app using Swift Package Manager (SPM):
 1. Open Xcode and navigate to `Project -> Package Dependencies`.
 2. When prompted, enter the URL: https://github.com/checkout/CheckoutCardManagement-iOS.git
 3. Select `Up to Next Major Version` as below
-<img width="671" alt="Screenshot 2024-03-27 at 17 03 39" src="https://github.com/cko-mobile/OOB-iOS/assets/125963311/3df43958-f696-4645-a0e2-c7d0af911a10">
+<img width="671" alt="1" src="https://github.com/checkout/CheckoutCardManagement-iOS/assets/125963311/c5f244c4-05dc-40f4-a57e-0ae08ed8d3e2">
+
 
 4. Click on `Add Package`
 5. You'll be presented with these options: 
-<img width="773" alt="Screenshot 2024-03-27 at 17 05 17" src="https://github.com/cko-mobile/OOB-iOS/assets/125963311/52fd9674-7b71-4065-b3f3-b09ab6e0f398">
+<img width="773" alt="2" src="https://github.com/checkout/CheckoutCardManagement-iOS/assets/125963311/d9805451-57b0-454b-9ff2-efd3e8269f9a">
+
 
 6. If you just want to use OOB SDK as a standalone SDK and no other product from Checkout.com, select your main target to include `CheckoutOOBSDK` as below. If you also want to use Checkout.com's Issuing solution ([CheckoutCardManagement](https://github.com/checkout/CheckoutCardManagement-iOS)), then follow the instructions in its README. (See an example [here](https://github.com/checkout/CheckoutCardManagement-iOS/tree/main/Sample%20Application))
-<img width="768" alt="Screenshot 2024-03-27 at 17 06 03" src="https://github.com/cko-mobile/OOB-iOS/assets/125963311/ad53127c-5821-4b62-a08c-cc1ab7d7a2bf">
+<img width="768" alt="3" src="https://github.com/checkout/CheckoutCardManagement-iOS/assets/125963311/0a39ab8a-2d3f-4d21-adf4-bb21805a6789">
+
 
 7. Click on `Add Package` again.
 8. You have to add [CheckoutNetwork](https://github.com/checkout/NetworkClient-iOS) as a dependency to your project as well. Use `https://github.com/checkout/NetworkClient-iOS.git` for that
