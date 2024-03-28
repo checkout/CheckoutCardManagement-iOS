@@ -13,7 +13,7 @@
   - [Update card state](#Update-card-state)
   - [Retrieve Secure Data](#Retrieve-secure-data)
   - [Push Provisioning](#Push-provisioning)
-- [Out of Band (OOB) Authentication](##checkout-out-of-band-oob-authentication-sdk)
+- [Out of Band (OOB) Authentication](#checkout-out-of-band-oob-authentication-sdk)
 - [Contact](#Contact)
 ***
 
