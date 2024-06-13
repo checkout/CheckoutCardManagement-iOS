@@ -7,6 +7,7 @@
 
 import UIKit
 
+//swiftlint:disable identifier_name
 extension UIColor: Encodable {
     
     private enum CodingKeys: String, CodingKey {
@@ -44,3 +45,4 @@ extension UIColor: Encodable {
         try container.encode(hexString, forKey: .hex)
     }
 }
+//swiftlint:enable identifier_name
