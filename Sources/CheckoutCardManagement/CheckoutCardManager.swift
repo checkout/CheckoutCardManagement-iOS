@@ -91,7 +91,7 @@ public final class CheckoutCardManager: CardManager {
     public func logoutSession() {
         sessionToken = nil
     }
-    
+
     /// Request a list of cards
     public func getCards(completionHandler: @escaping CardListResultCompletion) {
         guard let sessionToken = sessionToken else {
