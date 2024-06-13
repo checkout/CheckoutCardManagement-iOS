@@ -719,7 +719,7 @@
 			repositoryURL = "https://github.com/checkout/CheckoutCardManagement-iOS.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.1.3;
 			};
 		};
 		169D837E2BB47A2700ABAD50 /* XCRemoteSwiftPackageReference "NetworkClient-iOS" */ = {
