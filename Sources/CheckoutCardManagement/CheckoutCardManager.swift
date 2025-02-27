@@ -91,6 +91,34 @@ public final class CheckoutCardManager: CardManager {
     public func logoutSession() {
         sessionToken = nil
     }
+    
+    // Configure the Push Provisioning Manager
+    public func configurePushProvisioning(cardholderID: String,
+                                     appGroupId: String,
+                                     configuration: ProvisioningConfiguration,
+                                     walletCards: [(Card, UIImage)],
+                                     completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
+        
+        let walletCardsList: [WalletCardDetails] = walletCards.map { (card, uiImage) in
+            return WalletCardDetails(cardId: card.id, cardTitle: card.panLast4Digits, cardArt: uiImage)
+        }
+        
+        let startTime = Date()
+        cardService.configurePushProvisioning(cardholderID: cardholderID,
+                                              appGroupId: appGroupId,
+                                              configuration: configuration,
+                                              walletCardsList: walletCardsList) { [weak self] in
+            switch $0 {
+            case .success:
+                let event = LogEvent.configurePushProvisioning(last4CardholderID: String(cardholderID.suffix(4)))
+                self?.logger?.log(event, startedAt: startTime)
+                completionHandler(.success)
+            case .failure(let networkError):
+                self?.logger?.log(.failure(source: "Configure Push Provisioning", error: networkError), startedAt: startTime)
+                completionHandler(.failure(.from(networkError)))
+            }
+        }
+    }
 
     /// Request a list of cards
     public func getCards(completionHandler: @escaping CardListResultCompletion) {
@@ -119,4 +147,3 @@ public final class CheckoutCardManager: CardManager {
         logger?.log(.initialized(design: designSystem))
     }
 }
-

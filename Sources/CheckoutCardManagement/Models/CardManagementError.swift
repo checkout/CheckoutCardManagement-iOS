@@ -31,6 +31,25 @@ public enum CardManagementError: Error, Equatable {
         }
     }
     
+    public enum ProvisioningExtensionFailure: Error, Equatable {
+        /// User has cancelled the operation at some point during the flow
+        case walletExtensionAppGroupIDNotFound
+        case notLoggedIn
+        case cardNotFound
+        case deviceEnvironmentUnsafe
+        case operationFailure
+        
+        static func from (_ networkError: CardNetworkError.ProvisioningExtensionFailure) -> Self {
+            switch networkError {
+            case .walletExtensionAppGroupIDNotFound: return .walletExtensionAppGroupIDNotFound
+            case .notLoggedIn: return .notLoggedIn
+            case .cardNotFound: return .cardNotFound
+            case .deviceEnvironmentUnsafe: return .deviceEnvironmentUnsafe
+            case .operationFailure: return .operationFailure
+            }
+        }
+   }
+    
     /// The authentication of the session has failed. Functionality will not be available until a successful authentication takes place
     case authenticationFailure
     

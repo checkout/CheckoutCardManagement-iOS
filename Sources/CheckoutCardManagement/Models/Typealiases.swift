@@ -22,3 +22,9 @@ public typealias CardRevokeReason = CheckoutCardNetwork.CardRevokeReason
 
 /// Configuration object used for Push Provisioning
 public typealias ProvisioningConfiguration = CheckoutCardNetwork.ProvisioningConfiguration
+
+@available(iOS 14.0, *)
+public typealias CKOIssuerProvisioningExtensionHandler = CheckoutCardNetwork.NonUiProvisioningExtensionHandler
+
+@available(iOS 14.0, *)
+public typealias CKOIssuerProvisioningExtensionAuthorizationProviding = CheckoutCardNetwork.UiProvisioningExtensionAuthorizationProviding

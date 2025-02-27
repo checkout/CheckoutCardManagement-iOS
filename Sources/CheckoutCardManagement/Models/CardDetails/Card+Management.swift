@@ -26,22 +26,15 @@ public extension Card {
     ///
     /// - Parameters:
     ///     - cardhodlerID: Identifier for the cardholder owning the card
-    ///     - configuration: Specialised object used for Push Provisioning, received during Onboarding
-    ///     - provisioningToken: Push Provisioning token
     ///     - completionHandler: Completion Handler returning the outcome of the provisioning operation
-    func provision(cardholderID: String,
-                   configuration: ProvisioningConfiguration,
-                   provisioningToken: String,
+    func provision(provisioningToken: String,
                    completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
         let startTime = Date()
         manager?.cardService.addCardToAppleWallet(cardID: self.id,
-                                                  cardholderID: cardholderID,
-                                                  configuration: configuration,
                                                   token: provisioningToken) { [weak self] result in
             switch result {
             case .success:
-                let event = LogEvent.pushProvisioning(last4CardID: self?.partIdentifier ?? "",
-                                                      last4CardholderID: String(cardholderID.suffix(4)))
+                let event = LogEvent.pushProvisioning(last4CardID: self?.partIdentifier ?? "")
                 self?.manager?.logger?.log(event, startedAt: startTime)
                 completionHandler(.success)
             case .failure(let networkError):
