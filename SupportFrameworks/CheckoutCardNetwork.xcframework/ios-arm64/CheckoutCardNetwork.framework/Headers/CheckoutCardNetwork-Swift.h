@@ -277,6 +277,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import PassKit;
 #endif
 
 #endif
@@ -297,6 +299,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class PKIssuerProvisioningExtensionStatus;
+@class PKIssuerProvisioningExtensionPassEntry;
+@class NSString;
+@class PKAddPaymentPassRequestConfiguration;
+@class NSData;
+@class PKAddPaymentPassRequest;
+
+SWIFT_CLASS("_TtC19CheckoutCardNetwork33NonUiProvisioningExtensionHandler") SWIFT_AVAILABILITY(ios,introduced=14.0)
+@interface NonUiProvisioningExtensionHandler : PKIssuerProvisioningExtensionHandler
+- (void)statusWithCompletion:(void (^ _Nonnull)(PKIssuerProvisioningExtensionStatus * _Nonnull))completion;
+- (void)passEntriesWithCompletion:(void (^ _Nonnull)(NSArray<PKIssuerProvisioningExtensionPassEntry *> * _Nonnull))completion;
+- (void)remotePassEntriesWithCompletion:(void (^ _Nonnull)(NSArray<PKIssuerProvisioningExtensionPassEntry *> * _Nonnull))completion;
+- (void)generateAddPaymentPassRequestForPassEntryWithIdentifier:(NSString * _Nonnull)identifier configuration:(PKAddPaymentPassRequestConfiguration * _Nonnull)configuration certificateChain:(NSArray<NSData *> * _Nonnull)certificates nonce:(NSData * _Nonnull)nonce nonceSignature:(NSData * _Nonnull)nonceSignature completionHandler:(void (^ _Nonnull)(PKAddPaymentPassRequest * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 #endif
 #if __has_attribute(external_source_symbol)

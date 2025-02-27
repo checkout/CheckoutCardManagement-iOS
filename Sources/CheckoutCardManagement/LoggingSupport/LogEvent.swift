@@ -33,8 +33,11 @@ enum LogEvent {
     /// Describe a successfull event where a card state change was completed
     case stateManagement(idLast4: String, originalState: CardState, requestedState: CardState, reason: String?)
     
+    /// Describe a successfull Configuration of Push Provisioning
+    case configurePushProvisioning(last4CardholderID: String)
+    
     /// Describe a Push Provisioning event
-    case pushProvisioning(last4CardID: String, last4CardholderID: String)
+    case pushProvisioning(last4CardID: String)
     
     /// Describe an unexpected but non critical failure
     case failure(source: String, error: Error)
