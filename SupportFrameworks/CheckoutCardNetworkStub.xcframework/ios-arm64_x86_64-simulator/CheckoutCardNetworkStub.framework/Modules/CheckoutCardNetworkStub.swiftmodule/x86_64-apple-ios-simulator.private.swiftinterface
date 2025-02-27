@@ -73,8 +73,19 @@ final public class CheckoutCardService : CheckoutCardNetworkStub.CardService {
   final public func revokeCard(cardID: Swift.String, reason: CheckoutCardNetworkStub.CardRevokeReason?, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
   final public func getCards(sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CheckoutCardService.CardListResult) -> Swift.Void))
   final public func createCard(from cardModel: CheckoutCardNetworkStub.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CheckoutCardService.CardResult) -> Swift.Void))
-  final public func addCardToAppleWallet(cardID: Swift.String, cardholderID: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  final public func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetworkStub.WalletCardDetails], completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  final public func addCardToAppleWallet(cardID: Swift.String, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
   @objc deinit
+}
+@_hasMissingDesignatedInitializers open class NonUiProvisioningExtensionHandler {
+  public func initLogger(logger: any CheckoutCardNetworkStub.NetworkLogger)
+  open func onError(_ error: CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure)
+  @objc deinit
+}
+public protocol UiProvisioningExtensionAuthorizationProviding {
+}
+extension CheckoutCardNetworkStub.UiProvisioningExtensionAuthorizationProviding {
+  public func login(token: Swift.String, logger: any CheckoutCardNetworkStub.NetworkLogger, completion: @escaping (CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure?) -> Swift.Void)
 }
 public protocol CardService {
   typealias SecureResult = Swift.Result<UIKit.UIView, CheckoutCardNetworkStub.CardNetworkError>
@@ -94,7 +105,8 @@ public protocol CardService {
   func revokeCard(cardID: Swift.String, reason: CheckoutCardNetworkStub.CardRevokeReason?, sessionToken: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
   func getCards(sessionToken: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
   func createCard(from cardModel: CheckoutCardNetworkStub.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
-  func addCardToAppleWallet(cardID: Swift.String, cardholderID: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, token: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetworkStub.WalletCardDetails], completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  func addCardToAppleWallet(cardID: Swift.String, token: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
 }
 public typealias Token = Swift.String
 public enum CardSuspendReason : Swift.String {
@@ -117,6 +129,12 @@ public struct CardExpiryDate : Swift.Equatable {
   public let month: Swift.String
   public let year: Swift.String
   public static func == (a: CheckoutCardNetworkStub.CardExpiryDate, b: CheckoutCardNetworkStub.CardExpiryDate) -> Swift.Bool
+}
+public struct WalletCardDetails {
+  public let cardId: Swift.String
+  public let cardTitle: Swift.String
+  public let cardArt: UIKit.UIImage
+  public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage)
 }
 public enum CardRevokeReason : Swift.String {
   case lost
@@ -154,6 +172,18 @@ public enum CardNetworkError : Swift.Error, Swift.Equatable {
     case operationFailure
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: CheckoutCardNetworkStub.CardNetworkError.PushProvisioningFailure, b: CheckoutCardNetworkStub.CardNetworkError.PushProvisioningFailure) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ProvisioningExtensionFailure : Swift.Error, Swift.Equatable {
+    case walletExtensionAppGroupIDNotFound
+    case notLoggedIn
+    case cardNotFound
+    case deviceEnvironmentUnsafe
+    case operationFailure
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure, b: CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -204,3 +234,4 @@ extension CheckoutCardNetworkStub.CardRevokeReason : Swift.Equatable {}
 extension CheckoutCardNetworkStub.CardRevokeReason : Swift.Hashable {}
 extension CheckoutCardNetworkStub.CardRevokeReason : Swift.RawRepresentable {}
 extension CheckoutCardNetworkStub.CardNetworkError.PushProvisioningFailure : Swift.Hashable {}
+extension CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure : Swift.Hashable {}
