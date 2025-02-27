@@ -1107,8 +1107,8 @@
           },
           {
             "kind": "Function",
-            "name": "addCardToAppleWallet",
-            "printedName": "addCardToAppleWallet(cardID:cardholderID:configuration:token:completionHandler:)",
+            "name": "configurePushProvisioning",
+            "printedName": "configurePushProvisioning(cardholderID:appGroupId:configuration:walletCardsList:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1132,6 +1132,67 @@
                 "name": "ProvisioningConfiguration",
                 "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
                 "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CheckoutCardNetwork.WalletCardDetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletCardDetails",
+                    "printedName": "CheckoutCardNetwork.WalletCardDetails",
+                    "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC25configurePushProvisioning12cardholderID10appGroupId13configuration15walletCardsList17completionHandlerySS_SSAA0G13ConfigurationVSayAA06WalletB7DetailsVGyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC25configurePushProvisioning12cardholderID10appGroupId13configuration15walletCardsList17completionHandlerySS_SSAA0G13ConfigurationVSayAA06WalletB7DetailsVGyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCardToAppleWallet",
+            "printedName": "addCardToAppleWallet(cardID:token:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1159,8 +1220,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID5token17completionHandlerySS_SSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC03addB13ToAppleWallet6cardID5token17completionHandlerySS_SSyAA15OperationResultOctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "Final",
@@ -3102,6 +3163,212 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WalletCardDetails",
+        "printedName": "WalletCardDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cardId",
+            "printedName": "cardId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV6cardIdSSvp",
+            "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV6cardIdSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV6cardIdSSvg",
+                "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV6cardIdSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardTitle",
+            "printedName": "cardTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV9cardTitleSSvp",
+            "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV9cardTitleSSvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV9cardTitleSSvg",
+                "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV9cardTitleSSvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardArt",
+            "printedName": "cardArt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV7cardArtSo7UIImageCvp",
+            "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV7cardArtSo7UIImageCvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV7cardArtSo7UIImageCvg",
+                "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV7cardArtSo7UIImageCvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cardId:cardTitle:cardArt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WalletCardDetails",
+                "printedName": "CheckoutCardNetwork.WalletCardDetails",
+                "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV6cardId0F5Title0F3ArtACSS_SSSo7UIImageCtcfc",
+            "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV6cardId0F5Title0F3ArtACSS_SSSo7UIImageCtcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV",
+        "mangledName": "$s19CheckoutCardNetwork06WalletB7DetailsV",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3118,6 +3385,1021 @@
         "moduleName": "CheckoutCardNetwork",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IssuerProvisioningExtensionHandler",
+        "printedName": "IssuerProvisioningExtensionHandler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "logger",
+            "printedName": "logger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "CheckoutCardNetwork.NetworkLogger?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC6logger33_400FFD7FA34C104FB62ED531603397B4LLAA0C6Logger_pSgvp",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC6logger33_400FFD7FA34C104FB62ED531603397B4LLAA0C6Logger_pSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "errorCallback",
+            "printedName": "errorCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC13errorCallback33_400FFD7FA34C104FB62ED531603397B4LLyAA0bC5ErrorO0eF7FailureOcSgvp",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC13errorCallback33_400FFD7FA34C104FB62ED531603397B4LLyAA0bC5ErrorO0eF7FailureOcSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "initLogger",
+            "printedName": "initLogger(logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkLogger",
+                "printedName": "CheckoutCardNetwork.NetworkLogger",
+                "usr": "s:19CheckoutCardNetwork0C6LoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC10initLogger6loggeryAA0cI0_p_tF",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC10initLogger6loggeryAA0cI0_p_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "errorEncountered",
+            "printedName": "errorEncountered(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "D1Error",
+                "printedName": "D1.D1Error",
+                "usr": "s:2D10A5ErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC16errorEncounteredyy2D10J5ErrorVF",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC16errorEncounteredyy2D10J5ErrorVF",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Final",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnError",
+            "printedName": "setOnError(errorCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProvisioningExtensionFailure",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC10setOnError13errorCallbackyyAA0bcJ0O0eF7FailureOc_tF",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC10setOnError13errorCallbackyyAA0bcJ0O0eF7FailureOc_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IssuerProvisioningExtensionHandler",
+                "printedName": "CheckoutCardNetwork.IssuerProvisioningExtensionHandler",
+                "usr": "c:@M@CheckoutCardNetwork@objc(cs)IssuerProvisioningExtensionHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)IssuerProvisioningExtensionHandler(im)init",
+            "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerCACycfc",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CheckoutCardNetwork@objc(cs)IssuerProvisioningExtensionHandler",
+        "mangledName": "$s19CheckoutCardNetwork34IssuerProvisioningExtensionHandlerC",
+        "moduleName": "CheckoutCardNetwork",
+        "isOpen": true,
+        "intro_iOS": "14.0",
+        "declAttributes": [
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@D1@objc(cs)D1IssuerProvisioningExtensionHandler",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "D1.D1IssuerProvisioningExtensionHandler",
+          "PassKit.PKIssuerProvisioningExtensionHandler",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NonUiProvisioningExtensionHandler",
+        "printedName": "NonUiProvisioningExtensionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initLogger",
+            "printedName": "initLogger(logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkLogger",
+                "printedName": "CheckoutCardNetwork.NetworkLogger",
+                "usr": "s:19CheckoutCardNetwork0C6LoggerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC10initLogger6loggeryAA0cJ0_p_tF",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC10initLogger6loggeryAA0cJ0_p_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "status",
+            "printedName": "status(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PassKit.PKIssuerProvisioningExtensionStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIssuerProvisioningExtensionStatus",
+                    "printedName": "PassKit.PKIssuerProvisioningExtensionStatus",
+                    "usr": "c:objc(cs)PKIssuerProvisioningExtensionStatus"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler(im)statusWithCompletion:",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC6status10completionyySo08PKIssuerfG6StatusCc_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "statusWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "passEntries",
+            "printedName": "passEntries(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([PassKit.PKIssuerProvisioningExtensionPassEntry]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PassKit.PKIssuerProvisioningExtensionPassEntry]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIssuerProvisioningExtensionPassEntry",
+                        "printedName": "PassKit.PKIssuerProvisioningExtensionPassEntry",
+                        "usr": "c:objc(cs)PKIssuerProvisioningExtensionPassEntry"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler(im)passEntriesWithCompletion:",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC11passEntries10completionyySaySo08PKIssuerfG9PassEntryCGc_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "passEntriesWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remotePassEntries",
+            "printedName": "remotePassEntries(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([PassKit.PKIssuerProvisioningExtensionPassEntry]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PassKit.PKIssuerProvisioningExtensionPassEntry]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIssuerProvisioningExtensionPassEntry",
+                        "printedName": "PassKit.PKIssuerProvisioningExtensionPassEntry",
+                        "usr": "c:objc(cs)PKIssuerProvisioningExtensionPassEntry"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler(im)remotePassEntriesWithCompletion:",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC17remotePassEntries10completionyySaySo08PKIssuerfgJ5EntryCGc_tF",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "remotePassEntriesWithCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateAddPaymentPassRequestForPassEntryWithIdentifier",
+            "printedName": "generateAddPaymentPassRequestForPassEntryWithIdentifier(_:configuration:certificateChain:nonce:nonceSignature:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKAddPaymentPassRequestConfiguration",
+                "printedName": "PassKit.PKAddPaymentPassRequestConfiguration",
+                "usr": "c:objc(cs)PKAddPaymentPassRequestConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.Data]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PassKit.PKAddPaymentPassRequest?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PassKit.PKAddPaymentPassRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKAddPaymentPassRequest",
+                        "printedName": "PassKit.PKAddPaymentPassRequest",
+                        "usr": "c:objc(cs)PKAddPaymentPassRequest"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler(im)generateAddPaymentPassRequestForPassEntryWithIdentifier:configuration:certificateChain:nonce:nonceSignature:completionHandler:",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC032generateAddPaymentPassRequestForL19EntryWithIdentifier_13configuration16certificateChain5nonce0U9Signature010completionH0ySS_So05PKAddklM13ConfigurationCSay10Foundation4DataVGA2NySo0xklM0CSgctF",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "generateAddPaymentPassRequestForPassEntryWithIdentifier:configuration:certificateChain:nonce:nonceSignature:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningExtensionFailure",
+                "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC7onErroryyAA0bcJ0O0fG7FailureOF",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC7onErroryyAA0bcJ0O0fG7FailureOF",
+            "moduleName": "CheckoutCardNetwork",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NonUiProvisioningExtensionHandler",
+                "printedName": "CheckoutCardNetwork.NonUiProvisioningExtensionHandler",
+                "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler(im)init",
+            "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerCACycfc",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CheckoutCardNetwork@objc(cs)NonUiProvisioningExtensionHandler",
+        "mangledName": "$s19CheckoutCardNetwork33NonUiProvisioningExtensionHandlerC",
+        "moduleName": "CheckoutCardNetwork",
+        "isOpen": true,
+        "intro_iOS": "14.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)PKIssuerProvisioningExtensionHandler",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "PassKit.PKIssuerProvisioningExtensionHandler",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UiProvisioningExtensionAuthorizationProvidingClass",
+        "printedName": "UiProvisioningExtensionAuthorizationProvidingClass",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "completionHandler",
+            "printedName": "completionHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKIssuerProvisioningExtensionAuthorizationResult",
+                        "printedName": "PassKit.PKIssuerProvisioningExtensionAuthorizationResult",
+                        "usr": "c:@E@PKIssuerProvisioningExtensionAuthorizationResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass(py)completionHandler",
+            "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC17completionHandlerySo08PKIssuerefG6ResultVcSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "isOpen": true,
+            "objc_name": "completionHandler",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKIssuerProvisioningExtensionAuthorizationResult",
+                            "printedName": "PassKit.PKIssuerProvisioningExtensionAuthorizationResult",
+                            "usr": "c:@E@PKIssuerProvisioningExtensionAuthorizationResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass(im)completionHandler",
+                "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC17completionHandlerySo08PKIssuerefG6ResultVcSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "isOpen": true,
+                "objc_name": "completionHandler",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PassKit.PKIssuerProvisioningExtensionAuthorizationResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PKIssuerProvisioningExtensionAuthorizationResult",
+                            "printedName": "PassKit.PKIssuerProvisioningExtensionAuthorizationResult",
+                            "usr": "c:@E@PKIssuerProvisioningExtensionAuthorizationResult"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass(im)setCompletionHandler:",
+                "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC17completionHandlerySo08PKIssuerefG6ResultVcSgvs",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "isOpen": true,
+                "objc_name": "setCompletionHandler:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC17completionHandlerySo08PKIssuerefG6ResultVcSgvM",
+                "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC17completionHandlerySo08PKIssuerefG6ResultVcSgvM",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "isOpen": true,
+                "intro_iOS": "14.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UiProvisioningExtensionAuthorizationProvidingClass",
+                "printedName": "CheckoutCardNetwork.UiProvisioningExtensionAuthorizationProvidingClass",
+                "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass(im)init",
+            "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassCACycfc",
+            "moduleName": "CheckoutCardNetwork",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CheckoutCardNetwork@objc(cs)UiProvisioningExtensionAuthorizationProvidingClass",
+        "mangledName": "$s19CheckoutCardNetwork50UiProvisioningExtensionAuthorizationProvidingClassC",
+        "moduleName": "CheckoutCardNetwork",
+        "isOpen": true,
+        "intro_iOS": "14.0",
+        "declAttributes": [
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "D1IssuerProvisioningExtensionAuthorizationProviding",
+            "printedName": "D1IssuerProvisioningExtensionAuthorizationProviding",
+            "usr": "s:2D10A49IssuerProvisioningExtensionAuthorizationProvidingP",
+            "mangledName": "$s2D10A49IssuerProvisioningExtensionAuthorizationProvidingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UiProvisioningExtensionAuthorizationProviding",
+        "printedName": "UiProvisioningExtensionAuthorizationProviding",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "login",
+            "printedName": "login(token:logger:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkLogger",
+                "printedName": "CheckoutCardNetwork.NetworkLogger",
+                "usr": "s:19CheckoutCardNetwork0C6LoggerP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork45UiProvisioningExtensionAuthorizationProvidingPAAE5login5token6logger10completionySS_AA0C6Logger_pyAA0bC5ErrorO0eF7FailureOSgctF",
+            "mangledName": "$s19CheckoutCardNetwork45UiProvisioningExtensionAuthorizationProvidingPAAE5login5token6logger10completionySS_AA0C6Logger_pyAA0bC5ErrorO0eF7FailureOSgctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.UiProvisioningExtensionAuthorizationProviding>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.UiProvisioningExtensionAuthorizationProviding>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19CheckoutCardNetwork45UiProvisioningExtensionAuthorizationProvidingP",
+        "mangledName": "$s19CheckoutCardNetwork45UiProvisioningExtensionAuthorizationProvidingP",
+        "moduleName": "CheckoutCardNetwork",
+        "genericSig": "<τ_0_0 : PassKit.PKIssuerProvisioningExtensionAuthorizationProviding>",
+        "sugared_genericSig": "<Self : PassKit.PKIssuerProvisioningExtensionAuthorizationProviding>",
+        "intro_iOS": "14.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
         ]
       },
       {
@@ -4017,8 +5299,8 @@
           },
           {
             "kind": "Function",
-            "name": "addCardToAppleWallet",
-            "printedName": "addCardToAppleWallet(cardID:cardholderID:configuration:token:completionHandler:)",
+            "name": "configurePushProvisioning",
+            "printedName": "configurePushProvisioning(cardholderID:appGroupId:configuration:walletCardsList:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4042,6 +5324,68 @@
                 "name": "ProvisioningConfiguration",
                 "printedName": "CheckoutCardNetwork.ProvisioningConfiguration",
                 "usr": "s:19CheckoutCardNetwork25ProvisioningConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CheckoutCardNetwork.WalletCardDetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WalletCardDetails",
+                    "printedName": "CheckoutCardNetwork.WalletCardDetails",
+                    "usr": "s:19CheckoutCardNetwork06WalletB7DetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.OperationResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationResult",
+                    "printedName": "CheckoutCardNetwork.OperationResult",
+                    "usr": "s:19CheckoutCardNetwork15OperationResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP25configurePushProvisioning12cardholderID10appGroupId13configuration15walletCardsList17completionHandlerySS_SSAA0G13ConfigurationVSayAA06WalletB7DetailsVGyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP25configurePushProvisioning12cardholderID10appGroupId13configuration15walletCardsList17completionHandlerySS_SSAA0G13ConfigurationVSayAA06WalletB7DetailsVGyAA15OperationResultOctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCardToAppleWallet",
+            "printedName": "addCardToAppleWallet(cardID:token:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -4069,8 +5413,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
-            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID010cardholderJ013configuration5token17completionHandlerySS_SSAA25ProvisioningConfigurationVSSyAA15OperationResultOctF",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID5token17completionHandlerySS_SSyAA15OperationResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP03addB13ToAppleWallet6cardID5token17completionHandlerySS_SSyAA15OperationResultOctF",
             "moduleName": "CheckoutCardNetwork",
             "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
             "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
@@ -10503,6 +11847,334 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "ProvisioningExtensionFailure",
+            "printedName": "ProvisioningExtensionFailure",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "walletExtensionAppGroupIDNotFound",
+                "printedName": "walletExtensionAppGroupIDNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProvisioningExtensionFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO06walletF18AppGroupIDNotFoundyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO06walletF18AppGroupIDNotFoundyA2EmF",
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "notLoggedIn",
+                "printedName": "notLoggedIn",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProvisioningExtensionFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
+                "moduleName": "CheckoutCardNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "cardNotFound",
+                "printedName": "cardNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProvisioningExtensionFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
+                "moduleName": "CheckoutCardNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "deviceEnvironmentUnsafe",
+                "printedName": "deviceEnvironmentUnsafe",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProvisioningExtensionFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
+                "moduleName": "CheckoutCardNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "operationFailure",
+                "printedName": "operationFailure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProvisioningExtensionFailure",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProvisioningExtensionFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO09operationG0yA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO09operationG0yA2EmF",
+                "moduleName": "CheckoutCardNetwork"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO9hashValueSivp",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO9hashValueSivp",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO9hashValueSivg",
+                    "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO9hashValueSivg",
+                    "moduleName": "CheckoutCardNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO4hash4intoys6HasherVz_tF",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProvisioningExtensionFailure",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProvisioningExtensionFailure",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO2eeoiySbAE_AEtFZ",
+                "moduleName": "CheckoutCardNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
             "kind": "Var",
             "name": "authenticationFailure",
             "printedName": "authenticationFailure",
@@ -15886,77 +17558,147 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 1009,
+      "offset": 2614,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 2728,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 5166,
+      "offset": 6506,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 5279,
+      "offset": 6619,
       "length": 69,
       "value": "[(\"info\", \"Could not retrieve a Root ViewController for presentation\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 6774,
+      "offset": 8114,
       "length": 26,
       "value": "\"D1 Configuration Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 6880,
+      "offset": 8220,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 6893,
+      "offset": 8233,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7114,
+      "offset": 8454,
       "length": 18,
       "value": "\"D1 Login Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7157,
+      "offset": 8497,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7225,
+      "offset": 8565,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7426,
+      "offset": 8766,
+      "length": 8,
+      "value": "\"source\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 9257,
+      "length": 29,
+      "value": "\"D1 Non-UI Extension Failure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 9311,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 9376,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 10306,
+      "length": 8,
+      "value": "\"source\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 13667,
+      "length": 25,
+      "value": "\"D1 UI Extension Failure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 13888,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 13905,
+      "length": 19,
+      "value": "\"Token not correct\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 14341,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 14415,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 15241,
       "length": 8,
       "value": "\"source\""
     },
