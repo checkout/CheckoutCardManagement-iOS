@@ -36,6 +36,9 @@ enum LogEvent {
     /// Describe a successfull Configuration of Push Provisioning
     case configurePushProvisioning(last4CardholderID: String)
     
+    /// Describe a Get Card Digitization State event
+    case getCardDigitizationState(last4CardID: String, digitizationState: DigitizationState)
+    
     /// Describe a Push Provisioning event
     case pushProvisioning(last4CardID: String)
     

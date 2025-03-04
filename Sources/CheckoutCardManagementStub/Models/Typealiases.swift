@@ -14,6 +14,9 @@ public typealias CardExpiryDate = CheckoutCardNetworkStub.CardExpiryDate
 /// State for a card
 public typealias CardState = CheckoutCardNetworkStub.CardState
 
+/// Digitization state of a card
+public typealias CardDigitizationState = CheckoutCardNetworkStub.CardDigitizationState
+
 /// Reason for requesting to perform a Card Suspend operation on card
 public typealias CardSuspendReason = CheckoutCardNetworkStub.CardSuspendReason
 
