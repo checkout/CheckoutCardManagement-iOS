@@ -21,6 +21,29 @@ public extension Card {
             return []
         }
     }
+
+    /// Get the Card Digitization State
+    ///
+    /// - Parameters:
+    ///     - completionHandler: Completion Handler returning the outcome of the fetch digitization state operation
+    func getDigitizationState(provisioningToken: String,
+                              completionHandler: @escaping ((CheckoutCardManager.CardDigitizationResult) -> Void)) {
+        let startTime = Date()
+        manager?.cardService.getCardDigitizationState(cardID: self.id,
+                                                      token: provisioningToken) { [weak self] result in
+            switch result {
+            case .success(let cardDigitizationState):
+                let digitizationState = DigitizationState.from(cardDigitizationState)
+                let event = LogEvent.getCardDigitizationState(last4CardID: self?.partIdentifier ?? "",
+                                                              digitizationState: digitizationState)
+                self?.manager?.logger?.log(event, startedAt: startTime)
+                completionHandler(.success(digitizationState))
+            case .failure(let networkError):
+                self?.manager?.logger?.log(.failure(source: "Get Digitization State", error: networkError), startedAt: startTime)
+                completionHandler(.failure(.from(networkError)))
+            }
+        }
+    }
     
     /// Add the card object to the Apple Wallet
     ///

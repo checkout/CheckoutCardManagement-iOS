@@ -8,6 +8,28 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct WalletCardDetails {
+  public let cardId: Swift.String
+  public let cardTitle: Swift.String
+  public let cardArt: UIKit.UIImage
+  public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage)
+}
+public enum CardDigitizationResult : Swift.Equatable {
+  case success(CheckoutCardNetworkStub.CardDigitizationState)
+  case failure(CheckoutCardNetworkStub.CardNetworkError)
+  public static func == (a: CheckoutCardNetworkStub.CardDigitizationResult, b: CheckoutCardNetworkStub.CardDigitizationResult) -> Swift.Bool
+}
+public enum CardDigitizationState : Swift.String, Swift.Decodable {
+  case digitized
+  case notDigitized
+  case pendingIDVLocal
+  case pendingIDVRemote
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum CardType : Swift.String, Swift.Codable {
   case physical
   case virtual
@@ -74,10 +96,12 @@ final public class CheckoutCardService : CheckoutCardNetworkStub.CardService {
   final public func getCards(sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CheckoutCardService.CardListResult) -> Swift.Void))
   final public func createCard(from cardModel: CheckoutCardNetworkStub.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CheckoutCardService.CardResult) -> Swift.Void))
   final public func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetworkStub.WalletCardDetails], completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  final public func getCardDigitizationState(cardID: Swift.String, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CardDigitizationResult) -> Swift.Void))
   final public func addCardToAppleWallet(cardID: Swift.String, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
   @objc deinit
 }
-@_hasMissingDesignatedInitializers open class NonUiProvisioningExtensionHandler {
+open class NonUiProvisioningExtensionHandler {
+  public init()
   public func initLogger(logger: any CheckoutCardNetworkStub.NetworkLogger)
   open func onError(_ error: CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure)
   @objc deinit
@@ -106,6 +130,7 @@ public protocol CardService {
   func getCards(sessionToken: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
   func createCard(from cardModel: CheckoutCardNetworkStub.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
   func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetworkStub.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetworkStub.WalletCardDetails], completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
+  func getCardDigitizationState(cardID: Swift.String, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetworkStub.CardDigitizationResult) -> Swift.Void))
   func addCardToAppleWallet(cardID: Swift.String, token: CheckoutCardNetworkStub.Token, completionHandler: @escaping ((CheckoutCardNetworkStub.OperationResult) -> Swift.Void))
 }
 public typealias Token = Swift.String
@@ -129,12 +154,6 @@ public struct CardExpiryDate : Swift.Equatable {
   public let month: Swift.String
   public let year: Swift.String
   public static func == (a: CheckoutCardNetworkStub.CardExpiryDate, b: CheckoutCardNetworkStub.CardExpiryDate) -> Swift.Bool
-}
-public struct WalletCardDetails {
-  public let cardId: Swift.String
-  public let cardTitle: Swift.String
-  public let cardArt: UIKit.UIImage
-  public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage)
 }
 public enum CardRevokeReason : Swift.String {
   case lost
@@ -218,6 +237,9 @@ public struct Card : Swift.Decodable, Swift.Equatable {
 public struct PanViewConfiguration {
   public init(font: UIKit.UIFont, textColor: UIKit.UIColor, formatSeparator: Swift.String)
 }
+extension CheckoutCardNetworkStub.CardDigitizationState : Swift.Equatable {}
+extension CheckoutCardNetworkStub.CardDigitizationState : Swift.Hashable {}
+extension CheckoutCardNetworkStub.CardDigitizationState : Swift.RawRepresentable {}
 extension CheckoutCardNetworkStub.CardType : Swift.Equatable {}
 extension CheckoutCardNetworkStub.CardType : Swift.Hashable {}
 extension CheckoutCardNetworkStub.CardType : Swift.RawRepresentable {}
