@@ -12,7 +12,7 @@ public final class Card {
 
     /// Current state of the card
     public internal(set) var state: CardState
-    
+
     /// Last 4 digits from the long card number
     public let panLast4Digits: String
 
@@ -29,7 +29,7 @@ public final class Card {
     ///
     /// - Enables object to carry operations that depend on it
     internal weak var manager: CardManager?
-    
+
     /// Minimal partial identifier for logging purposes
     internal var partIdentifier: String { String(id.suffix(4)) }
 

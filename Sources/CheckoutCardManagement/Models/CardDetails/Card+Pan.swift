@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Card {
-    
+
     /// Request a secure UI component containing long card number for the card
     func getPan(singleUseToken: String,
                 completionHandler: @escaping CheckoutCardManager.SecureResultCompletion) {
@@ -35,7 +35,7 @@ public extension Card {
             }
         }
     }
-    
+
     /// Request a tuple made of pan and security code protected UI components for the card
     func getPanAndSecurityCode(singleUseToken: String,
                                completionHandler: @escaping CheckoutCardManager.SecurePropertiesResultCompletion) {
@@ -64,5 +64,5 @@ public extension Card {
             }
         }
     }
-    
+
 }

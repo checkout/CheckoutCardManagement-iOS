@@ -9,7 +9,7 @@ import Foundation
 import CheckoutCardNetwork
 
 public extension Card {
-    
+
     /// Possible Card State changes from the current state
     var possibleStateChanges: [CardState] {
         switch self.state {
@@ -44,7 +44,7 @@ public extension Card {
             }
         }
     }
-    
+
     /// Add the card object to the Apple Wallet
     ///
     /// - Parameters:
@@ -66,7 +66,7 @@ public extension Card {
             }
         }
     }
-    
+
     /// Request to activate the card
     func activate(completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
         guard possibleStateChanges.contains(.active) else {
@@ -78,7 +78,7 @@ public extension Card {
             return
         }
         let startTime = Date()
-        
+
         manager?.cardService.activateCard(cardID: id,
                                           sessionToken: sessionToken) { [weak self] result in
             self?.handleCardOperationResult(result: result,
@@ -88,7 +88,7 @@ public extension Card {
                                             completionHandler: completionHandler)
         }
     }
-    
+
     /// Request to suspend the card, with option to provide a reason for change
     func suspend(reason: CardSuspendReason?,
                  completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
@@ -101,7 +101,7 @@ public extension Card {
             return
         }
         let startTime = Date()
-        
+
         manager?.cardService.suspendCard(cardID: id,
                                          reason: reason,
                                          sessionToken: sessionToken) { [weak self] result in
@@ -113,7 +113,7 @@ public extension Card {
                                             completionHandler: completionHandler)
         }
     }
-    
+
     /// Request to revoke the card, with option to provide a reason for change
     func revoke(reason: CardRevokeReason?,
                 completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
@@ -126,7 +126,7 @@ public extension Card {
             return
         }
         let startTime = Date()
-        
+
         manager?.cardService.revokeCard(cardID: id,
                                         reason: reason,
                                         sessionToken: sessionToken) { [weak self] result in
@@ -138,7 +138,7 @@ public extension Card {
                                             completionHandler: completionHandler)
         }
     }
-    
+
     private func handleCardOperationResult(result: OperationResult,
                                            newState: CardState,
                                            reasonString: String? = nil,
@@ -159,5 +159,5 @@ public extension Card {
             completionHandler(.failure(.from(networkError)))
         }
     }
-    
+
 }
