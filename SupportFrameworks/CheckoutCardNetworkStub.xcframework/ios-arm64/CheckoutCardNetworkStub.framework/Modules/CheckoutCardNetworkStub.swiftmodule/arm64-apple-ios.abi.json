@@ -9723,43 +9723,6 @@
               },
               {
                 "kind": "Var",
-                "name": "notLoggedIn",
-                "printedName": "notLoggedIn",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProvisioningExtensionFailure",
-                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure",
-                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProvisioningExtensionFailure",
-                            "printedName": "CheckoutCardNetworkStub.CardNetworkError.ProvisioningExtensionFailure",
-                            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
-                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
-                "moduleName": "CheckoutCardNetworkStub"
-              },
-              {
-                "kind": "Var",
                 "name": "cardNotFound",
                 "printedName": "cardNotFound",
                 "children": [
@@ -9793,7 +9756,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
                 "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
-                "moduleName": "CheckoutCardNetworkStub"
+                "moduleName": "CheckoutCardNetworkStub",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -9830,7 +9796,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
                 "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
-                "moduleName": "CheckoutCardNetworkStub"
+                "moduleName": "CheckoutCardNetworkStub",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -9867,7 +9836,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO09operationH0yA2EmF",
                 "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO09operationH0yA2EmF",
-                "moduleName": "CheckoutCardNetworkStub"
+                "moduleName": "CheckoutCardNetworkStub",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -9971,7 +9943,229 @@
             "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO28ProvisioningExtensionFailureO",
             "moduleName": "CheckoutCardNetworkStub",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "DigitizationStateFailure",
+            "printedName": "DigitizationStateFailure",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "configurationFailure",
+                "printedName": "configurationFailure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure.Type) -> CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DigitizationStateFailure",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DigitizationStateFailure",
+                            "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO013configurationH0yA2EmF",
+                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO013configurationH0yA2EmF",
+                "moduleName": "CheckoutCardNetworkStub",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "operationFailure",
+                "printedName": "operationFailure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure.Type) -> CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DigitizationStateFailure",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DigitizationStateFailure",
+                            "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO09operationH0yA2EmF",
+                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO09operationH0yA2EmF",
+                "moduleName": "CheckoutCardNetworkStub",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO9hashValueSivp",
+                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO9hashValueSivp",
+                "moduleName": "CheckoutCardNetworkStub",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO9hashValueSivg",
+                    "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO9hashValueSivg",
+                    "moduleName": "CheckoutCardNetworkStub",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO4hash4intoys6HasherVz_tF",
+                "moduleName": "CheckoutCardNetworkStub",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DigitizationStateFailure",
+                    "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                    "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DigitizationStateFailure",
+                    "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                    "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO2eeoiySbAE_AEtFZ",
+                "moduleName": "CheckoutCardNetworkStub",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO",
+            "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO",
+            "moduleName": "CheckoutCardNetworkStub",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "conformances": [
               {
@@ -10499,6 +10693,66 @@
             "declKind": "EnumElement",
             "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO23pushProvisioningFailureyA2C04PushgH0O_tcACmF",
             "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO23pushProvisioningFailureyA2C04PushgH0O_tcACmF",
+            "moduleName": "CheckoutCardNetworkStub",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fetchDigitizationStateFailure",
+            "printedName": "fetchDigitizationStateFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetworkStub.CardNetworkError.Type) -> (CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure) -> CheckoutCardNetworkStub.CardNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure) -> CheckoutCardNetworkStub.CardNetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(failure: CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DigitizationStateFailure",
+                            "printedName": "CheckoutCardNetworkStub.CardNetworkError.DigitizationStateFailure",
+                            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO24DigitizationStateFailureO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetworkStub.CardNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetworkStub.CardNetworkError",
+                        "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23CheckoutCardNetworkStub0bC5ErrorO29fetchDigitizationStateFailureyA2C0ghI0O_tcACmF",
+            "mangledName": "$s23CheckoutCardNetworkStub0bC5ErrorO29fetchDigitizationStateFailureyA2C0ghI0O_tcACmF",
             "moduleName": "CheckoutCardNetworkStub",
             "declAttributes": [
               "RawDocComment"
