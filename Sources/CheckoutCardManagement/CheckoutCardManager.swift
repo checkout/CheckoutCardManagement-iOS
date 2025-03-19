@@ -19,12 +19,12 @@ protocol CardManager: AnyObject {
     var sessionToken: String? { get }
     /// Design system to guide any secure view UI
     var designSystem: CardManagementDesignSystem { get }
-    
+
 }
 
 /// Access gateway into the Card Management functionality
 public final class CheckoutCardManager: CardManager {
-    
+
     /// Result type that on success delivers a secure UIView to be presented to the user, and on failure delivers an error to identify problem
     public typealias SecureResult = Result<UIView, CardManagementError>
     /// Completion handler returning a SecureResult
@@ -37,7 +37,7 @@ public final class CheckoutCardManager: CardManager {
     public typealias CardListResult = Result<[Card], CardManagementError>
     /// Completion handler returning CardListResult
     public typealias CardListResultCompletion = ((CardListResult) -> Void)
-    
+
     /// Generic token used for non sensitive calls
     var sessionToken: String?
     /// Service enabling interactions with outside services
@@ -46,23 +46,23 @@ public final class CheckoutCardManager: CardManager {
     let designSystem: CardManagementDesignSystem
     /// Analytics logger and dispatcher for tracked events
     let logger: CheckoutLogger?
-    
+
     /// Enable the functionality using the provided design system for secure UI components
     public init(designSystem: CardManagementDesignSystem, environment: CardManagerEnvironment) {
         let eventLogger = CheckoutEventLogger(productName: Constants.productName)
         let logger = CheckoutLogger(eventLogger: eventLogger)
         let service = CheckoutCardService(environment: environment.networkEnvironment())
         service.logger = logger
-        
+
         self.designSystem = designSystem
         self.cardService = service
         self.logger = logger
-        
+
         logger.setupRemoteLogging(environment: environment,
                                   serviceVersion: type(of: cardService).version)
         logInitialization()
     }
-    
+
     internal init(service: CardService,
                   designSystem: CardManagementDesignSystem,
                   logger: CheckoutEventLogging? = nil) {
@@ -73,10 +73,10 @@ public final class CheckoutCardManager: CardManager {
         } else {
             self.logger = nil
         }
-        
+
         logInitialization()
     }
-    
+
     /// Store provided token to use on network calls. If token is rejected, any previous session token will be removed.
     public func logInSession(token: String) -> Bool {
         guard cardService.isTokenValid(token) else {
@@ -86,23 +86,23 @@ public final class CheckoutCardManager: CardManager {
         sessionToken = token
         return true
     }
-    
+
     /// Remove current token from future calls
     public func logoutSession() {
         sessionToken = nil
     }
-    
+
     // Configure the Push Provisioning Manager
     public func configurePushProvisioning(cardholderID: String,
                                      appGroupId: String,
                                      configuration: ProvisioningConfiguration,
                                      walletCards: [(Card, UIImage)],
                                      completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
-        
-        let walletCardsList: [WalletCardDetails] = walletCards.map { (card, uiImage) in
+
+        let walletCardsList: [WalletCardDetails] = walletCards.map { card, uiImage in
             return WalletCardDetails(cardId: card.id, cardTitle: card.panLast4Digits, cardArt: uiImage)
         }
-        
+
         let startTime = Date()
         cardService.configurePushProvisioning(cardholderID: cardholderID,
                                               appGroupId: appGroupId,
@@ -142,7 +142,7 @@ public final class CheckoutCardManager: CardManager {
             }
         }
     }
-    
+
     private func logInitialization() {
         logger?.log(.initialized(design: designSystem))
     }

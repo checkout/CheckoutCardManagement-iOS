@@ -18,7 +18,7 @@ extension IssuerProvisioningExtensionAuthorizationProviding {
     public func login(_ issuerToken: String, completion: @escaping (CardManagementError.ProvisioningExtensionFailure?) -> Void) {
         let eventLogger = CheckoutEventLogger(productName: Constants.productName)
         let logger = CheckoutLogger(eventLogger: eventLogger)
-        
+
         login(token: issuerToken, logger: logger) { (error: CardNetworkError.ProvisioningExtensionFailure?) in
             if error != nil {
                 completion(.from(error!))

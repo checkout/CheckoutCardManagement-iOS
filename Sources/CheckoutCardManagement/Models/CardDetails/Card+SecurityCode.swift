@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Card {
-    
+
     /// Request a secure UI component containing security number for the card
     func getSecurityCode(singleUseToken: String,
                          completionHandler: @escaping CheckoutCardManager.SecureResultCompletion) {
@@ -35,5 +35,5 @@ public extension Card {
             }
         }
     }
-    
+
 }

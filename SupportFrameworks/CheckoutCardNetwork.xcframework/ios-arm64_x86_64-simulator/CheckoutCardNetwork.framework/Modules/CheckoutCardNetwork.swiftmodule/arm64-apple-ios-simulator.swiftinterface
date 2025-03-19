@@ -173,7 +173,6 @@ public enum CardNetworkError : Swift.Error, Swift.Equatable {
   }
   public enum ProvisioningExtensionFailure : Swift.Error, Swift.Equatable {
     case walletExtensionAppGroupIDNotFound
-    case notLoggedIn
     case cardNotFound
     case deviceEnvironmentUnsafe
     case operationFailure

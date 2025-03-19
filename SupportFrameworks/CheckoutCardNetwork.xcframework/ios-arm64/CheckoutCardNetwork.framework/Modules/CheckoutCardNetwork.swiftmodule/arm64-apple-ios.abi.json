@@ -12473,43 +12473,6 @@
               },
               {
                 "kind": "Var",
-                "name": "notLoggedIn",
-                "printedName": "notLoggedIn",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type) -> CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProvisioningExtensionFailure",
-                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
-                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProvisioningExtensionFailure",
-                            "printedName": "CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure",
-                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
-                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO11notLoggedInyA2EmF",
-                "moduleName": "CheckoutCardNetwork"
-              },
-              {
-                "kind": "Var",
                 "name": "cardNotFound",
                 "printedName": "cardNotFound",
                 "children": [
@@ -12543,7 +12506,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
                 "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO12cardNotFoundyA2EmF",
-                "moduleName": "CheckoutCardNetwork"
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -12580,7 +12546,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
                 "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO23deviceEnvironmentUnsafeyA2EmF",
-                "moduleName": "CheckoutCardNetwork"
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -12617,7 +12586,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO09operationG0yA2EmF",
                 "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO09operationG0yA2EmF",
-                "moduleName": "CheckoutCardNetwork"
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -12721,7 +12693,8 @@
             "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO28ProvisioningExtensionFailureO",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "conformances": [
               {
@@ -12794,7 +12767,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO013configurationG0yA2EmF",
                 "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO013configurationG0yA2EmF",
-                "moduleName": "CheckoutCardNetwork"
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -12831,7 +12807,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO09operationG0yA2EmF",
                 "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO09operationG0yA2EmF",
-                "moduleName": "CheckoutCardNetwork"
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -12935,7 +12914,8 @@
             "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "conformances": [
               {
@@ -18111,98 +18091,98 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 631,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 749,
+      "offset": 737,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 771,
+      "offset": 759,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 785,
+      "offset": 773,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 801,
+      "offset": 789,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 828,
       "length": 3,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 914,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 951,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 1007,
+      "offset": 991,
       "length": 15,
       "value": "\"client_secret\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 914,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 967,
+      "offset": 951,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
-      "offset": 1007,
+      "offset": 991,
       "length": 15,
       "value": "\"client_secret\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1283,
+      "offset": 1259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 1692,
+      "offset": 1660,
       "length": 36,
       "value": "\"Complete integration in PIMOB-1864\""
     },
@@ -18223,427 +18203,427 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 147,
+      "offset": 143,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 184,
+      "offset": 180,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "Array",
-      "offset": 666,
+      "offset": 654,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 822,
+      "offset": 805,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 905,
+      "offset": 888,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 944,
+      "offset": 927,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 968,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1014,
+      "offset": 997,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1231,
+      "offset": 1210,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1310,
+      "offset": 1289,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1353,
+      "offset": 1332,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1394,
+      "offset": 1373,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
-      "offset": 1423,
+      "offset": 1402,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 317,
+      "offset": 313,
       "length": 4,
       "value": "2048"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 598,
+      "offset": 586,
       "length": 37,
       "value": "\"Failed to create encryption keypair\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 835,
+      "offset": 815,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1308,
       "length": 34,
       "value": "\"Failed to create String from Key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2011,
+      "offset": 1967,
       "length": 34,
       "value": "\"Failed to create key from String\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2817,
+      "offset": 2769,
       "length": 17,
       "value": "\"Decrypting data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "Dictionary",
-      "offset": 3236,
+      "offset": 3180,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3521,
+      "offset": 3461,
       "length": 34,
       "value": "\"Failed to create String from Key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4182,
+      "offset": 4102,
       "length": 9,
       "value": "\"Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 213,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 261,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 309,
       "length": 32,
       "value": "\"sian-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 336,
       "length": 1,
       "value": "\"-sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 2217,
+      "offset": 2193,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 2493,
+      "offset": 2461,
       "length": 22,
       "value": "\"Unable to read token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 2580,
+      "offset": 2548,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 2873,
       "length": 17,
       "value": "\"Incorrect token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 3002,
+      "offset": 2965,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 4119,
+      "offset": 4050,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 4233,
+      "offset": 4164,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8085,
+      "offset": 7952,
       "length": 36,
       "value": "\"D1 Card Digitization State Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8155,
+      "offset": 8022,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8229,
+      "offset": 8096,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 9516,
+      "offset": 9379,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 9629,
+      "offset": 9492,
       "length": 69,
       "value": "[(\"info\", \"Could not retrieve a Root ViewController for presentation\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11124,
+      "offset": 10983,
       "length": 26,
       "value": "\"D1 Configuration Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11230,
+      "offset": 11089,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11243,
+      "offset": 11102,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11464,
+      "offset": 11319,
       "length": 18,
       "value": "\"D1 Login Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11507,
+      "offset": 11362,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11575,
+      "offset": 11430,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11776,
+      "offset": 11627,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12267,
+      "offset": 12110,
       "length": 29,
       "value": "\"D1 Non-UI Extension Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12321,
+      "offset": 12164,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12386,
+      "offset": 12229,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 13316,
+      "offset": 13067,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16677,
+      "offset": 16388,
       "length": 25,
       "value": "\"D1 UI Extension Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16898,
+      "offset": 16601,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16915,
+      "offset": 16618,
       "length": 19,
       "value": "\"Token not correct\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17351,
+      "offset": 17040,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17425,
+      "offset": 17114,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 18251,
+      "offset": 17906,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 248,
+      "offset": 244,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 646,
+      "offset": 638,
       "length": 11,
       "value": "\"errorType\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 767,
+      "offset": 759,
       "length": 12,
       "value": "\"errorCodes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 812,
+      "offset": 804,
       "length": 5,
       "value": "\" ; \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 905,
       "length": 11,
       "value": "\"requestID\""
     },
@@ -18671,133 +18651,133 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
-      "offset": 286,
+      "offset": 278,
       "length": 8,
       "value": "\"number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 315,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
-      "offset": 286,
+      "offset": 278,
       "length": 8,
       "value": "\"number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 315,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 267,
       "length": 17,
       "value": "\"encrypted_block\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 267,
       "length": 17,
       "value": "\"encrypted_block\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 273,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 283,
+      "offset": 279,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 337,
+      "offset": 333,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 343,
+      "offset": 339,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 394,
+      "offset": 390,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 396,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 711,
       "length": 44,
       "value": "\"Redirection response received from network\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1059,
       "length": 34,
       "value": "\"Response status code was \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1092,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1195,
+      "offset": 1187,
       "length": 47,
       "value": "\"No data was returned although it was expected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+InternalSupport.swift",
       "kind": "StringLiteral",
-      "offset": 253,
+      "offset": 249,
       "length": 18,
       "value": "\"x-correlation-id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 255,
       "length": 42,
       "value": "\"https:\/\/api.sandbox.checkout.com\/issuing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 357,
       "length": 34,
       "value": "\"https:\/\/api.checkout.com\/issuing\""
     },
@@ -18923,35 +18903,35 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 193,
+      "offset": 189,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 288,
+      "offset": 284,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 347,
+      "offset": 343,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 432,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 483,
+      "offset": 479,
       "length": 1,
       "value": "1"
     },
@@ -19245,21 +19225,21 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 254,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 271,
       "length": 17,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 291,
+      "offset": 287,
       "length": 2,
       "value": "\"\""
     },
@@ -19294,98 +19274,98 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 402,
+      "offset": 390,
       "length": 12,
       "value": "\"request_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 428,
       "length": 12,
       "value": "\"error_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 467,
       "length": 13,
       "value": "\"error_codes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 402,
+      "offset": 390,
       "length": 12,
       "value": "\"request_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 428,
       "length": 12,
       "value": "\"error_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 467,
       "length": 13,
       "value": "\"error_codes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 882,
       "length": 15,
       "value": "\"Activate Card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 957,
       "length": 26,
       "value": "\"Cannot activate the card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 1980,
       "length": 14,
       "value": "\"Suspend Card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2054,
       "length": 25,
       "value": "\"Cannot suspend the card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 3082,
+      "offset": 3069,
       "length": 13,
       "value": "\"Revoke Card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 3155,
+      "offset": 3142,
       "length": 24,
       "value": "\"Cannot revoke the card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 3461,
+      "offset": 3444,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
-      "offset": 3482,
+      "offset": 3465,
       "length": 2,
       "value": "\"\""
     },
@@ -19406,322 +19386,322 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 778,
+      "offset": 770,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1123,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1175,
+      "offset": 1167,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1452,
+      "offset": 1436,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1480,
+      "offset": 1464,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1475,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1552,
+      "offset": 1536,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1571,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1612,
+      "offset": 1596,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1619,
+      "offset": 1603,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1657,
+      "offset": 1641,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 469,
+      "offset": 465,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 1541,
+      "offset": 1533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 2658,
+      "offset": 2646,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3961,
+      "offset": 3945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
       "kind": "Dictionary",
-      "offset": 8616,
+      "offset": 8564,
       "length": 45,
       "value": "[(\"source\", \"Secure operation key generation\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
       "kind": "Dictionary",
-      "offset": 8906,
+      "offset": 8854,
       "length": 41,
       "value": "[(\"source\", \"Unable to encode public key\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
       "kind": "StringLiteral",
-      "offset": 9088,
+      "offset": 9028,
       "length": 16,
       "value": "\"Encryption-Key\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
       "kind": "StringLiteral",
-      "offset": 10329,
+      "offset": 10265,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 240,
+      "offset": 236,
       "length": 8,
       "value": "\"number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 277,
+      "offset": 273,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 240,
+      "offset": 236,
       "length": 8,
       "value": "\"number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 277,
+      "offset": 273,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 735,
       "length": 33,
       "value": "\"cardholders\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 761,
       "length": 1,
       "value": "\"\/cards\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 871,
       "length": 21,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 899,
+      "offset": 887,
       "length": 1,
       "value": "\"\/pin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1012,
+      "offset": 1000,
       "length": 26,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 1016,
       "length": 1,
       "value": "\"\/activate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1133,
       "length": 25,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1161,
+      "offset": 1149,
       "length": 1,
       "value": "\"\/suspend\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1264,
       "length": 24,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1292,
+      "offset": 1280,
       "length": 1,
       "value": "\"\/revoke\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1431,
+      "offset": 1419,
       "length": 29,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 1435,
       "length": 1,
       "value": "\"\/credentials\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 1587,
+      "offset": 1575,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 1667,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1748,
       "length": 13,
       "value": "\"credentials\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1907,
+      "offset": 1894,
       "length": 29,
       "value": "\"cards\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 1910,
       "length": 1,
       "value": "\"\/credentials\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2144,
+      "offset": 2127,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2269,
+      "offset": 2252,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2387,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2537,
+      "offset": 2520,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2668,
+      "offset": 2651,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 2826,
+      "offset": 2809,
       "length": 1,
       "value": "4"
     },
@@ -19756,210 +19736,210 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 596,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 670,
+      "offset": 671,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
+      "offset": 1200,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1291,
+      "offset": 1280,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1538,
+      "offset": 1519,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1647,
+      "offset": 1628,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1725,
+      "offset": 1698,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1776,
+      "offset": 1749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1859,
+      "offset": 1832,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1997,
+      "offset": 1970,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2026,
+      "offset": 1999,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2079,
+      "offset": 2052,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2084,
+      "offset": 2057,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2284,
+      "offset": 2249,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2490,
+      "offset": 2455,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "Array",
-      "offset": 2656,
+      "offset": 2613,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2774,
+      "offset": 2727,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2785,
+      "offset": 2738,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2805,
+      "offset": 2758,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2826,
+      "offset": 2778,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2842,
+      "offset": 2794,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2852,
+      "offset": 2804,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 2864,
+      "offset": 2815,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3098,
+      "offset": 3045,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 3083,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3370,
+      "offset": 3305,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3461,
+      "offset": 3396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3548,
+      "offset": 3483,
       "length": 4,
       "value": "0xff"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3613,
+      "offset": 3548,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
-      "offset": 3661,
+      "offset": 3596,
       "length": 1,
       "value": "1"
     },

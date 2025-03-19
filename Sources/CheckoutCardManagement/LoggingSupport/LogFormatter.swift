@@ -10,9 +10,9 @@ import CheckoutEventLoggerKit
 
 /// Formatter for internal Analytic Events
 enum LogFormatter {
-    
+
     private static let typePrefix = "com.checkout.issuing-mobile-sdk."
-    
+
     /// Create dispatchable analytics event from the given LogEvent
     static func build(event: LogEvent,
                       startedAt startDate: Date? = nil,
@@ -26,7 +26,7 @@ enum LogFormatter {
               monitoringLevel: monitoringLevel(for: event),
               properties: eventProperties)
     }
-    
+
     /// Define unique identifier for event
     static private func identifier(for event: LogEvent) -> String {
         switch event {
@@ -43,7 +43,7 @@ enum LogFormatter {
         case .failure: return "failure"
         }
     }
-    
+
     /// Define monitoring level for event
     static private func monitoringLevel(for event: LogEvent) -> MonitoringLevel {
         switch event {
@@ -62,7 +62,7 @@ enum LogFormatter {
             return .warn
         }
     }
-    
+
     /// Generate dictionary of properties  for event
     static private func properties(from event: LogEvent, startDate: Date? = nil) -> [String: AnyCodable] {
         var dictionary = [String: AnyCodable]()
