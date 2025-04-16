@@ -5,7 +5,25 @@
 //  Created by Marian Enache on 03.03.2025.
 //
 
+import CheckoutCardNetwork
 import Foundation
+import PassKit
+
+public struct DigitizationData {
+
+    /// State of card digitization.
+    public let state: DigitizationState
+
+    /// [PKPass](https://developer.apple.com/documentation/passkit/pkpass) for the card on local device (mobile device).
+    public let localPKPass: PKPass?
+
+    /// [PKPass](https://developer.apple.com/documentation/passkit/pkpass) for the card on remote device (Apple Watch).
+    public let remotePKPass: PKPass?
+
+    static func from(_ data: CardDigitizationData) -> Self {
+        return DigitizationData(state: DigitizationState.from(data.state), localPKPass: data.localPKPass, remotePKPass: data.remotePKPass)
+    }
+}
 
 /// Describe the digitization state of a card
 public enum DigitizationState: String, Decodable {

@@ -13,10 +13,10 @@ extension CheckoutCardManager {
 
     /// Enum describing the result of an asynchronous operation
     @frozen
-    public enum CardDigitizationResult: Equatable {
+    public enum CardDigitizationResult {
 
         /// The operation was a success
-        case success(DigitizationState)
+        case success(DigitizationData)
 
         /// The operation has failed and an appropriate failure error is attached
         case failure(CardManagementError)
