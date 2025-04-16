@@ -15,6 +15,247 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardDigitizationData",
+        "printedName": "CardDigitizationData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardDigitizationState",
+                "printedName": "CheckoutCardNetwork.CardDigitizationState",
+                "usr": "s:19CheckoutCardNetwork0B17DigitizationStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV5stateAA0bD5StateOvp",
+            "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV5stateAA0bD5StateOvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDigitizationState",
+                    "printedName": "CheckoutCardNetwork.CardDigitizationState",
+                    "usr": "s:19CheckoutCardNetwork0B17DigitizationStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV5stateAA0bD5StateOvg",
+                "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV5stateAA0bD5StateOvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localPKPass",
+            "printedName": "localPKPass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKPass?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKPass",
+                    "printedName": "PassKit.PKPass",
+                    "usr": "c:objc(cs)PKPass"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV11localPKPassSo0G0CSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV11localPKPassSo0G0CSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PassKit.PKPass?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKPass",
+                        "printedName": "PassKit.PKPass",
+                        "usr": "c:objc(cs)PKPass"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV11localPKPassSo0G0CSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV11localPKPassSo0G0CSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remotePKPass",
+            "printedName": "remotePKPass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKPass?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKPass",
+                    "printedName": "PassKit.PKPass",
+                    "usr": "c:objc(cs)PKPass"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV12remotePKPassSo0G0CSgvp",
+            "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV12remotePKPassSo0G0CSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PassKit.PKPass?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKPass",
+                        "printedName": "PassKit.PKPass",
+                        "usr": "c:objc(cs)PKPass"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV12remotePKPassSo0G0CSgvg",
+                "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV12remotePKPassSo0G0CSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(state:localPKPass:remotePKPass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardDigitizationData",
+                "printedName": "CheckoutCardNetwork.CardDigitizationData",
+                "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardDigitizationState",
+                "printedName": "CheckoutCardNetwork.CardDigitizationState",
+                "usr": "s:19CheckoutCardNetwork0B17DigitizationStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKPass?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKPass",
+                    "printedName": "PassKit.PKPass",
+                    "usr": "c:objc(cs)PKPass"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKPass?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKPass",
+                    "printedName": "PassKit.PKPass",
+                    "usr": "c:objc(cs)PKPass"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV5state11localPKPass06remoteH0AcA0bD5StateO_So0H0CSgAKtcfc",
+            "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV5state11localPKPass06remoteH0AcA0bD5StateO_So0H0CSgAKtcfc",
+            "moduleName": "CheckoutCardNetwork",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV",
+        "mangledName": "$s19CheckoutCardNetwork0B16DigitizationDataV",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CardDigitizationState",
         "printedName": "CardDigitizationState",
@@ -330,12 +571,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CheckoutCardNetwork.CardDigitizationResult.Type) -> (CheckoutCardNetwork.CardDigitizationState) -> CheckoutCardNetwork.CardDigitizationResult",
+                "printedName": "(CheckoutCardNetwork.CardDigitizationResult.Type) -> (CheckoutCardNetwork.CardDigitizationData) -> CheckoutCardNetwork.CardDigitizationResult",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(CheckoutCardNetwork.CardDigitizationState) -> CheckoutCardNetwork.CardDigitizationResult",
+                    "printedName": "(CheckoutCardNetwork.CardDigitizationData) -> CheckoutCardNetwork.CardDigitizationResult",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -345,9 +586,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "CardDigitizationState",
-                        "printedName": "CheckoutCardNetwork.CardDigitizationState",
-                        "usr": "s:19CheckoutCardNetwork0B17DigitizationStateO"
+                        "name": "CardDigitizationData",
+                        "printedName": "CheckoutCardNetwork.CardDigitizationData",
+                        "usr": "s:19CheckoutCardNetwork0B16DigitizationDataV"
                       }
                     ]
                   },
@@ -368,8 +609,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:19CheckoutCardNetwork0B18DigitizationResultO7successyAcA0bD5StateOcACmF",
-            "mangledName": "$s19CheckoutCardNetwork0B18DigitizationResultO7successyAcA0bD5StateOcACmF",
+            "usr": "s:19CheckoutCardNetwork0B18DigitizationResultO7successyAcA0bD4DataVcACmF",
+            "mangledName": "$s19CheckoutCardNetwork0B18DigitizationResultO7successyAcA0bD4DataVcACmF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "RawDocComment"
@@ -427,38 +668,6 @@
             "declAttributes": [
               "RawDocComment"
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CardDigitizationResult",
-                "printedName": "CheckoutCardNetwork.CardDigitizationResult",
-                "usr": "s:19CheckoutCardNetwork0B18DigitizationResultO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CardDigitizationResult",
-                "printedName": "CheckoutCardNetwork.CardDigitizationResult",
-                "usr": "s:19CheckoutCardNetwork0B18DigitizationResultO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:19CheckoutCardNetwork0B18DigitizationResultO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s19CheckoutCardNetwork0B18DigitizationResultO2eeoiySbAC_ACtFZ",
-            "moduleName": "CheckoutCardNetwork",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -467,15 +676,6 @@
         "moduleName": "CheckoutCardNetwork",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
         ]
       },
       {
@@ -18441,154 +18641,154 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7952,
+      "offset": 7955,
       "length": 36,
       "value": "\"D1 Card Digitization State Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8022,
+      "offset": 8030,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8096,
+      "offset": 8107,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 9379,
+      "offset": 9568,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 9492,
+      "offset": 9681,
       "length": 69,
       "value": "[(\"info\", \"Could not retrieve a Root ViewController for presentation\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 10983,
+      "offset": 11172,
       "length": 26,
       "value": "\"D1 Configuration Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11089,
+      "offset": 11278,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11102,
+      "offset": 11291,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11319,
+      "offset": 11508,
       "length": 18,
       "value": "\"D1 Login Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11362,
+      "offset": 11551,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11430,
+      "offset": 11619,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11627,
+      "offset": 11816,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12110,
+      "offset": 12299,
       "length": 29,
       "value": "\"D1 Non-UI Extension Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12164,
+      "offset": 12353,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12229,
+      "offset": 12418,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 13067,
+      "offset": 13256,
       "length": 8,
       "value": "\"source\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16388,
+      "offset": 16626,
       "length": 25,
       "value": "\"D1 UI Extension Failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16601,
+      "offset": 16839,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16618,
+      "offset": 16856,
       "length": 19,
       "value": "\"Token not correct\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17040,
+      "offset": 17278,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17114,
+      "offset": 17352,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17906,
+      "offset": 18144,
       "length": 8,
       "value": "\"source\""
     },
@@ -19386,77 +19586,77 @@
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 770,
+      "offset": 761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1114,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1167,
+      "offset": 1158,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1436,
+      "offset": 1427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1464,
+      "offset": 1455,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1466,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1536,
+      "offset": 1527,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1571,
+      "offset": 1562,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1596,
+      "offset": 1587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1603,
+      "offset": 1594,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 1641,
+      "offset": 1632,
       "length": 3,
       "value": "\"=\""
     },
