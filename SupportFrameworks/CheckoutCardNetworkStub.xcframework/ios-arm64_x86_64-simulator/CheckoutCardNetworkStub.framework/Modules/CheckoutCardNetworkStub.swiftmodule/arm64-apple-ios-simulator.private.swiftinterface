@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheckoutCardNetworkStub
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
+import PassKit
 import Swift
 import UIKit
 import _Concurrency
@@ -14,10 +15,14 @@ public struct WalletCardDetails {
   public let cardArt: UIKit.UIImage
   public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage)
 }
-public enum CardDigitizationResult : Swift.Equatable {
-  case success(CheckoutCardNetworkStub.CardDigitizationState)
+public enum CardDigitizationResult {
+  case success(CheckoutCardNetworkStub.CardDigitizationData)
   case failure(CheckoutCardNetworkStub.CardNetworkError)
-  public static func == (a: CheckoutCardNetworkStub.CardDigitizationResult, b: CheckoutCardNetworkStub.CardDigitizationResult) -> Swift.Bool
+}
+public struct CardDigitizationData {
+  public let state: CheckoutCardNetworkStub.CardDigitizationState
+  public let localPKPass: PassKit.PKPass?
+  public let remotePKPass: PassKit.PKPass?
 }
 public enum CardDigitizationState : Swift.String, Swift.Decodable {
   case digitized

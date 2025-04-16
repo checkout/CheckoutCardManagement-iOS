@@ -32,12 +32,12 @@ public extension Card {
         manager?.cardService.getCardDigitizationState(cardID: self.id,
                                                       token: provisioningToken) { [weak self] result in
             switch result {
-            case .success(let cardDigitizationState):
-                let digitizationState = DigitizationState.from(cardDigitizationState)
+            case .success(let cardDigitizationData):
+                let digitizationData = DigitizationData.from(cardDigitizationData)
                 let event = LogEvent.getCardDigitizationState(last4CardID: self?.partIdentifier ?? "",
-                                                              digitizationState: digitizationState)
+                                                              digitizationState: digitizationData.state)
                 self?.manager?.logger?.log(event, startedAt: startTime)
-                completionHandler(.success(digitizationState))
+                completionHandler(.success(digitizationData))
             case .failure(let networkError):
                 self?.manager?.logger?.log(.failure(source: "Get Digitization State", error: networkError), startedAt: startTime)
                 completionHandler(.failure(.from(networkError)))

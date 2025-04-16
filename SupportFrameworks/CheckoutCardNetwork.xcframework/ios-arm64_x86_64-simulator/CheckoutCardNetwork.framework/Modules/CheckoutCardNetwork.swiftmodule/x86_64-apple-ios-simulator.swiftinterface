@@ -9,6 +9,11 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct CardDigitizationData {
+  public let state: CheckoutCardNetwork.CardDigitizationState
+  public let localPKPass: PassKit.PKPass?
+  public let remotePKPass: PassKit.PKPass?
+}
 public enum CardDigitizationState : Swift.String, Swift.Decodable {
   case digitized
   case notDigitized
@@ -20,10 +25,9 @@ public enum CardDigitizationState : Swift.String, Swift.Decodable {
     get
   }
 }
-public enum CardDigitizationResult : Swift.Equatable {
-  case success(CheckoutCardNetwork.CardDigitizationState)
+public enum CardDigitizationResult {
+  case success(CheckoutCardNetwork.CardDigitizationData)
   case failure(CheckoutCardNetwork.CardNetworkError)
-  public static func == (a: CheckoutCardNetwork.CardDigitizationResult, b: CheckoutCardNetwork.CardDigitizationResult) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers final public class CheckoutCardService : CheckoutCardNetwork.CardService {
   public static var version: CheckoutCardNetwork.CardServiceVersion
