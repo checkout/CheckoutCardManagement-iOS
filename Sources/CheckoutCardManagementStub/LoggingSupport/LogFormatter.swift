@@ -7,6 +7,7 @@
 
 import Foundation
 import CheckoutEventLoggerKit
+import CheckoutCardNetworkStub
 
 /// Formatter for internal Analytic Events
 enum LogFormatter {
@@ -41,6 +42,7 @@ enum LogFormatter {
         case .getCardDigitizationState: return "get_card_digitization_state"
         case .pushProvisioning: return "push_provisioning"
         case .failure: return "failure"
+        case .copyPan: return "copy_pan"
         }
     }
 
@@ -56,6 +58,7 @@ enum LogFormatter {
                 .stateManagement,
                 .configurePushProvisioning,
                 .getCardDigitizationState,
+                .copyPan,
                 .pushProvisioning:
             return .info
         case .failure:
@@ -72,45 +75,147 @@ enum LogFormatter {
                 "version": AnyCodable(Constants.productVersion),
                 "design": AnyCodable(try? design.mapToLogDictionary())
             ]
-        case .cardList(let suffixes):
-            dictionary = ["suffix_ids": AnyCodable(suffixes)]
-        case .getPin(let idLast4, let state),
-                .getPan(let idLast4, let state),
-                .getCVV(let idLast4, let state),
-                .getPanCVV(let idLast4, let state):
+        case .cardList(let cardIds):
+            dictionary = ["cardIds": AnyCodable(cardIds)]
+        case .getPin(let cardId, let state),
+                .getPan(let cardId, let state),
+                .getCVV(let cardId, let state),
+                .getPanCVV(let cardId, let state),
+                .copyPan(let cardId, let state):
             dictionary = [
-                "suffix_id": AnyCodable(idLast4),
+                "cardId": AnyCodable(cardId),
                 "card_state": AnyCodable(state.rawValue)
             ]
-        case .stateManagement(let idLast4, let originalState, let requestedState, let reason):
+        case .stateManagement(let cardId, let originalState, let requestedState, let reason):
             dictionary = [
-                "suffix_id": AnyCodable(idLast4),
+                "cardId": AnyCodable(cardId),
                 "from": AnyCodable(originalState.rawValue),
                 "to": AnyCodable(requestedState.rawValue)
             ]
             if let reason {
                 dictionary["reason"] = AnyCodable(reason)
             }
-        case .configurePushProvisioning(let last4CardholderID):
+        case .configurePushProvisioning(let cardholderId):
             dictionary = [
-                "cardholder": AnyCodable(last4CardholderID)
+                "cardholder": AnyCodable(cardholderId)
             ]
-        case .getCardDigitizationState(let last4CardID, let digitizationState):
+        case .getCardDigitizationState(let cardId, let digitizationState):
             dictionary = [
-                "card": AnyCodable(last4CardID),
+                "card": AnyCodable(cardId),
                 "digitization_state": AnyCodable(digitizationState.rawValue)
             ]
-        case .pushProvisioning(let last4CardID):
+        case .pushProvisioning(let cardId):
             dictionary = [
-                "card": AnyCodable(last4CardID)
+                "cardId": AnyCodable(cardId)
             ]
-        case .failure(let source, let error):
-            dictionary = [
-                "source": AnyCodable(source),
-                "error": AnyCodable(error.localizedDescription)
-            ]
+        case .failure(let source, let error, let networkError, let additionalInfo):
+            if let networkError = networkError {
+                let errorDetails = extractErrorDetails(from: networkError)
+                dictionary = [
+                    "source": AnyCodable(source),
+                    "error_type": AnyCodable(errorDetails.type),
+                    "error_description": AnyCodable(errorDetails.description)
+                ]
+
+                if let additionalErrorInfo = errorDetails.additionalInfo {
+                    additionalErrorInfo.forEach { key, value in
+                        dictionary["error_\(key)"] = AnyCodable(value)
+                    }
+                }
+            } else {
+                dictionary = [
+                    "source": AnyCodable(source),
+                    "error": AnyCodable(error.localizedDescription)
+                ]
+            }
+
+            additionalInfo.forEach { (key: String, value: Any) in
+                dictionary[key] = AnyCodable(value)
+            }
         }
         dictionary.addTimeSince(startDate: startDate)
         return dictionary
+    }
+
+    /// Extract structured information from CardNetworkError
+    private static func extractErrorDetails(from error: Error) -> (type: String, description: String, additionalInfo: [String: Any]?) {
+        guard let cardNetworkError = error as? CardNetworkError else {
+            return (type: "unknown", description: error.localizedDescription, additionalInfo: nil)
+        }
+
+        switch cardNetworkError {
+        case .authenticationFailure:
+            return (type: "authentication_failure", description: "Authentication failed", additionalInfo: nil)
+
+        case .deviceNotSupported:
+            return (type: "device_not_supported", description: "Device does not support the operation", additionalInfo: nil)
+
+        case .insecureDevice:
+            return (type: "insecure_device", description: "Device flagged as unsafe", additionalInfo: nil)
+
+        case .invalidRequest(let hint):
+            return (type: "invalid_request", description: "Invalid request", additionalInfo: ["hint": hint])
+
+        case .invalidRequestInput:
+            return (type: "invalid_request_input", description: "Invalid request input format", additionalInfo: nil)
+
+        case .misconfigured(let hint):
+            return (type: "misconfigured", description: "Service connection misconfigured", additionalInfo: ["hint": hint])
+
+        case .serverIssue:
+            return (type: "server_issue", description: "Server unable to respond", additionalInfo: nil)
+
+        case .unauthenticated:
+            return (type: "unauthenticated", description: "Session expired or missing", additionalInfo: nil)
+
+        case .secureOperationsFailure:
+            return (type: "secure_operations_failure", description: "Unable to handle secure operations", additionalInfo: nil)
+
+        case .parsingFailure:
+            return (type: "parsing_failure", description: "Response format mismatch", additionalInfo: nil)
+
+        case .pushProvisioningFailure(let failure):
+            let failureType = extractPushProvisioningFailureType(failure)
+            return (type: "push_provisioning_failure", description: "Push provisioning failed", additionalInfo: ["failure_type": failureType])
+
+        case .fetchDigitizationStateFailure(let failure):
+            let failureType = extractDigitizationStateFailureType(failure)
+            return (type: "fetch_digitization_state_failure", description: "Failed to fetch digitization state", additionalInfo: ["failure_type": failureType])
+        case .unableToCopy(let failure):
+            let failureType = extractUnableToCopyFailureType(failure)
+            return (type: "copy_failure", description: "Failed to copy to clipboard", additionalInfo: ["failure_type": failureType])
+        }
+    }
+
+    /// Extract push provisioning failure type
+    private static func extractPushProvisioningFailureType(_ failure: CardNetworkError.PushProvisioningFailure) -> String {
+        switch failure {
+        case .cancelled:
+            return "cancelled"
+        case .configurationFailure:
+            return "configuration_failure"
+        case .operationFailure(let hint):
+            return "operation_failure \(hint)"
+        }
+    }
+
+    /// Extract digitization state failure type
+    private static func extractDigitizationStateFailureType(_ failure: CardNetworkError.DigitizationStateFailure) -> String {
+        switch failure {
+        case .configurationFailure:
+            return "configuration_failure"
+        case .operationFailure:
+            return "operation_failure"
+        }
+    }
+
+    /// Extract digitization state failure type
+    private static func extractUnableToCopyFailureType(_ failure: CardNetworkError.CopySensitiveDataError) -> String {
+        switch failure {
+        case .copyFailure:
+            return "copy_operation_failure"
+        case .dataNotViewed:
+            return "pan_not_viewed"
+        }
     }
 }

@@ -10,7 +10,6 @@ import CheckoutEventLoggerKit
 import CheckoutCardNetwork
 
 final class CheckoutLogger: NetworkLogger {
-
     let sessionID: String
     private let eventLogger: CheckoutEventLogging
 
@@ -26,11 +25,11 @@ final class CheckoutLogger: NetworkLogger {
 
     /// Network Logger conformance, enabling to collect network level details if error is encountered
     func log(error: Error, additionalInfo: [String: String]) {
-        let event = LogEvent.failure(source: additionalInfo["source"] ?? "", error: error)
+        let event = LogEvent.failure(source: additionalInfo["source"] ?? "", error: error, additionalInfo: additionalInfo)
         eventLogger.log(event: LogFormatter.build(event: event,
-                                                  extraProperties: additionalInfo))
+                                                extraProperties: additionalInfo))
     }
-
+    
     /// Enable logger to dispatch events
     func setupRemoteLogging(environment: CardManagerEnvironment,
                             serviceVersion: CardServiceVersion) {

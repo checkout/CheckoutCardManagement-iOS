@@ -1,6 +1,6 @@
 //
 //  CardManagementError.swift
-//  
+//
 //
 //  Created by Alex Ioja-Yang on 07/06/2022.
 //
@@ -35,13 +35,13 @@ public enum CardManagementError: Error, Equatable {
     public enum ProvisioningExtensionFailure: Error, Equatable {
         /// App Group Id was not provided
         case walletExtensionAppGroupIDNotFound
-        
+
         /// The card is invalid or couldn't be found
         case cardNotFound
-        
+
         /// The device environment is unsafe, rooted or jailbroken
         case deviceEnvironmentUnsafe
-        
+
         /// The flow has failed during the execution
         case operationFailure
 
@@ -63,6 +63,21 @@ public enum CardManagementError: Error, Equatable {
             switch networkError {
             case .configurationFailure: return .configurationFailure
             case .operationFailure: return .operationFailure
+            }
+        }
+    }
+
+    public enum CopySensitiveDataError: Error, Equatable {
+        case copyFailure
+        case dataNotViewed
+        case missingManager
+
+        static func from (_ networkError: CardNetworkError.CopySensitiveDataError) -> Self {
+            switch networkError {
+            case .copyFailure:
+                return .copyFailure
+            case .dataNotViewed:
+                return .dataNotViewed
             }
         }
     }
@@ -112,6 +127,8 @@ public enum CardManagementError: Error, Equatable {
 
     /// Failed to complete Push Provisioning request
     case fetchDigitizationStateFailure(failure: DigitizationStateFailure)
+
+    case unableToCopy(failure: CopySensitiveDataError)
 }
 
 extension CardManagementError {
@@ -142,7 +159,8 @@ extension CardManagementError {
             return .pushProvisioningFailure(failure: .from(failure))
         case .fetchDigitizationStateFailure(failure: let failure):
             return .fetchDigitizationStateFailure(failure: .from(failure))
+        case .unableToCopy(let failure):
+            return .unableToCopy(failure: .from(failure))
         }
     }
-
 }

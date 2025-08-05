@@ -34,12 +34,18 @@ public extension Card {
             switch result {
             case .success(let cardDigitizationData):
                 let digitizationData = DigitizationData.from(cardDigitizationData)
-                let event = LogEvent.getCardDigitizationState(last4CardID: self?.partIdentifier ?? "",
+                let event = LogEvent.getCardDigitizationState(cardId: self?.id ?? "",
                                                               digitizationState: digitizationData.state)
                 self?.manager?.logger?.log(event, startedAt: startTime)
                 completionHandler(.success(digitizationData))
             case .failure(let networkError):
-                self?.manager?.logger?.log(.failure(source: "Get Digitization State", error: networkError), startedAt: startTime)
+                self?.manager?.logger?.log(
+                    .failure(source: "Get Digitization State",
+                             error: networkError,
+                             networkError: networkError,
+                             additionalInfo: ["cardId": self?.id ?? ""]),
+                    startedAt: startTime
+                )
                 completionHandler(.failure(.from(networkError)))
             }
         }
@@ -57,11 +63,17 @@ public extension Card {
                                                   token: provisioningToken) { [weak self] result in
             switch result {
             case .success:
-                let event = LogEvent.pushProvisioning(last4CardID: self?.partIdentifier ?? "")
+                let event = LogEvent.pushProvisioning(cardId: self?.id ?? "")
                 self?.manager?.logger?.log(event, startedAt: startTime)
                 completionHandler(.success)
             case .failure(let networkError):
-                self?.manager?.logger?.log(.failure(source: "Push Provisioning", error: networkError), startedAt: startTime)
+                self?.manager?.logger?.log(
+                    .failure(
+                        source: "Push Provisioning",
+                        error: networkError,
+                        networkError: networkError,
+                        additionalInfo: ["cardId": self?.id ?? ""]),
+                    startedAt: startTime)
                 completionHandler(.failure(.from(networkError)))
             }
         }
@@ -147,7 +159,7 @@ public extension Card {
                                            completionHandler: @escaping ((CheckoutCardManager.OperationResult) -> Void)) {
         switch result {
         case .success:
-            let event = LogEvent.stateManagement(idLast4: partIdentifier,
+            let event = LogEvent.stateManagement(cardId: id,
                                                  originalState: state,
                                                  requestedState: newState,
                                                  reason: reasonString)
@@ -155,7 +167,12 @@ public extension Card {
             state = newState
             completionHandler(.success)
         case .failure(let networkError):
-            manager?.logger?.log(.failure(source: operationSource, error: networkError), startedAt: startTime)
+            manager?.logger?.log(
+                .failure(source: operationSource,
+                         error: networkError,
+                         networkError: networkError,
+                         additionalInfo: ["cardId": id, "originalState": state, "newState": newState, "reason": reasonString ?? ""]),
+                startedAt: startTime)
             completionHandler(.failure(.from(networkError)))
         }
     }

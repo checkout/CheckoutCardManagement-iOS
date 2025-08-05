@@ -110,11 +110,17 @@ public final class CheckoutCardManager: CardManager {
                                               walletCardsList: walletCardsList) { [weak self] in
             switch $0 {
             case .success:
-                let event = LogEvent.configurePushProvisioning(last4CardholderID: String(cardholderID.suffix(4)))
+                let event = LogEvent.configurePushProvisioning(cardholderId: cardholderID)
                 self?.logger?.log(event, startedAt: startTime)
                 completionHandler(.success)
             case .failure(let networkError):
-                self?.logger?.log(.failure(source: "Configure Push Provisioning", error: networkError), startedAt: startTime)
+                self?.logger?.log(
+                    .failure(source: "Configure Push Provisioning",
+                             error: networkError,
+                             networkError: networkError,
+                             additionalInfo: ["cardholderId": cardholderID]),
+                    startedAt: startTime
+                )
                 completionHandler(.failure(.from(networkError)))
             }
         }
@@ -133,11 +139,16 @@ public final class CheckoutCardManager: CardManager {
                 let cards = cards.compactMap {
                     Card(networkCard: $0, manager: self)
                 }
-                let cardsSuffixes: [String] = cards.compactMap { $0.partIdentifier }
-                self?.logger?.log(.cardList(idSuffixes: cardsSuffixes), startedAt: startTimestamp)
+                let cardIds: [String] = cards.compactMap { $0.id }
+                self?.logger?.log(.cardList(cardIds: cardIds), startedAt: startTimestamp)
                 completionHandler(.success(cards))
             case .failure(let networkError):
-                self?.logger?.log(.failure(source: "Get Cards", error: networkError), startedAt: startTimestamp)
+                self?.logger?.log(
+                    .failure(source: "Get Cards",
+                             error: networkError,
+                             additionalInfo: [:]),
+                    startedAt: startTimestamp
+                )
                 completionHandler(.failure(.from(networkError)))
             }
         }
