@@ -24,13 +24,19 @@ public extension Card {
             switch result {
             case .success(let pinView):
                 if let self = self {
-                    let event = LogEvent.getCVV(idLast4: self.partIdentifier,
+                    let event = LogEvent.getCVV(cardId: self.id,
                                                 cardState: self.state)
                     self.manager?.logger?.log(event, startedAt: startTime)
                 }
                 completionHandler(.success(pinView))
             case .failure(let error):
-                self?.manager?.logger?.log(.failure(source: "Get Security Code", error: error), startedAt: startTime)
+                self?.manager?.logger?.log(
+                    .failure(source: "Get Security Code",
+                             error: error,
+                             networkError: error,
+                             additionalInfo: ["cardId": self?.id ?? ""]),
+                    startedAt: startTime
+                )
                 completionHandler(.failure(.from(error)))
             }
         }

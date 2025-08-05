@@ -316,6 +316,7 @@ SWIFT_CLASS("_TtC19CheckoutCardNetwork33NonUiProvisioningExtensionHandler") SWIF
 @end
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -640,6 +641,7 @@ SWIFT_CLASS("_TtC19CheckoutCardNetwork33NonUiProvisioningExtensionHandler") SWIF
 - (void)generateAddPaymentPassRequestForPassEntryWithIdentifier:(NSString * _Nonnull)identifier configuration:(PKAddPaymentPassRequestConfiguration * _Nonnull)configuration certificateChain:(NSArray<NSData *> * _Nonnull)certificates nonce:(NSData * _Nonnull)nonce nonceSignature:(NSData * _Nonnull)nonceSignature completionHandler:(void (^ _Nonnull)(PKAddPaymentPassRequest * _Nullable))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 #endif
