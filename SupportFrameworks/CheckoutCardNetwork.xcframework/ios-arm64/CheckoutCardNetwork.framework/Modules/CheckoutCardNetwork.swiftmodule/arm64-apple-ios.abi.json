@@ -680,6 +680,197 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PasteboardType",
+        "printedName": "PasteboardType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "string",
+            "printedName": "string",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvp",
+            "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvp",
+            "moduleName": "CheckoutCardNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvg",
+                "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvg",
+                "moduleName": "CheckoutCardNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.PasteboardType>",
+                "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.PasteboardType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvs",
+                "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvs",
+                "moduleName": "CheckoutCardNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.PasteboardType>",
+                "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.PasteboardType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvM",
+                "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP6stringSSSgvM",
+                "moduleName": "CheckoutCardNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.PasteboardType>",
+                "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.PasteboardType>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setObjects",
+            "printedName": "setObjects(_:localOnly:expirationDate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSItemProviderWriting]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSItemProviderWriting",
+                    "printedName": "Foundation.NSItemProviderWriting",
+                    "usr": "c:objc(pl)NSItemProviderWriting"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork14PasteboardTypeP10setObjects_9localOnly14expirationDateySaySo21NSItemProviderWriting_pG_Sb10Foundation0K0VSgtF",
+            "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP10setObjects_9localOnly14expirationDateySaySo21NSItemProviderWriting_pG_Sb10Foundation0K0VSgtF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.PasteboardType>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.PasteboardType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19CheckoutCardNetwork14PasteboardTypeP",
+        "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -988,6 +1179,137 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "CardDetailCopyResult",
+        "printedName": "CardDetailCopyResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardDetailCopyResult.Type) -> CheckoutCardNetwork.CardDetailCopyResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetailCopyResult",
+                    "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                    "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardDetailCopyResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetailCopyResult",
+                        "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                        "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO7successyA2CmF",
+            "mangledName": "$s19CheckoutCardNetwork0B16DetailCopyResultO7successyA2CmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardDetailCopyResult.Type) -> (CheckoutCardNetwork.CardNetworkError) -> CheckoutCardNetwork.CardDetailCopyResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError) -> CheckoutCardNetwork.CardDetailCopyResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetailCopyResult",
+                        "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                        "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardDetailCopyResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDetailCopyResult",
+                        "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                        "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO7failureyAcA0bC5ErrorOcACmF",
+            "mangledName": "$s19CheckoutCardNetwork0B16DetailCopyResultO7failureyAcA0bC5ErrorOcACmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO",
+        "mangledName": "$s19CheckoutCardNetwork0B16DetailCopyResultO",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
         "kind": "Import",
         "name": "CheckoutNetwork",
         "printedName": "CheckoutNetwork",
@@ -1227,6 +1549,220 @@
           },
           {
             "kind": "Var",
+            "name": "hashedSessionViewedCardIds",
+            "printedName": "hashedSessionViewedCardIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvp",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvg",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvs",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvs",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvM",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC019hashedSessionViewedB3IdsShySSGvM",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pasteboard",
+            "printedName": "pasteboard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PasteboardType",
+                "printedName": "CheckoutCardNetwork.PasteboardType",
+                "usr": "s:19CheckoutCardNetwork14PasteboardTypeP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvp",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvp",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasteboardType",
+                    "printedName": "CheckoutCardNetwork.PasteboardType",
+                    "usr": "s:19CheckoutCardNetwork14PasteboardTypeP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvg",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvg",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PasteboardType",
+                    "printedName": "CheckoutCardNetwork.PasteboardType",
+                    "usr": "s:19CheckoutCardNetwork14PasteboardTypeP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvs",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvs",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvM",
+                "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC10pasteboardAA14PasteboardType_pvM",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "cmsClient",
             "printedName": "cmsClient",
             "children": [
@@ -1416,16 +1952,17 @@
             "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC11environmentAcA0bC11EnvironmentO_tcfc",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
+              "Convenience",
               "AccessControl",
               "Required",
               "RawDocComment"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(client:)",
+            "printedName": "init(client:pasteboard:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1439,16 +1976,25 @@
                 "printedName": "CheckoutNetwork.CheckoutClientInterface",
                 "hasDefaultArg": true,
                 "usr": "s:15CheckoutNetwork0A15ClientInterfaceP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasteboardType",
+                "printedName": "CheckoutCardNetwork.PasteboardType",
+                "hasDefaultArg": true,
+                "usr": "s:19CheckoutCardNetwork14PasteboardTypeP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19CheckoutCardNetwork0aB7ServiceC6clientAC0aC00A15ClientInterface_p_tcfc",
-            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6clientAC0aC00A15ClientInterface_p_tcfc",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC6client10pasteboardAC0aC00A15ClientInterface_p_AA14PasteboardType_ptcfc",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC6client10pasteboardAC0aC00A15ClientInterface_p_AA14PasteboardType_ptcfc",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
-              "AccessControl"
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Function",
@@ -2440,6 +2986,58 @@
             "declKind": "Func",
             "usr": "s:19CheckoutCardNetwork0aB7ServiceC25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
             "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC25displayPanAndSecurityCode03forB020panViewConfiguration08securityilM014singleUseToken17completionHandlerySS_AA0flM0VAA0hilM0VSSys6ResultOySo6UIViewC0K0_AQ0nI0tAA0bC5ErrorOGctF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "copyPan",
+            "printedName": "copyPan(forCard:singleUseToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardDetailCopyResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetailCopyResult",
+                    "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                    "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0aB7ServiceC7copyPan03forB014singleUseToken17completionHandlerySS_SSyAA0B16DetailCopyResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0aB7ServiceC7copyPan03forB014singleUseToken17completionHandlerySS_SSyAA0B16DetailCopyResultOctF",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "Final",
@@ -5518,6 +6116,60 @@
             "declKind": "Func",
             "usr": "s:19CheckoutCardNetwork0B7ServiceP10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
             "mangledName": "$s19CheckoutCardNetwork0B7ServiceP10displayPan03forB00E13Configuration14singleUseToken17completionHandlerySS_AA0f4ViewH0VSSys6ResultOySo6UIViewCAA0bC5ErrorOGctF",
+            "moduleName": "CheckoutCardNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
+            "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "copyPan",
+            "printedName": "copyPan(forCard:singleUseToken:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardDetailCopyResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardDetailCopyResult",
+                    "printedName": "CheckoutCardNetwork.CardDetailCopyResult",
+                    "usr": "s:19CheckoutCardNetwork0B16DetailCopyResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19CheckoutCardNetwork0B7ServiceP7copyPan03forB014singleUseToken17completionHandlerySS_SSyAA0B16DetailCopyResultOctF",
+            "mangledName": "$s19CheckoutCardNetwork0B7ServiceP7copyPan03forB014singleUseToken17completionHandlerySS_SSyAA0B16DetailCopyResultOctF",
             "moduleName": "CheckoutCardNetwork",
             "genericSig": "<τ_0_0 where τ_0_0 : CheckoutCardNetwork.CardService>",
             "sugared_genericSig": "<Self where Self : CheckoutCardNetwork.CardService>",
@@ -12458,13 +13110,33 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure.Type) -> CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure.Type) -> (Swift.String) -> CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure",
                     "children": [
                       {
-                        "kind": "TypeNominal",
-                        "name": "PushProvisioningFailure",
-                        "printedName": "CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure",
-                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO"
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PushProvisioningFailure",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(hint: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeNominal",
@@ -12483,76 +13155,12 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO09operationG0yA2EmF",
-                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO09operationG0yA2EmF",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO09operationG0yAESS_tcAEmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO09operationG0yAESS_tcAEmF",
                 "moduleName": "CheckoutCardNetwork",
                 "declAttributes": [
                   "RawDocComment"
                 ]
-              },
-              {
-                "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO9hashValueSivp",
-                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO9hashValueSivp",
-                "moduleName": "CheckoutCardNetwork",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO9hashValueSivg",
-                    "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO9hashValueSivg",
-                    "moduleName": "CheckoutCardNetwork",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO23PushProvisioningFailureO4hash4intoys6HasherVz_tF",
-                "moduleName": "CheckoutCardNetwork",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
               },
               {
                 "kind": "Function",
@@ -12596,13 +13204,6 @@
               "RawDocComment"
             ],
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
               {
                 "kind": "Conformance",
                 "name": "Error",
@@ -13112,6 +13713,227 @@
             "declKind": "Enum",
             "usr": "s:19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO",
             "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO24DigitizationStateFailureO",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CopySensitiveDataError",
+            "printedName": "CopySensitiveDataError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "copyFailure",
+                "printedName": "copyFailure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError.Type) -> CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CopySensitiveDataError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CopySensitiveDataError",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O11copyFailureyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O11copyFailureyA2EmF",
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "dataNotViewed",
+                "printedName": "dataNotViewed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError.Type) -> CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CopySensitiveDataError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CopySensitiveDataError",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O13dataNotViewedyA2EmF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O13dataNotViewedyA2EmF",
+                "moduleName": "CheckoutCardNetwork",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O9hashValueSivp",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O9hashValueSivp",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O9hashValueSivg",
+                    "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O9hashValueSivg",
+                    "moduleName": "CheckoutCardNetwork",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O4hash4intoys6HasherVz_tF",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O4hash4intoys6HasherVz_tF",
+                "moduleName": "CheckoutCardNetwork",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CopySensitiveDataError",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CopySensitiveDataError",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                    "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O2eeoiySbAE_AEtFZ",
+                "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O2eeoiySbAE_AEtFZ",
+                "moduleName": "CheckoutCardNetwork",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O",
             "moduleName": "CheckoutCardNetwork",
             "declAttributes": [
               "AccessControl",
@@ -13709,6 +14531,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "unableToCopy",
+            "printedName": "unableToCopy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CheckoutCardNetwork.CardNetworkError.Type) -> (CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError) -> CheckoutCardNetwork.CardNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError) -> CheckoutCardNetwork.CardNetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(failure: CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CopySensitiveDataError",
+                            "printedName": "CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError",
+                            "usr": "s:19CheckoutCardNetwork0bC5ErrorO017CopySensitiveDataD0O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CheckoutCardNetwork.CardNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardNetworkError",
+                        "printedName": "CheckoutCardNetwork.CardNetworkError",
+                        "usr": "s:19CheckoutCardNetwork0bC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19CheckoutCardNetwork0bC5ErrorO12unableToCopyyA2C0g13SensitiveDataD0O_tcACmF",
+            "mangledName": "$s19CheckoutCardNetwork0bC5ErrorO12unableToCopyyA2C0g13SensitiveDataD0O_tcACmF",
+            "moduleName": "CheckoutCardNetwork",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -14029,6 +14911,20 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "CheckoutCardNetwork"
       },
       {
         "kind": "Import",
@@ -16853,6 +17749,96 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIPasteboard",
+        "printedName": "UIPasteboard",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIPasteboard",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "3.0",
+        "objc_name": "UIPasteboard",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PasteboardType",
+            "printedName": "PasteboardType",
+            "usr": "s:19CheckoutCardNetwork14PasteboardTypeP",
+            "mangledName": "$s19CheckoutCardNetwork14PasteboardTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UILabel",
         "printedName": "UILabel",
         "children": [
@@ -18289,1883 +19275,1932 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 31,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 1,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 3,
       "value": "\"&\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 951,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 15,
       "value": "\"client_secret\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 951,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/AuthenticationRequestCredentials.swift",
       "kind": "StringLiteral",
       "offset": 991,
       "length": 15,
       "value": "\"client_secret\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1259,
+      "offset": 2842,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 3243,
       "length": 36,
       "value": "\"Complete integration in PIMOB-1864\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/UILabel+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/UILabel+Extensions.swift",
       "kind": "Array",
       "offset": 193,
       "length": 14,
       "value": "[4, 8, 12, 16]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/UILabel+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/UILabel+Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 733,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 143,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "Array",
       "offset": 654,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 805,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 888,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 927,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 968,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 997,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 1210,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 1332,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 1373,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/Scram.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/Scram.swift",
       "kind": "IntegerLiteral",
       "offset": 1402,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 37,
       "value": "\"Failed to create encryption keypair\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 815,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 1308,
       "length": 34,
       "value": "\"Failed to create String from Key\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 1967,
       "length": 34,
       "value": "\"Failed to create key from String\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 2769,
       "length": 17,
       "value": "\"Decrypting data\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "Dictionary",
       "offset": 3180,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 3461,
       "length": 34,
       "value": "\"Failed to create String from Key\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecureHelper.swift",
       "kind": "StringLiteral",
       "offset": 4102,
       "length": 9,
       "value": "\"Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 32,
       "value": "\"sian-\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 1,
       "value": "\"-sdk\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 1707,
+      "length": 21,
+      "value": "\"Configuration Error\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 2193,
+      "offset": 2269,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2537,
       "length": 22,
       "value": "\"Unable to read token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 2548,
+      "offset": 2624,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 2873,
+      "offset": 2949,
       "length": 17,
       "value": "\"Incorrect token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 2965,
+      "offset": 3041,
       "length": 48,
       "value": "[(\"source\", \"D1 Card Digitization State Failure\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 4050,
+      "offset": 4126,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 4164,
+      "offset": 4240,
       "length": 7,
       "value": "\"token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 7955,
+      "offset": 5862,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "kind": "StringLiteral",
+      "offset": 8103,
       "length": 36,
       "value": "\"D1 Card Digitization State Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8030,
+      "offset": 8178,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 8107,
+      "offset": 8255,
       "length": 8,
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 9568,
+      "offset": 9716,
       "length": 48,
       "value": "\"Unable to retrieve Presentation ViewController\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "Dictionary",
-      "offset": 9681,
+      "offset": 9829,
       "length": 69,
       "value": "[(\"info\", \"Could not retrieve a Root ViewController for presentation\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11172,
+      "offset": 11320,
       "length": 26,
       "value": "\"D1 Configuration Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11278,
+      "offset": 11426,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11291,
+      "offset": 11439,
       "length": 29,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11508,
+      "offset": 11656,
       "length": 18,
       "value": "\"D1 Login Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11551,
+      "offset": 11699,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11619,
+      "offset": 11767,
       "length": 8,
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 11816,
+      "offset": 11964,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12299,
+      "offset": 12447,
       "length": 29,
       "value": "\"D1 Non-UI Extension Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12353,
+      "offset": 12501,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 12418,
+      "offset": 12566,
       "length": 8,
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 13256,
+      "offset": 13404,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16626,
+      "offset": 16774,
       "length": 25,
       "value": "\"D1 UI Extension Failure\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16839,
+      "offset": 16987,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 16856,
+      "offset": 17004,
       "length": 19,
       "value": "\"Token not correct\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17278,
+      "offset": 17426,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 17352,
+      "offset": 17500,
       "length": 8,
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+Provisioning.swift",
       "kind": "StringLiteral",
-      "offset": 18144,
+      "offset": 18292,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 11,
       "value": "\"errorType\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 12,
       "value": "\"errorCodes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 804,
       "length": 5,
       "value": "\" ; \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/ProjectSupport\/NetworkLogger+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 11,
       "value": "\"requestID\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/String+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/String+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/String+Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/String+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardLifetime.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardLifetime.swift",
       "kind": "StringLiteral",
       "offset": 150,
       "length": 8,
       "value": "\"Months\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedCredentialsDto.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 17,
       "value": "\"encrypted_block\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/EncryptedBlockResponse.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 17,
       "value": "\"encrypted_block\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 279,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 396,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 44,
       "value": "\"Redirection response received from network\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1059,
       "length": 34,
       "value": "\"Response status code was \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1092,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkError+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1187,
       "length": 47,
       "value": "\"No data was returned although it was expected\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+InternalSupport.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+InternalSupport.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 18,
       "value": "\"x-correlation-id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 42,
       "value": "\"https:\/\/api.sandbox.checkout.com\/issuing\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CardNetworkEnvironment+URLs.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 34,
       "value": "\"https:\/\/api.checkout.com\/issuing\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Configuration.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 249,
       "length": 44,
       "value": "\"https:\/\/hapi.dbp-stg.thalescloud.io\/mg\/tpc\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Configuration.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 332,
+      "offset": 330,
       "length": 43,
       "value": "\"https:\/\/client-api.d1-stg.thalescloud.io\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Configuration.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 402,
+      "offset": 400,
       "length": 12,
       "value": "\"is_cko_cko\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 20,
       "value": "\"shipping_recipient\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 18,
       "value": "\"shipping_address\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 20,
       "value": "\"additional_comment\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 20,
       "value": "\"shipping_recipient\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 18,
       "value": "\"shipping_address\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 20,
       "value": "\"additional_comment\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 15,
       "value": "\"address_line1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2384,
       "length": 15,
       "value": "\"address_line2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2473,
       "length": 5,
       "value": "\"zip\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 15,
       "value": "\"address_line1\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2384,
       "length": 15,
       "value": "\"address_line2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2473,
       "length": 5,
       "value": "\"zip\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardShippingInstructions.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 189,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 284,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 343,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 432,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Data+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 479,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 1814,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "BooleanLiteral",
       "offset": 2076,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2167,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2852,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2867,
       "length": 10,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2876,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2890,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2931,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 2976,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3111,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3158,
       "length": 6,
       "value": "\"1234\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "BooleanLiteral",
       "offset": 3250,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3295,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3606,
       "length": 4,
       "value": "\"01\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 3618,
       "length": 6,
       "value": "\"2055\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4331,
       "length": 17,
       "value": "\"card_product_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4373,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4412,
       "length": 14,
       "value": "\"display_name\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4454,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4539,
       "length": 11,
       "value": "\"last_four\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4572,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4608,
       "length": 15,
       "value": "\"is_single_use\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4696,
       "length": 18,
       "value": "\"billing_currency\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4745,
       "length": 17,
       "value": "\"issuing_country\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4788,
       "length": 12,
       "value": "\"created_on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4831,
       "length": 18,
       "value": "\"last_modified_on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 15,
       "value": "\"cardholder_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4331,
       "length": 17,
       "value": "\"card_product_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4373,
       "length": 11,
       "value": "\"client_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4412,
       "length": 14,
       "value": "\"display_name\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4454,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4495,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4539,
       "length": 11,
       "value": "\"last_four\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4572,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4608,
       "length": 15,
       "value": "\"is_single_use\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4696,
       "length": 18,
       "value": "\"billing_currency\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4745,
       "length": 17,
       "value": "\"issuing_country\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4788,
       "length": 12,
       "value": "\"created_on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/Card.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/Card.swift",
       "kind": "StringLiteral",
       "offset": 4831,
       "length": 18,
       "value": "\"last_modified_on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 17,
       "value": "\"Bearer \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/RequestConfiguration+Extension.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"suspected_lost\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 18,
       "value": "\"suspected_stolen\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"suspected_lost\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardSuspendReason.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 18,
       "value": "\"suspected_stolen\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 12,
       "value": "\"request_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 12,
       "value": "\"error_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 13,
       "value": "\"error_codes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 12,
       "value": "\"request_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 12,
       "value": "\"error_type\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/Models\/OperationResponseDto.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/Models\/OperationResponseDto.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 13,
       "value": "\"error_codes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 15,
       "value": "\"Activate Card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 957,
       "length": 26,
       "value": "\"Cannot activate the card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 1980,
       "length": 14,
       "value": "\"Suspend Card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 2054,
       "length": 25,
       "value": "\"Cannot suspend the card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 3069,
       "length": 13,
       "value": "\"Revoke Card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 3142,
       "length": 24,
       "value": "\"Cannot revoke the card\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 3444,
       "length": 8,
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient+CardManagement.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
       "kind": "StringLiteral",
       "offset": 3465,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 180,
       "length": 19,
       "value": "\"cko_cardholder_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 16,
       "value": "\"cko_single_use\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "BooleanLiteral",
       "offset": 761,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1114,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1158,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1427,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1455,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1466,
       "length": 3,
       "value": "\"+\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1527,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1562,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1587,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 1594,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 3,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 465,
+      "offset": 493,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 1533,
+      "offset": 1561,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 2646,
+      "offset": 2834,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3945,
+      "offset": 4133,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5541,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6121,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6125,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6203,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService\/CheckoutCardService+SensitiveData.swift",
+      "kind": "StringLiteral",
+      "offset": 6794,
+      "length": 8,
+      "value": "\"%02hhx\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient.swift",
       "kind": "Dictionary",
       "offset": 8564,
       "length": 45,
       "value": "[(\"source\", \"Secure operation key generation\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient.swift",
       "kind": "Dictionary",
       "offset": 8854,
       "length": 41,
       "value": "[(\"source\", \"Unable to encode public key\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient.swift",
       "kind": "StringLiteral",
       "offset": 9028,
       "length": 16,
       "value": "\"Encryption-Key\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/CMSClient.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient.swift",
       "kind": "StringLiteral",
       "offset": 10265,
       "length": 7,
       "value": "\"value\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 8,
       "value": "\"number\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 6,
       "value": "\"cvc2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 33,
       "value": "\"cardholders\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 761,
       "length": 1,
       "value": "\"\/cards\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 871,
       "length": 21,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 1,
       "value": "\"\/pin\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1000,
       "length": 26,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 1,
       "value": "\"\/activate\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1133,
       "length": 25,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1149,
       "length": 1,
       "value": "\"\/suspend\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1264,
       "length": 24,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 1,
       "value": "\"\/revoke\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1419,
       "length": 29,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1435,
       "length": 1,
       "value": "\"\/credentials\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "BooleanLiteral",
       "offset": 1575,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1667,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1748,
       "length": 13,
       "value": "\"credentials\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1894,
       "length": 29,
       "value": "\"cards\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 1910,
       "length": 1,
       "value": "\"\/credentials\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2127,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2252,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2387,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2520,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2651,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/Network\/NetworkEndpoint.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/NetworkEndpoint.swift",
       "kind": "IntegerLiteral",
       "offset": 2809,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "Array",
       "offset": 185,
       "length": 90,
       "value": "[0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 335,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 438,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
       "length": 2,
       "value": "03"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 596,
       "length": 3,
       "value": "128"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 671,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1200,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1280,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1519,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1628,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1698,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1749,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1832,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1970,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1999,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2052,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2057,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2249,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2455,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "Array",
       "offset": 2613,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2727,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2738,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2758,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2778,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2794,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2804,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 2815,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3045,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3083,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3305,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3396,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3483,
       "length": 4,
       "value": "0xff"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3548,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/SecureHelper\/SecKeyFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 3596,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 15,
       "value": "\"reported_lost\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 17,
       "value": "\"reported_stolen\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 15,
       "value": "\"reported_lost\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/Pamir-iOS\/Pamir-iOS\/Sian-iOS\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/PublicAPIs\/Models\/CardRevokeReason.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 17,
