@@ -20563,13 +20563,6 @@
       "value": "\"reason\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/Network\/CMSClient+CardManagement.swift",
-      "kind": "StringLiteral",
-      "offset": 3465,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/Token+Extension.swift",
       "kind": "StringLiteral",
       "offset": 180,
