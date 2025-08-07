@@ -64,7 +64,7 @@ extension CheckoutOOBSDK.CheckoutOOB {
 }
 extension CheckoutOOBSDK.CheckoutOOB {
   public struct DeviceRegistration : Swift.Equatable {
-    public init(token: Swift.String, cardID: Swift.String, applicationID: Swift.String, phoneNumber: CheckoutOOBSDK.CheckoutOOB.PhoneNumber, locale: CheckoutOOBSDK.CheckoutOOB.Locale) throws
+    public init(token: Swift.String, cardID: Swift.String, applicationID: Swift.String, phoneNumber: CheckoutOOBSDK.CheckoutOOB.PhoneNumber? = nil, locale: CheckoutOOBSDK.CheckoutOOB.Locale) throws
     public static func == (a: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration, b: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration) -> Swift.Bool
   }
 }
