@@ -19559,19 +19559,19 @@
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"3.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
       "offset": 309,
-      "length": 32,
-      "value": "\"sian-\""
+      "length": 35,
+      "value": "\"issuing-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutCardNetwork\/Sian\/CheckoutCardNetwork\/CheckoutCardService+Constants.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 339,
       "length": 1,
       "value": "\"-sdk\""
     },
