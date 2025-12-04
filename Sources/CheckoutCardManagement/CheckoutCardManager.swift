@@ -38,6 +38,8 @@ public final class CheckoutCardManager: CardManager {
     /// Completion handler returning CardListResult
     public typealias CardListResultCompletion = ((CardListResult) -> Void)
 
+    public typealias CardDetailResultCompletion = ((Result<Card, CardManagementError>) -> Void)
+
     /// Generic token used for non sensitive calls
     var sessionToken: String?
     /// Service enabling interactions with outside services
@@ -127,13 +129,17 @@ public final class CheckoutCardManager: CardManager {
     }
 
     /// Request a list of cards
-    public func getCards(completionHandler: @escaping CardListResultCompletion) {
+    /// - Parameters:
+    ///   - statuses: Optional set of card states to filter the results
+    ///   - completionHandler: Callback with the list of cards or an error
+    public func getCards(statuses: Set<CardState>? = nil,
+                         completionHandler: @escaping CardListResultCompletion) {
         guard let sessionToken = sessionToken else {
             completionHandler(.failure(.unauthenticated))
             return
         }
         let startTimestamp = Date()
-        cardService.getCards(sessionToken: sessionToken) { [weak self] in
+        cardService.getCards(sessionToken: sessionToken, statuses: statuses) { [weak self] in
             switch $0 {
             case .success(let cards):
                 let cards = cards.compactMap {
@@ -145,6 +151,65 @@ public final class CheckoutCardManager: CardManager {
             case .failure(let networkError):
                 self?.logger?.log(
                     .failure(source: "Get Cards",
+                             error: networkError,
+                             additionalInfo: [:]),
+                    startedAt: startTimestamp
+                )
+                completionHandler(.failure(.from(networkError)))
+            }
+        }
+    }
+
+    /// Retrieves detailed information for a specific card by its identifier.
+    ///
+    /// This method fetches the details of a single card using its unique card ID. The returned
+    /// `Card` object provides access to card properties and operations.
+    ///
+    /// - Important: A valid session token must be set using `logInSession(token:)` before calling
+    ///   this method. If no session token is available, the completion handler will be called
+    ///   immediately with a `.failure(.unauthenticated)` result.
+    ///
+    /// - Parameters:
+    ///   - cardID: The unique identifier of the card to retrieve. This should be a valid card ID
+    ///     associated with the authenticated cardholder.
+    ///   - completionHandler: A closure called when the request completes. The closure receives
+    ///     a `Result<Card, CardManagementError>` containing either:
+    ///     - `.success(Card)`: A `Card` object containing the card's details
+    ///     - `.failure(CardManagementError)`: An error indicating why the request failed, such as
+    ///       `.unauthenticated` if no session token is set, or `.connectionIssue` if the network
+    ///       request failed
+    ///
+    /// - Note: This method logs analytics events for both successful and failed requests,
+    ///   including request duration and the card ID.
+    ///
+    /// ## Example Usage
+    /// ```swift
+    /// manager.getCard(withID: "card_123") { result in
+    ///     switch result {
+    ///     case .success(let card):
+    ///         print("Card: \(card.displayName)")
+    ///         print("Last 4 digits: \(card.panLast4Digits)")
+    ///         print("State: \(card.state)")
+    ///     case .failure(let error):
+    ///         print("Failed to get card: \(error.localizedDescription)")
+    ///     }
+    /// }
+    /// ```
+    public func getCard(withID cardID: String, completionHandler: @escaping CardDetailResultCompletion) {
+        guard let sessionToken = sessionToken else {
+            completionHandler(.failure(.unauthenticated))
+            return
+        }
+        let startTimestamp = Date()
+        cardService.getCard(withID: cardID, sessionToken: sessionToken) { [weak self] in
+            switch $0 {
+            case .success(let domainCard):
+                let card = Card(networkCard: domainCard, manager: self)
+                self?.logger?.log(.cardDetails(cardID: card.id), startedAt: startTimestamp)
+                completionHandler(.success(card))
+            case .failure(let networkError):
+                self?.logger?.log(
+                    .failure(source: "Get Card Details",
                              error: networkError,
                              additionalInfo: [:]),
                     startedAt: startTimestamp
