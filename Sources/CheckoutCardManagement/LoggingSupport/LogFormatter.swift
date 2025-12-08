@@ -43,6 +43,7 @@ enum LogFormatter {
         case .pushProvisioning: return "push_provisioning"
         case .failure: return "failure"
         case .copyPan: return "copy_pan"
+        case .cardDetails: return "card_details"
         }
     }
 
@@ -59,6 +60,7 @@ enum LogFormatter {
                 .configurePushProvisioning,
                 .getCardDigitizationState,
                 .copyPan,
+                .cardDetails,
                 .pushProvisioning:
             return .info
         case .failure:
@@ -77,6 +79,8 @@ enum LogFormatter {
             ]
         case .cardList(let cardIds):
             dictionary = ["cardIds": AnyCodable(cardIds)]
+        case .cardDetails(let cardID):
+            dictionary = ["cardId": AnyCodable(cardID)]
         case .getPin(let cardId, let state),
                 .getPan(let cardId, let state),
                 .getCVV(let cardId, let state),

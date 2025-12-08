@@ -43,7 +43,8 @@ public enum CardDetailCopyResult {
   }
   required convenience public init(environment: CheckoutCardNetwork.CardNetworkEnvironment)
   final public func isTokenValid(_ token: CheckoutCardNetwork.Token) -> Swift.Bool
-  final public func getCards(sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardListResult) -> Swift.Void))
+  final public func getCards(sessionToken: CheckoutCardNetwork.Token, statuses: Swift.Set<CheckoutCardNetwork.CardState>? = nil, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardListResult) -> Swift.Void))
+  final public func getCard(withID cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardResult) -> Swift.Void))
   final public func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardResult) -> Swift.Void))
   @objc deinit
 }
@@ -100,7 +101,8 @@ public protocol CardService {
   func activateCard(cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
   func suspendCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardSuspendReason?, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
   func revokeCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardRevokeReason?, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
-  func getCards(sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
+  func getCards(sessionToken: CheckoutCardNetwork.Token, statuses: Swift.Set<CheckoutCardNetwork.CardState>?, completionHandler: @escaping ((Self.CardListResult) -> Swift.Void))
+  func getCard(withID cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
   func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
   func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetwork.WalletCardDetails], completionHandler: @escaping ((CheckoutCardNetwork.OperationResult) -> Swift.Void))
   func getCardDigitizationState(cardID: Swift.String, token: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CardDigitizationResult) -> Swift.Void))

@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zR6QVcw49O59uMHkH2Yr3AiuvO4=
+		DWFJxmGyLoR3BJJqIo71lFv3nPc=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		P9Zu/UYrmMEInRo2OYen1msYT0A=
+		wrTVu6P7RReLm+646j9w2Yzj5uI=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		37ZZpW//GzEiwVTmPHImKlj2ytM=
+		IBMybLIoixWS7naX/Y4yyz5H8EM=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		P9Zu/UYrmMEInRo2OYen1msYT0A=
+		wrTVu6P7RReLm+646j9w2Yzj5uI=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3YMkBEj9mqfVbixdv32brjxHRyk=
+		xH7lowy3N27USGcnBgiowf0uito=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zR6QVcw49O59uMHkH2Yr3AiuvO4=
+		DWFJxmGyLoR3BJJqIo71lFv3nPc=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9GuEOVpJvBWtSA5MDxFjisOL9uQ=
+		cwUDXoqTnrEjBwnBWoosfsbbjFo=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aEYb02iXqn8Rp5aUEOVoAEUdMh8=
+		pMWHlFwUx18KZC2apUuY51b4yuY=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9GuEOVpJvBWtSA5MDxFjisOL9uQ=
+		cwUDXoqTnrEjBwnBWoosfsbbjFo=
 		</data>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wnviA4uby1qG30+plG2n8iApqDM=
+		5dkHHJ6Nf2IQnyHfXS4wvEgCk6U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,70 +66,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			32t3qvJs1NxqEs2XzXAybiACGmTZvS6kS93iofIp+v8=
+			UTj6n7CHYXMBJT+XP8PwSf/zpErt1JgZA27mttY4u4M=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EcOhgvhbChufv+UFD5NMlh+pM5pv5woIixrNJZTE3Ls=
+			6r1rqoDq7nhrGikaZ3vy2ZC/zkY7910LerNqUQLBZmg=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5l45gwbTMhOl0KFBvEiXhXFDBxNDlRRe/g3nHTrvJSM=
+			oK2VeCjgcHEZISP5QFcpGyNv6//O4b07GZ+xX3/l840=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EcOhgvhbChufv+UFD5NMlh+pM5pv5woIixrNJZTE3Ls=
+			6r1rqoDq7nhrGikaZ3vy2ZC/zkY7910LerNqUQLBZmg=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0pIMxW/JdH44Kyg9E2VsYdAxGVZeYVKppzyaMzA8Eio=
+			x6wEiE6kU8H9TDbElc0xb+FNnEDgQw9tuUzMjvhN/xk=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			32t3qvJs1NxqEs2XzXAybiACGmTZvS6kS93iofIp+v8=
+			UTj6n7CHYXMBJT+XP8PwSf/zpErt1JgZA27mttY4u4M=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHPvxBECjB1TklLmyCyUu8IWA1uAOBTtO1lRHoWLB+0=
+			6xXrxjZ7rYVL4C27hG5jIPYswZ/ow7zHrgBdJ2QHYfY=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ebA07GTb0MmEPQmftcEmEpl+M6wPe4gp0TZ8eZULnlo=
+			qH3wYoEuGWCWqegkIG4wY+1IK0Leo5Z80R49tSymZ1s=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHPvxBECjB1TklLmyCyUu8IWA1uAOBTtO1lRHoWLB+0=
+			6xXrxjZ7rYVL4C27hG5jIPYswZ/ow7zHrgBdJ2QHYfY=
 			</data>
 		</dict>
 		<key>Modules/CheckoutCardNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XrDjysNfa9pjvo4RPP4P3czMHPNFrzgTNoVnGpsokac=
+			7BS03UPgjeaf0j91aWY8y3TkVh6k0kFbxPomzfe/Ly4=
 			</data>
 		</dict>
 	</dict>
