@@ -19,7 +19,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework",
-            from: "1.2.1"),
+            exact: "1.2.4"),
     ],
     targets: [
         .target(
