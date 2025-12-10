@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "CheckoutOOBSDK",
+    "printedName": "CheckoutOOBSDK",
     "children": [
       {
         "kind": "Import",
@@ -242,6 +242,22 @@
         "moduleName": "CheckoutOOBSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -626,6 +642,39 @@
                 ]
               },
               {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CheckoutOOBSDK.CheckoutOOB.Locale?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Locale",
+                        "printedName": "CheckoutOOBSDK.CheckoutOOB.Locale",
+                        "usr": "s:14CheckoutOOBSDK0A3OOBV6LocaleO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14CheckoutOOBSDK0A3OOBV6LocaleO8rawValueAESgSS_tcfc",
+                "mangledName": "$s14CheckoutOOBSDK0A3OOBV6LocaleO8rawValueAESgSS_tcfc",
+                "moduleName": "CheckoutOOBSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
                 "kind": "Var",
                 "name": "rawValue",
                 "printedName": "rawValue",
@@ -665,39 +714,6 @@
                 ]
               },
               {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CheckoutOOBSDK.CheckoutOOB.Locale?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Locale",
-                        "printedName": "CheckoutOOBSDK.CheckoutOOB.Locale",
-                        "usr": "s:14CheckoutOOBSDK0A3OOBV6LocaleO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:14CheckoutOOBSDK0A3OOBV6LocaleO8rawValueAESgSS_tcfc",
-                "mangledName": "$s14CheckoutOOBSDK0A3OOBV6LocaleO8rawValueAESgSS_tcfc",
-                "moduleName": "CheckoutOOBSDK",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
                 "kind": "Function",
                 "name": "encode",
                 "printedName": "encode(to:)",
@@ -710,7 +726,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -736,6 +752,20 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -884,7 +914,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -909,6 +939,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -1095,7 +1139,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -1121,6 +1165,20 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Hashable",
@@ -1336,6 +1394,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -1484,7 +1556,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -1509,6 +1581,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -1934,6 +2020,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -2220,6 +2320,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "LocalizedError",
                 "printedName": "LocalizedError",
                 "usr": "s:10Foundation14LocalizedErrorP",
@@ -2458,7 +2572,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -2484,6 +2598,20 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Hashable",
@@ -2643,7 +2771,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -2670,6 +2798,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -2692,6 +2834,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2780,7 +2938,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2815,6 +2973,20 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2860,34 +3032,6 @@
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
       "kind": "StringLiteral",
-      "offset": 633,
-      "length": 9,
-      "value": "\"card_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 668,
-      "length": 16,
-      "value": "\"application_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 708,
-      "length": 14,
-      "value": "\"phone_number\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 1111,
-      "length": 14,
-      "value": "\"country_code\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
-      "kind": "StringLiteral",
       "offset": 1111,
       "length": 14,
       "value": "\"country_code\""
@@ -2907,34 +3051,6 @@
       "value": "\"fr-FR\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/Locale.swift",
-      "kind": "StringLiteral",
-      "offset": 452,
-      "length": 7,
-      "value": "\"en-US\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/Locale.swift",
-      "kind": "StringLiteral",
-      "offset": 511,
-      "length": 7,
-      "value": "\"fr-FR\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkLayer+Authenticate.swift",
-      "kind": "StringLiteral",
-      "offset": 331,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkLayer+Authenticate.swift",
-      "kind": "StringLiteral",
-      "offset": 348,
-      "length": 9,
-      "value": "\"Bearer \""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
       "kind": "StringLiteral",
       "offset": 304,
@@ -2947,83 +3063,13 @@
       "offset": 383,
       "length": 10,
       "value": "\"DECLINED\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
-      "kind": "StringLiteral",
-      "offset": 304,
-      "length": 10,
-      "value": "\"ACCEPTED\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
-      "kind": "StringLiteral",
-      "offset": 383,
-      "length": 10,
-      "value": "\"DECLINED\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkLayer+RegisterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 343,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkLayer+RegisterDevice.swift",
-      "kind": "StringLiteral",
-      "offset": 360,
-      "length": 9,
-      "value": "\"Bearer \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 807,
-      "length": 36,
-      "value": "\"Card ID must be 30 characters long\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 894,
-      "length": 40,
-      "value": "\"Transaction ID can't be blank or empty\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 977,
-      "length": 31,
-      "value": "\"Token can't be blank or empty\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 1059,
-      "length": 40,
-      "value": "\"Application ID can't be blank or empty\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 1153,
-      "length": 57,
-      "value": "\"Phone number's country code must be 1-7 characters long\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/ConfigurationError.swift",
-      "kind": "StringLiteral",
-      "offset": 1259,
-      "length": 69,
-      "value": "\"Phone number must be 6-25 characters long exclusive of country code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"3.3.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Constants.swift",
@@ -3040,13 +3086,6 @@
       "value": "30"
     },
     {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Errors\/InternalError.swift",
-      "kind": "StringLiteral",
-      "offset": 895,
-      "length": 16,
-      "value": "\"Card not found\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/DeviceRegistrationRequest.swift",
       "kind": "StringLiteral",
       "offset": 604,
@@ -3059,27 +3098,6 @@
       "offset": 657,
       "length": 14,
       "value": "\"phone_number\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/DeviceRegistrationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 604,
-      "length": 13,
-      "value": "\"out_of_band\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/DeviceRegistrationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 657,
-      "length": 14,
-      "value": "\"phone_number\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/PhoneNumberRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 513,
-      "length": 14,
-      "value": "\"country_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/PhoneNumberRequest.swift",
@@ -3098,111 +3116,6 @@
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
-      "offset": 884,
-      "length": 17,
-      "value": "\"sdk_initialised\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 942,
-      "length": 25,
-      "value": "\"biometrics_not_enrolled\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1008,
-      "length": 25,
-      "value": "\"register_device_request\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1073,
-      "length": 24,
-      "value": "\"register_device_result\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1143,
-      "length": 30,
-      "value": "\"authenticate_payment_request\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 1218,
-      "length": 29,
-      "value": "\"authenticate_payment_result\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2128,
-      "length": 10,
-      "value": "\"redacted\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2751,
-      "length": 32,
-      "value": "\"register_device_data_error_ios\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2787,
-      "length": 51,
-      "value": "\"Could not create a request object without a token\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 2983,
-      "length": 10,
-      "value": "\"redacted\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3591,
-      "length": 32,
-      "value": "\"register_device_data_error_ios\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3627,
-      "length": 51,
-      "value": "\"Could not create a request object without a token\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 3822,
-      "length": 10,
-      "value": "\"redacted\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4404,
-      "length": 37,
-      "value": "\"authenticate_payment_data_error_ios\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4445,
-      "length": 36,
-      "value": "\"Could not create a request object.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
       "offset": 4909,
       "length": 15,
       "value": "\"is_successful\""
@@ -3227,97 +3140,6 @@
       "offset": 5039,
       "length": 23,
       "value": "\"server_error_response\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4909,
-      "length": 15,
-      "value": "\"is_successful\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4948,
-      "length": 14,
-      "value": "\"error_detail\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 4989,
-      "length": 18,
-      "value": "\"http_status_code\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 5039,
-      "length": 23,
-      "value": "\"server_error_response\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5475,
-      "length": 3,
-      "value": "422"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 5669,
-      "length": 35,
-      "value": "\"error_reason_could_not_be_decoded\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 5708,
-      "length": 32,
-      "value": "\"Could not decode error reason.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/CheckoutOOB+ErrorMapping.swift",
-      "kind": "IntegerLiteral",
-      "offset": 335,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/Dictionary+AddTimeSince.swift",
-      "kind": "StringLiteral",
-      "offset": 345,
-      "length": 6,
-      "value": "\"%.2f\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/Dictionary+AddTimeSince.swift",
-      "kind": "StringLiteral",
-      "offset": 440,
-      "length": 10,
-      "value": "\"duration\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
-      "kind": "StringLiteral",
-      "offset": 305,
-      "length": 16,
-      "value": "\"OOB_BIOMETRICS\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
-      "length": 11,
-      "value": "\"OOB_LOGIN\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
-      "kind": "StringLiteral",
-      "offset": 453,
-      "length": 11,
-      "value": "\"OOB_OTHER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
@@ -3362,27 +3184,6 @@
       "value": "\"error_codes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 527,
-      "length": 12,
-      "value": "\"request_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 561,
-      "length": 12,
-      "value": "\"error_type\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 596,
-      "length": 13,
-      "value": "\"error_codes\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/Authentication+Encodable.swift",
       "kind": "StringLiteral",
       "offset": 621,
@@ -3397,130 +3198,11 @@
       "value": "\"acs_transaction_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/Authentication+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 621,
-      "length": 9,
-      "value": "\"card_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/Authentication+Encodable.swift",
-      "kind": "StringLiteral",
-      "offset": 656,
-      "length": 20,
-      "value": "\"acs_transaction_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkEndpoint.swift",
-      "kind": "StringLiteral",
-      "offset": 529,
-      "length": 32,
-      "value": "\"cards\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkEndpoint.swift",
-      "kind": "StringLiteral",
-      "offset": 545,
-      "length": 1,
-      "value": "\"\/3ds-enrollment\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkEndpoint.swift",
-      "kind": "StringLiteral",
-      "offset": 625,
-      "length": 43,
-      "value": "\"cards\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkEndpoint.swift",
-      "kind": "StringLiteral",
-      "offset": 641,
-      "length": 1,
-      "value": "\"\/3ds-authentication-result\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/NetworkLayer\/NetworkEndpoint.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 40,
-      "value": "\"The string provided is not a valid URL\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Environment+BaseURL.swift",
-      "kind": "StringLiteral",
-      "offset": 216,
-      "length": 43,
-      "value": "\"https:\/\/api.sandbox.checkout.com\/issuing\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Environment+BaseURL.swift",
-      "kind": "StringLiteral",
-      "offset": 296,
-      "length": 35,
-      "value": "\"https:\/\/api.checkout.com\/issuing\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/PhoneNumber.swift",
-      "kind": "IntegerLiteral",
-      "offset": 584,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/PhoneNumber.swift",
-      "kind": "IntegerLiteral",
-      "offset": 588,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/PhoneNumber.swift",
-      "kind": "IntegerLiteral",
-      "offset": 706,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/PhoneNumber.swift",
-      "kind": "IntegerLiteral",
-      "offset": 710,
-      "length": 2,
-      "value": "25"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/OutOfBand.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 16,
       "value": "\"application_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/OutOfBand.swift",
-      "kind": "StringLiteral",
-      "offset": 228,
-      "length": 16,
-      "value": "\"application_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 755,
-      "length": 20,
-      "value": "\"acs_transaction_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 798,
-      "length": 23,
-      "value": "\"authentication_method\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 844,
-      "length": 23,
-      "value": "\"authentication_result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
