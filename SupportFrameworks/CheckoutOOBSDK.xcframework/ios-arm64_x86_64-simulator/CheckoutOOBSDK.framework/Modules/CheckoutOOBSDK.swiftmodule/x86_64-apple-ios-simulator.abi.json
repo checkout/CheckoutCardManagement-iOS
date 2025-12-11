@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "CheckoutOOBSDK",
-    "printedName": "CheckoutOOBSDK",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -242,22 +242,6 @@
         "moduleName": "CheckoutOOBSDK",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -754,20 +738,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -939,20 +909,6 @@
             ],
             "isFromExtension": true,
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -1165,20 +1121,6 @@
             "isFromExtension": true,
             "enumRawTypeName": "String",
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Hashable",
@@ -1394,20 +1336,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -1581,20 +1509,6 @@
             ],
             "isFromExtension": true,
             "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2020,20 +1934,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -2320,20 +2220,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "LocalizedError",
                 "printedName": "LocalizedError",
                 "usr": "s:10Foundation14LocalizedErrorP",
@@ -2600,20 +2486,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
@@ -2798,20 +2670,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -2834,22 +2692,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -2976,20 +2818,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -3032,6 +2860,34 @@
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
       "kind": "StringLiteral",
+      "offset": 633,
+      "length": 9,
+      "value": "\"card_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 668,
+      "length": 16,
+      "value": "\"application_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 14,
+      "value": "\"phone_number\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 1111,
+      "length": 14,
+      "value": "\"country_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/DeviceRegistration+Encodable.swift",
+      "kind": "StringLiteral",
       "offset": 1111,
       "length": 14,
       "value": "\"country_code\""
@@ -3049,6 +2905,34 @@
       "offset": 511,
       "length": 7,
       "value": "\"fr-FR\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/Locale.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/DeviceRegistration\/Locale.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 7,
+      "value": "\"fr-FR\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
+      "kind": "StringLiteral",
+      "offset": 304,
+      "length": 10,
+      "value": "\"ACCEPTED\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 10,
+      "value": "\"DECLINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Decision.swift",
@@ -3100,6 +2984,27 @@
       "value": "\"phone_number\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/DeviceRegistrationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 604,
+      "length": 13,
+      "value": "\"out_of_band\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/DeviceRegistrationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
+      "length": 14,
+      "value": "\"phone_number\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/PhoneNumberRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 513,
+      "length": 14,
+      "value": "\"country_code\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/PhoneNumberRequest.swift",
       "kind": "StringLiteral",
       "offset": 513,
@@ -3112,6 +3017,34 @@
       "offset": 237,
       "length": 30,
       "value": "\"com.checkout.oob-mobile-sdk.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 4909,
+      "length": 15,
+      "value": "\"is_successful\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 4948,
+      "length": 14,
+      "value": "\"error_detail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 4989,
+      "length": 18,
+      "value": "\"http_status_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 5039,
+      "length": 23,
+      "value": "\"server_error_response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
@@ -3163,6 +3096,48 @@
       "value": "\"OOB_OTHER\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 16,
+      "value": "\"OOB_BIOMETRICS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
+      "kind": "StringLiteral",
+      "offset": 379,
+      "length": 11,
+      "value": "\"OOB_LOGIN\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 11,
+      "value": "\"OOB_OTHER\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 527,
+      "length": 12,
+      "value": "\"request_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 561,
+      "length": 12,
+      "value": "\"error_type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 13,
+      "value": "\"error_codes\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/ErrorReason+Encodable.swift",
       "kind": "StringLiteral",
       "offset": 527,
@@ -3198,11 +3173,53 @@
       "value": "\"acs_transaction_id\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/Authentication+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 9,
+      "value": "\"card_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/EncodableSupport\/Authentication+Encodable.swift",
+      "kind": "StringLiteral",
+      "offset": 656,
+      "length": 20,
+      "value": "\"acs_transaction_id\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/OutOfBand.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 16,
       "value": "\"application_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/DeviceRegistration\/OutOfBand.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 16,
+      "value": "\"application_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 755,
+      "length": 20,
+      "value": "\"acs_transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 798,
+      "length": 23,
+      "value": "\"authentication_method\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 844,
+      "length": 23,
+      "value": "\"authentication_result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Network\/Models\/Authentication\/AuthenticationRequest.swift",

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CheckoutOOBSDK
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CheckoutOOBSDK
 @_exported import CheckoutNetwork
 import Foundation
 import LocalAuthentication
@@ -10,7 +9,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension CheckoutOOBSDK.CheckoutOOB {
+  #if compiler(>=5.3) && $AsyncAwait
   public func registerDevice(with deviceRegistration: CheckoutOOBSDK.CheckoutOOB.DeviceRegistration) async throws
+  #endif
 }
 extension CheckoutOOBSDK.CheckoutOOB.DeviceRegistration : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -77,8 +78,8 @@ extension CheckoutOOBSDK.CheckoutOOB {
     public var errorDescription: Swift.String? {
       get
     }
-    public static func == (a: CheckoutOOBSDK.CheckoutOOB.ConfigurationError, b: CheckoutOOBSDK.CheckoutOOB.ConfigurationError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: CheckoutOOBSDK.CheckoutOOB.ConfigurationError, b: CheckoutOOBSDK.CheckoutOOB.ConfigurationError) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -123,7 +124,9 @@ extension CheckoutOOBSDK.CheckoutOOB.Method : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension CheckoutOOBSDK.CheckoutOOB {
+  #if compiler(>=5.3) && $AsyncAwait
   public func authenticatePayment(with paymentAuthentication: CheckoutOOBSDK.CheckoutOOB.Authentication) async throws
+  #endif
 }
 public struct CheckoutOOB {
   public init(environment: CheckoutOOBSDK.CheckoutOOB.Environment)
