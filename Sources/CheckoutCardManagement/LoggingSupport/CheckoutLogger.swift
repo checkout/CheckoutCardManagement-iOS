@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CheckoutEventLoggerKit
+@preconcurrency import CheckoutEventLoggerKit
 import CheckoutCardNetwork
 
 final class CheckoutLogger: NetworkLogger {

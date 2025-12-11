@@ -188,6 +188,8 @@ enum LogFormatter {
         case .unableToCopy(let failure):
             let failureType = extractUnableToCopyFailureType(failure)
             return (type: "copy_failure", description: "Failed to copy to clipboard", additionalInfo: ["failure_type": failureType])
+        case .notFound:
+            return (type: "resource_not_found", description: "Failed to find requested resource", additionalInfo: ["failure_type": "resource not found"])
         }
     }
 

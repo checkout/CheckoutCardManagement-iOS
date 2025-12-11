@@ -7,22 +7,74 @@
 
 import CheckoutCardNetwork
 
-/// General card details
+/// Represents a payment card with its details and current state.
+///
+/// A `Card` object contains essential information about a payment card including its state,
+/// last 4 PAN digits, expiry date, cardholder name, and unique identifier. Card objects are
+/// created and managed by ``CheckoutCardManager`` and provide access to card-specific operations.
+///
+/// **Important:** Card objects are obtained through ``CheckoutCardManager/getCards()`` or
+/// ``CheckoutCardManager/getCards(completionHandler:)``. Do not attempt to create Card instances directly.
+///
+/// Each Card maintains a weak reference to its managing ``CheckoutCardManager``. Ensure the
+/// manager remains in memory for the lifetime of any card operations.
+///
+/// ## Usage
+///
+/// ```swift
+/// // Retrieve cards from the manager
+/// let cards = try await cardManager.getCards()
+///
+/// // Access card properties
+/// for card in cards {
+///     print("Card ending in: \(card.panLast4Digits)")
+///     print("Expires: \(card.expiryDate)")
+///     print("Status: \(card.state)")
+/// }
+/// ```
+///
+/// - SeeAlso: ``CheckoutCardManager``, ``CardState``, ``CardExpiryDate``
 public final class Card {
 
-    /// Current state of the card
+    /// The current state of the card.
+    ///
+    /// Indicates whether the card is active, inactive, suspended, or in another state.
+    /// The state can be modified through card management operations and reflects the
+    /// card's current usability for transactions.
+    ///
+    /// - SeeAlso: ``CardState``
     public internal(set) var state: CardState
 
-    /// Last 4 digits from the long card number
+    /// The last 4 digits of the card's Primary Account Number (PAN).
+    ///
+    /// This value is safe to display in user interfaces for card identification purposes.
+    /// The full PAN is never exposed through this SDK for security reasons.
+    ///
+    /// ## Example
+    ///
+    /// ```swift
+    /// print("Card ending in \(card.panLast4Digits)")  // "Card ending in 1234"
+    /// ```
     public let panLast4Digits: String
 
-    /// Expiry date for the card
+    /// The expiry date for the card.
+    ///
+    /// Contains the month and year when the card expires. This information is used
+    /// for display purposes and validation of card validity.
+    ///
+    /// - SeeAlso: ``CardExpiryDate``
     public let expiryDate: CardExpiryDate
 
-    /// Name of the cardholder
+    /// The name of the cardholder as it appears on the card.
+    ///
+    /// This is the display name associated with the card and is typically shown
+    /// in user interfaces when presenting card details.
     public let cardholderName: String
 
-    /// Identifier used to identify object for external operations
+    /// A unique identifier for this card.
+    ///
+    /// This identifier is used internally for card operations and API requests.
+    /// It uniquely identifies the card within the card management system.
     public let id: String
 
     /// A weak reference to the manager is required to enable sharing of the design system and the card service
