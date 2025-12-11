@@ -5,7 +5,7 @@
 //  Created by Marian Enache on 14.02.2025.
 //
 
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 import CheckoutEventLoggerKit
 
 /// Base handler class for the Issuer Provisioning Extension.

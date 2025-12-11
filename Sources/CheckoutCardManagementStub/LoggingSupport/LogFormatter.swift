@@ -7,7 +7,7 @@
 
 import Foundation
 import CheckoutEventLoggerKit
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 /// Formatter for internal Analytic Events
 enum LogFormatter {

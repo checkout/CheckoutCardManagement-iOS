@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 import CheckoutEventLoggerKit
 
 /// Defines the backend environment for card management operations.

@@ -5,7 +5,7 @@
 //  Created by Marian Enache on 14.02.2025.
 //
 
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 import CheckoutEventLoggerKit
 
 /// Protocol for providing authorization in the Issuer Provisioning Extension.

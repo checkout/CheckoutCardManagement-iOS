@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 /// Comprehensive error types for all card management operations.
 ///

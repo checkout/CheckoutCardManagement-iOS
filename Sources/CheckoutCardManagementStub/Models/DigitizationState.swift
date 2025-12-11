@@ -5,7 +5,7 @@
 //  Created by Marian Enache on 03.03.2025.
 //
 
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 import Foundation
 import PassKit
 

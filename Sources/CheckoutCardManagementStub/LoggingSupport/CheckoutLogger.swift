@@ -7,7 +7,7 @@
 
 import Foundation
 @preconcurrency import CheckoutEventLoggerKit
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 final class CheckoutLogger: NetworkLogger {
     let sessionID: String

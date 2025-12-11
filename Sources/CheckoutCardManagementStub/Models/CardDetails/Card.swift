@@ -5,7 +5,7 @@
 //  Created by Alex Ioja-Yang on 08/06/2022.
 //
 
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 /// Represents a payment card with its details and current state.
 ///
@@ -85,7 +85,7 @@ public final class Card {
     /// Minimal partial identifier for logging purposes
     internal var partIdentifier: String { String(id.suffix(4)) }
 
-    init(networkCard: CheckoutCardNetwork.Card,
+    init(networkCard: CheckoutCardNetworkStub.Card,
          manager: CardManager?) {
         self.id = networkCard.id
         self.panLast4Digits = networkCard.panLast4Digits

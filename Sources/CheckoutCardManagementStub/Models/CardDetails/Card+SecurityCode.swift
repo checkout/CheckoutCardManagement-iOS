@@ -1,34 +1,30 @@
 //
-//  Card+Pin.swift
+//  Card+SecurityCode.swift
 //  
 //
-//  Created by Alex Ioja-Yang on 15/06/2022.
+//  Created by Alex Ioja-Yang on 02/11/2022.
 //
 
 import Foundation
 import UIKit
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 public extension Card {
 
-    /// Retrieves a secure UI component displaying the card's Personal Identification Number (PIN).
+    /// Retrieves a secure UI component displaying the card's security code
     ///
-    /// This method returns a protected UIView containing the card's PIN. The view is rendered
-    /// securely by the underlying card service to prevent unauthorized access or screen capture.
-    /// The PIN is highly sensitive cardholder data and must be handled according to PCI-DSS requirements.
+    /// This method returns a protected UIView containing the card's security code.. The security code is sensitive
+    /// cardholder data and should be handled according to PCI-DSS requirements.
     ///
     /// **Important:** This method requires a single-use token obtained from your backend service.
-    /// The token must be generated specifically for PIN retrieval and can only be used once.
-    ///
-    /// **Security Note:** PIN display should be time-limited and only shown when absolutely necessary
-    /// for cardholder verification purposes.
+    /// The token must be generated specifically for security code retrieval and can only be used once.
     ///
     /// - Parameters:
-    ///     - singleUseToken: A short-lived, single-use token required to authorize the PIN retrieval operation.
+    ///     - singleUseToken: A short-lived, single-use token required to authorize the security code retrieval operation.
     ///                      This token must be obtained from your backend and is valid for one use only.
     ///     - completionHandler: A closure called with the result containing either a secure `UIView` or a `CardManagementError`.
     ///
-    /// - Note: This is the callback-based version. For Swift concurrency support, use the async version `getPin(singleUseToken:)`
+    /// - Note: This is the callback-based version. For Swift concurrency support, use the async version `getSecurityCode(singleUseToken:)`
     ///
     /// The completion handler receives a `Result` which may contain the following errors:
     /// - ``CardManagementError/missingManager`` if the CardManager was deallocated
@@ -39,52 +35,47 @@ public extension Card {
     /// ## Example
     ///
     /// ```swift
-    /// card.getPin(singleUseToken: token) { result in
+    /// card.getSecurityCode(singleUseToken: token) { result in
     ///     switch result {
-    ///     case .success(let pinView):
+    ///     case .success(let securityCodeView):
     ///         // Add the secure view to your UI
-    ///         containerView.addSubview(pinView)
-    ///         // Consider auto-hiding after a timeout for security
+    ///         containerView.addSubview(securityCodeView)
     ///     case .failure(let error):
-    ///         print("Failed to get PIN: \(error)")
+    ///         print("Failed to get security code: \(error)")
     ///     }
     /// }
     /// ```
     ///
-    /// - SeeAlso: ``CheckoutCardManager``
+    /// - SeeAlso: ``CheckoutCardManager``, ``getPanAndSecurityCode(singleUseToken:completionHandler:)``
     /// - Since: 1.0.0
-    @available(*, deprecated, renamed: "getPin(singleUseToken:)")
-    func getPin(singleUseToken: String,
-                completionHandler: @escaping CheckoutCardManager.SecureResultCompletion) {
+    @available(*, deprecated, renamed: "getSecurityCode(singleUseToken:)")
+    func getSecurityCode(singleUseToken: String,
+                         completionHandler: @escaping CheckoutCardManager.SecureResultCompletion) {
         Task { [weak self] in
             guard let self else { return }
             do {
-                let pinView = try await getPin(singleUseToken: singleUseToken)
-                completionHandler(.success(pinView))
+                let securityCodeView = try await getSecurityCode(singleUseToken: singleUseToken)
+                completionHandler(.success(securityCodeView))
             } catch let error as CardManagementError {
                 completionHandler(.failure(error))
             }
         }
     }
 
-    /// Retrieves a secure UI component displaying the card's Personal Identification Number (PIN).
+    /// Retrieves a secure UI component displaying the card's security code
     ///
-    /// This async method returns a protected UIView containing the card's PIN. The view is rendered
-    /// securely by the underlying card service to prevent unauthorized access or screen capture.
-    /// The PIN is highly sensitive cardholder data and must be handled according to PCI-DSS requirements.
+    /// This method returns a protected UIView containing the card's security code.. The security code is sensitive
+    /// cardholder data and should be handled according to PCI-DSS requirements.
     ///
     /// **Important:** This method requires a single-use token obtained from your backend service.
-    /// The token must be generated specifically for PIN retrieval and can only be used once.
-    ///
-    /// **Security Note:** PIN display should be time-limited and only shown when absolutely necessary
-    /// for cardholder verification purposes.
+    /// The token must be generated specifically for security code retrieval and can only be used once.
     ///
     /// - Parameters:
-    ///     - singleUseToken: A short-lived, single-use token required to authorize the PIN retrieval operation.
+    ///     - singleUseToken: A short-lived, single-use token required to authorize the security code retrieval operation.
     ///                      This token must be obtained from your backend and is valid for one use only.
     ///
-    /// - Returns: A secure `UIView` containing the card's PIN. This view should be added to your UI hierarchy
-    ///           and will render the PIN securely. Consider implementing auto-hide functionality for enhanced security.
+    /// - Returns: A secure `UIView` containing the card's security code. This view should be added to your UI hierarchy
+    ///           and will render the security code securely.
     /// - Throws: ``CardManagementError`` indicating the failure reason:
     ///   - ``CardManagementError/missingManager`` if the CardManager was deallocated
     ///   - ``CardManagementError/authenticationFailure`` if the single-use token has expired or is invalid
@@ -96,40 +87,39 @@ public extension Card {
     /// ```swift
     /// Task {
     ///     do {
-    ///         let pinView = try await card.getPin(singleUseToken: token)
+    ///         let securityCodeView = try await card.getSecurityCode(singleUseToken: token)
     ///         // Add the secure view to your UI
-    ///         containerView.addSubview(pinView)
-    ///         // Consider auto-hiding after a timeout for security
+    ///         containerView.addSubview(securityCodeView)
     ///     } catch {
-    ///         print("Failed to get PIN: \(error)")
+    ///         print("Failed to get security code: \(error)")
     ///     }
     /// }
     /// ```
     ///
-    /// - SeeAlso: ``CheckoutCardManager``
+    /// - SeeAlso: ``CheckoutCardManager``, ``getPanAndSecurityCode(singleUseToken:)``
     /// - Since: 4.0.0
-    func getPin(singleUseToken: String) async throws -> UIView {
+    func getSecurityCode(singleUseToken: String) async throws -> UIView {
         guard let manager = manager else {
             throw CardManagementError.missingManager
         }
         
-        let pinViewDesign = manager.designSystem.pinViewDesign
+        let securityCodeViewDesign = manager.designSystem.securityCodeViewDesign
         let startTime = Date()
         
         do {
-            let pinView = try await manager.cardService.displayPin(
+            let securityCodeView = try await manager.cardService.displaySecurityCode(
                 forCard: id,
-                displayConfiguration: pinViewDesign,
+                displayConfiguration: securityCodeViewDesign,
                 singleUseToken: singleUseToken
             )
             
-            let event = LogEvent.getPin(cardId: id, cardState: state)
+            let event = LogEvent.getCVV(cardId: id, cardState: state)
             manager.logger?.log(event, startedAt: startTime)
             
-            return pinView
+            return securityCodeView
         } catch let error as CardNetworkError {
             manager.logger?.log(
-                .failure(source: "Get Pin",
+                .failure(source: "Get Security Code",
                          error: error,
                          networkError: error,
                          additionalInfo: ["cardId": id]),
@@ -138,7 +128,7 @@ public extension Card {
             throw CardManagementError.from(error)
         } catch {
             manager.logger?.log(
-                .failure(source: "Get Pin",
+                .failure(source: "Get Security Code",
                          error: error,
                          networkError: nil,
                          additionalInfo: ["cardId": id, "errorMessage": error.localizedDescription]),

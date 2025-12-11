@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import CheckoutCardNetwork
+import CheckoutCardNetworkStub
 
 public extension Card {
 
