@@ -202,6 +202,16 @@ enum LogFormatter {
             return "configuration_failure"
         case .operationFailure(let hint):
             return "operation_failure \(hint)"
+        case .cardNotFound:
+            return "card_not_found"
+        case .notLoggedIn:
+            return "user_not_logged_in"
+        case .core:
+            return "core_error"
+        case .deviceEnvironmentUnsafe:
+            return "device_unsafe"
+        case .unrecoverable(hint: let hint):
+            return "unrecoverable_error_\(hint)"
         }
     }
 
@@ -212,6 +222,16 @@ enum LogFormatter {
             return "configuration_failure"
         case .operationFailure:
             return "operation_failure"
+        case .cardNotFound:
+            return "card_not_found"
+        case .notLoggedIn:
+            return "user_not_logged_in"
+        case .core:
+            return "core_error"
+        case .deviceEnvironmentUnsafe:
+            return "device_unsafe"
+        case .unrecoverable:
+            return "unrecoverable_error"
         }
     }
 

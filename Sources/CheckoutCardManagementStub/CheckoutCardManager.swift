@@ -321,7 +321,8 @@ public final class CheckoutCardManager: CardManager {
             return WalletCardDetails(
                 cardId: card.id,
                 cardTitle: card.panLast4Digits,
-                cardArt: uiImage
+                cardArt: uiImage,
+                last4: card.panLast4Digits
             )
         }
 
