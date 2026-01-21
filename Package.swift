@@ -20,6 +20,9 @@ let package = Package(
         .package(
             url: "https://github.com/checkout/checkout-event-logger-ios-framework",
             exact: "1.2.4"),
+        .package(
+            url: "https://github.com/checkout/NetworkClient-iOS.git",
+            exact: "1.1.2"),
     ],
     targets: [
         .target(
@@ -28,6 +31,9 @@ let package = Package(
                 .product(
                     name: "CheckoutEventLoggerKit",
                     package: "checkout-event-logger-ios-framework"),
+                .product(
+                    name: "CheckoutNetwork",
+                    package: "NetworkClient-iOS"),
                 "CheckoutCardNetwork",
             ]),
         .target(
@@ -36,6 +42,9 @@ let package = Package(
                 .product(
                     name: "CheckoutEventLoggerKit",
                     package: "checkout-event-logger-ios-framework"),
+                .product(
+                    name: "CheckoutNetwork",
+                    package: "NetworkClient-iOS"),
                 "CheckoutCardNetworkStub",
             ]),
         .binaryTarget(
