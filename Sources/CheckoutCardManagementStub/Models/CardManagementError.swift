@@ -80,6 +80,7 @@ public enum CardManagementError: Error, Equatable {
             case .cancelled: return .cancelled
             case .configurationFailure: return .configurationFailure
             case .operationFailure: return .operationFailure
+            default: return .operationFailure
             }
         }
     }
@@ -166,6 +167,7 @@ public enum CardManagementError: Error, Equatable {
             switch networkError {
             case .configurationFailure: return .configurationFailure
             case .operationFailure: return .operationFailure
+            default: return .operationFailure
             }
         }
     }
