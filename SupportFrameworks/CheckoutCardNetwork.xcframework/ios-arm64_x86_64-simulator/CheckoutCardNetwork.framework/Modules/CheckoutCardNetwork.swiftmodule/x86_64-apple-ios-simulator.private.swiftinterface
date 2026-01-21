@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -module-name CheckoutCardNetwork
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CheckoutCardNetwork
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Combine
 import CryptoKit
 import Foundation
@@ -11,12 +11,12 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct CardDigitizationData {
+public struct CardDigitizationData : Swift.Sendable {
   public let state: CheckoutCardNetwork.CardDigitizationState
   public let localPKPass: PassKit.PKPass?
   public let remotePKPass: PassKit.PKPass?
 }
-public enum CardDigitizationState : Swift.String, Swift.Decodable {
+public enum CardDigitizationState : Swift.String, Swift.Decodable, Swift.Sendable {
   case digitized
   case notDigitized
   case pendingIDVLocal
@@ -41,7 +41,7 @@ public enum CardDetailCopyResult {
   final public func isTokenValid(_ token: CheckoutCardNetwork.Token) -> Swift.Bool
   final public func getCards(sessionToken: CheckoutCardNetwork.Token, statuses: Swift.Set<CheckoutCardNetwork.CardState>? = nil) async throws -> [CheckoutCardNetwork.Card]
   final public func getCard(withID cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.Card
-  final public func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((CheckoutCardNetwork.CheckoutCardService.CardResult) -> Swift.Void))
+  final public func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping (CheckoutCardNetwork.CheckoutCardService.CardResult) -> Swift.Void)
   @objc deinit
 }
 public struct CardCreationModel : Swift.Encodable {
@@ -51,11 +51,12 @@ public struct CardCreationModel : Swift.Encodable {
 public struct SecurityCodeViewConfiguration : Swift.Sendable {
   public init(font: UIKit.UIFont, textColor: UIKit.UIColor)
 }
-public struct WalletCardDetails {
+public struct WalletCardDetails : Swift.Sendable {
   public let cardId: Swift.String
   public let cardTitle: Swift.String
   public let cardArt: UIKit.UIImage
-  public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage)
+  public let last4: Swift.String
+  public init(cardId: Swift.String, cardTitle: Swift.String, cardArt: UIKit.UIImage, last4: Swift.String)
 }
 extension CheckoutCardNetwork.CheckoutCardService {
   final public func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetwork.WalletCardDetails]) async throws
@@ -99,7 +100,7 @@ public protocol CardService {
   func revokeCard(cardID: Swift.String, reason: CheckoutCardNetwork.CardRevokeReason?, sessionToken: CheckoutCardNetwork.Token) async throws
   func getCards(sessionToken: CheckoutCardNetwork.Token, statuses: Swift.Set<CheckoutCardNetwork.CardState>?) async throws -> [CheckoutCardNetwork.Card]
   func getCard(withID cardID: Swift.String, sessionToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.Card
-  func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping ((Self.CardResult) -> Swift.Void))
+  func createCard(from cardModel: CheckoutCardNetwork.CardCreationModel, sessionToken: Swift.String, completionHandler: @escaping (Self.CardResult) -> Swift.Void)
   func configurePushProvisioning(cardholderID: Swift.String, appGroupId: Swift.String, configuration: CheckoutCardNetwork.ProvisioningConfiguration, walletCardsList: [CheckoutCardNetwork.WalletCardDetails]) async throws
   func getCardDigitizationState(cardID: Swift.String, token: Swift.String) async throws -> CheckoutCardNetwork.CardDigitizationData
   func addCardToAppleWallet(cardID: Swift.String, token: CheckoutCardNetwork.Token, viewController: UIKit.UIViewController) async throws
@@ -139,7 +140,7 @@ public enum CardType : Swift.String, Swift.Codable {
     get
   }
 }
-public struct ProvisioningConfiguration : Swift.Codable {
+public struct ProvisioningConfiguration : Swift.Codable, Swift.Sendable {
   public let issuerID: Swift.String
   public let serviceRSAExponent: Foundation.Data
   public let serviceRSAModulus: Foundation.Data
@@ -173,35 +174,45 @@ public enum CardNetworkError : Swift.Error, Swift.Equatable {
   public enum PushProvisioningFailure : Swift.Error, Swift.Equatable {
     case cancelled
     case configurationFailure
+    case cardNotFound
+    case notLoggedIn
+    case core
+    case deviceEnvironmentUnsafe
+    case unrecoverable(hint: Swift.String)
     case operationFailure(hint: Swift.String)
     public static func == (a: CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure, b: CheckoutCardNetwork.CardNetworkError.PushProvisioningFailure) -> Swift.Bool
   }
-  public enum ProvisioningExtensionFailure : Swift.Error, Swift.Equatable {
+  public enum ProvisioningExtensionFailure : Swift.String, Swift.Error, Swift.Equatable {
     case walletExtensionAppGroupIDNotFound
     case cardNotFound
     case deviceEnvironmentUnsafe
     case operationFailure
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure, b: CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure) -> Swift.Bool
-    public var hashValue: Swift.Int {
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
       get
     }
   }
-  public enum DigitizationStateFailure : Swift.Error, Swift.Equatable {
+  public enum DigitizationStateFailure : Swift.String, Swift.Error, Swift.Equatable {
     case configurationFailure
+    case cardNotFound
+    case unrecoverable
+    case notLoggedIn
+    case core
+    case deviceEnvironmentUnsafe
     case operationFailure
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: CheckoutCardNetwork.CardNetworkError.DigitizationStateFailure, b: CheckoutCardNetwork.CardNetworkError.DigitizationStateFailure) -> Swift.Bool
-    public var hashValue: Swift.Int {
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
       get
     }
   }
-  public enum CopySensitiveDataError : Swift.Error, Swift.Equatable {
+  public enum CopySensitiveDataError : Swift.String, Swift.Error, Swift.Equatable {
     case copyFailure
     case dataNotViewed
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError, b: CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError) -> Swift.Bool
-    public var hashValue: Swift.Int {
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
       get
     }
   }
@@ -234,7 +245,7 @@ public struct CardExpiryDate : Swift.Equatable {
 extension CheckoutCardNetwork.CheckoutCardService {
   @_Concurrency.MainActor final public func displayPin(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PinViewConfiguration, singleUseToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.CheckoutCardService.SecureDisplay
   @_Concurrency.MainActor final public func displayPan(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.PanViewConfiguration, singleUseToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.CheckoutCardService.SecureDisplay
-  final public func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.CheckoutCardService.SecureDisplay
+  @_Concurrency.MainActor final public func displaySecurityCode(forCard cardID: Swift.String, displayConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: CheckoutCardNetwork.Token) async throws -> CheckoutCardNetwork.CheckoutCardService.SecureDisplay
   @_Concurrency.MainActor final public func displayPanAndSecurityCode(forCard cardID: Swift.String, panViewConfiguration: CheckoutCardNetwork.PanViewConfiguration, securityCodeViewConfiguration: CheckoutCardNetwork.SecurityCodeViewConfiguration, singleUseToken: CheckoutCardNetwork.Token) async throws -> (pan: CheckoutCardNetwork.CheckoutCardService.SecureDisplay, securityCode: CheckoutCardNetwork.CheckoutCardService.SecureDisplay)
   @_Concurrency.MainActor final public func copyPan(forCard cardID: Swift.String, singleUseToken: CheckoutCardNetwork.Token) async throws
 }
@@ -285,8 +296,11 @@ extension CheckoutCardNetwork.CardState : Swift.Equatable {}
 extension CheckoutCardNetwork.CardState : Swift.Hashable {}
 extension CheckoutCardNetwork.CardState : Swift.RawRepresentable {}
 extension CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure : Swift.Hashable {}
+extension CheckoutCardNetwork.CardNetworkError.ProvisioningExtensionFailure : Swift.RawRepresentable {}
 extension CheckoutCardNetwork.CardNetworkError.DigitizationStateFailure : Swift.Hashable {}
+extension CheckoutCardNetwork.CardNetworkError.DigitizationStateFailure : Swift.RawRepresentable {}
 extension CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError : Swift.Hashable {}
+extension CheckoutCardNetwork.CardNetworkError.CopySensitiveDataError : Swift.RawRepresentable {}
 extension CheckoutCardNetwork.CardRevokeReason : Swift.Equatable {}
 extension CheckoutCardNetwork.CardRevokeReason : Swift.Hashable {}
 extension CheckoutCardNetwork.CardRevokeReason : Swift.RawRepresentable {}
