@@ -3069,7 +3069,7 @@
       "kind": "StringLiteral",
       "offset": 187,
       "length": 7,
-      "value": "\"3.3.1\""
+      "value": "\"4.1.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Constants.swift",
@@ -3116,30 +3116,51 @@
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
-      "offset": 4909,
+      "offset": 4993,
       "length": 15,
       "value": "\"is_successful\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
-      "offset": 4948,
+      "offset": 5032,
       "length": 14,
       "value": "\"error_detail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
+      "offset": 5073,
       "length": 18,
       "value": "\"http_status_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
       "kind": "StringLiteral",
-      "offset": 5039,
+      "offset": 5123,
       "length": 23,
       "value": "\"server_error_response\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 6177,
+      "length": 8,
+      "value": "\"number\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 6725,
+      "length": 3,
+      "value": "\"*\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/Logging\/LogFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 6763,
+      "length": 6,
+      "value": "\"****\""
     },
     {
       "filePath": "\/Users\/runner\/work\/issuing-sdk-ios\/issuing-sdk-ios\/CheckoutOOB\/Sources\/CheckoutOOB\/Models\/Authentication\/Method.swift",
