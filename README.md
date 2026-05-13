@@ -14,6 +14,7 @@
   - [Retrieve Secure Data](#Retrieve-secure-data)
   - [Push Provisioning](#Push-provisioning)
 - [Out of Band (OOB) Authentication](#checkout-out-of-band-oob-authentication-sdk)
+- [SDK Lifecycle Policy](#SDK-Lifecycle-Policy)
 - [Contact](#Contact)
 ***
 
@@ -231,6 +232,10 @@ There are some behaviors to be aware of when you attempt a push provisioning ope
 ***
 # Checkout Out of Band (OOB) Authentication SDK
 Please find documentation [here](https://github.com/checkout/CheckoutCardManagement-iOS/blob/main/.github/partial-readmes/OOB-SDK-README.md).
+
+***
+# SDK Lifecycle Policy
+For details on support tiers, support windows, deprecation strategy, and versioning, see [SDK_LIFECYCLE_POLICY.md](SDK_LIFECYCLE_POLICY.md).
 
 ***
 # Contact
