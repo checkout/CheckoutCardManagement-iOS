@@ -1,3 +1,5 @@
+[![Supported version](https://img.shields.io/github/v/release/checkout/CheckoutCardManagement-iOS?sort=semver&label=supported&color=brightgreen)](#version-support)
+
 # Table of Contents
 - [What is the CheckoutCardManagement-iOS SDK?](#What-is-the-CheckoutCardManagement-iOS-SDK)
 - [Environments](#Environments)
@@ -14,6 +16,7 @@
   - [Retrieve Secure Data](#Retrieve-secure-data)
   - [Push Provisioning](#Push-provisioning)
 - [Out of Band (OOB) Authentication](#checkout-out-of-band-oob-authentication-sdk)
+- [SDK Lifecycle Policy](#SDK-Lifecycle-Policy)
 - [Contact](#Contact)
 ***
 
@@ -231,6 +234,25 @@ There are some behaviors to be aware of when you attempt a push provisioning ope
 ***
 # Checkout Out of Band (OOB) Authentication SDK
 Please find documentation [here](https://github.com/checkout/CheckoutCardManagement-iOS/blob/main/.github/partial-readmes/OOB-SDK-README.md).
+
+***
+# SDK Lifecycle Policy
+The [Mobile SDKs lifecycle policy](https://www.checkout.com/docs/developer-resources/sdks/mobile-sdks-lifecycle-policy) defines how long each version of the SDK is supported, and what support means at each stage. The CheckoutOOB SDK ships inside every release and follows the same lifecycle.
+
+## Version Support
+
+| Version | Released | Status | Not supported from |
+| --- | --- | --- | --- |
+| `5.0.0` | 2026-09-16 | Supported | Not applicable |
+| `4.2.0` | 2026-09-03 | Maintenance | 2027-03-16 |
+| `4.1.1` | 2026-03-20 | Not supported | 2026-09-16 |
+| `4.1.0` | 2026-01-21 | Not supported | 2026-03-20 |
+| `4.0.0` | 2025-12-12 | Not supported | 2026-04-21 |
+| `3.3.1` down to `0.1.1` | 2022-11-18 to 2025-12-11 | Not supported | Passed |
+
+Maintenance versions receive critical security and bug fixes only. See [GitHub Releases](https://github.com/checkout/CheckoutCardManagement-iOS/releases) for the full version history.
+
+The minimum supported deployment target is iOS 14. Minimum platform requirements only change in major releases.
 
 ***
 # Contact
