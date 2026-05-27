@@ -1,3 +1,0 @@
-framework module CheckoutOOBSDK {
-  header "CheckoutOOBSDK-Swift.h"
-}
