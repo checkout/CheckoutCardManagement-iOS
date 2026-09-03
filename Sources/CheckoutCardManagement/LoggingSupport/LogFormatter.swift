@@ -43,6 +43,7 @@ enum LogFormatter {
         case .pushProvisioning: return "push_provisioning"
         case .failure: return "failure"
         case .copyPan: return "copy_pan"
+        case .copyCVV: return "copy_cvv"
         case .cardDetails: return "card_details"
         }
     }
@@ -60,6 +61,7 @@ enum LogFormatter {
                 .configurePushProvisioning,
                 .getCardDigitizationState,
                 .copyPan,
+                .copyCVV,
                 .cardDetails,
                 .pushProvisioning:
             return .info
@@ -85,7 +87,8 @@ enum LogFormatter {
                 .getPan(let cardId, let state),
                 .getCVV(let cardId, let state),
                 .getPanCVV(let cardId, let state),
-                .copyPan(let cardId, let state):
+                .copyPan(let cardId, let state),
+                .copyCVV(let cardId, let state):
             dictionary = [
                 "cardId": AnyCodable(cardId),
                 "card_state": AnyCodable(state.rawValue)

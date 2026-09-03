@@ -33,6 +33,9 @@ enum LogEvent {
     /// Describe a successful call to retrieve a security code
     case getCVV(cardId: String, cardState: CardState)
 
+    /// Describe a successful call to copy a security code
+    case copyCVV(cardId: String, cardState: CardState)
+
     /// Describe a successful call to retrieve a pan and a security code
     case getPanCVV(cardId: String, cardState: CardState)
 

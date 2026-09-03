@@ -119,22 +119,94 @@ public extension Card {
             return securityCodeView
         } catch let error as CardNetworkError {
             manager.logger?.log(
-                .failure(source: "Get Security Code",
+                .failure(source: LogSource.getSecurityCode,
                          error: error,
                          networkError: error,
-                         additionalInfo: ["cardId": id]),
+                         additionalInfo: [LogKey.cardId: id]),
                 startedAt: startTime
             )
             throw CardManagementError.from(error)
         } catch {
             manager.logger?.log(
-                .failure(source: "Get Security Code",
+                .failure(source: LogSource.getSecurityCode,
                          error: error,
                          networkError: nil,
-                         additionalInfo: ["cardId": id, "errorMessage": error.localizedDescription]),
+                         additionalInfo: [LogKey.cardId: id, LogKey.errorMessage: error.localizedDescription]),
                 startedAt: startTime
             )
-            
+
+            throw CardManagementError.connectionIssue
+        }
+    }
+
+    /// Copies the card's security code (CVV) to the device clipboard.
+    ///
+    /// This method securely retrieves the card's CVV and copies it to the system clipboard. The security
+    /// code is sensitive cardholder data and should be handled according to PCI-DSS requirements. Once copied,
+    /// users can paste the CVV into other applications.
+    ///
+    /// **Important:** This method requires a single-use token obtained from your backend service.
+    /// The token must be generated specifically for security code retrieval and can only be used once.
+    ///
+    /// **Security Note:** The card's security code must have been displayed at least once before it can be
+    /// copied. The clipboard content expires automatically after 3 minutes.
+    ///
+    /// - Parameters:
+    ///   - singleUseToken: A short-lived, single-use token required to authorize the copy operation.
+    ///                    This token must be obtained from your backend and is valid for one use only.
+    ///
+    /// - Throws: ``CardManagementError`` indicating the failure reason:
+    ///   - ``CardManagementError/unableToCopy(failure:)`` with `missingManager` if the CardManager was deallocated
+    ///   - ``CardManagementError/authenticationFailure`` if the single-use token has expired or is invalid
+    ///   - ``CardManagementError/unableToCopy(failure:)`` with `dataNotViewed` if the security code has not been displayed
+    ///   - ``CardManagementError/connectionIssue`` if there are network connectivity problems
+    ///   - ``CardManagementError/unableToCopy(failure:)`` with `copyFailure` if clipboard operation fails
+    ///
+    /// ## Example
+    ///
+    /// ```swift
+    /// Task {
+    ///     do {
+    ///         try await card.copySecurityCode(singleUseToken: token)
+    ///         print("Security code copied to clipboard")
+    ///     } catch {
+    ///         print("Failed to copy security code: \(error)")
+    ///     }
+    /// }
+    /// ```
+    ///
+    /// - SeeAlso: ``CheckoutCardManager``, ``getSecurityCode(singleUseToken:)``
+    /// - Since: 4.2.0
+    func copySecurityCode(singleUseToken: String) async throws {
+        guard let manager = manager else {
+            throw CardManagementError.unableToCopy(failure: .missingManager)
+        }
+
+        let startTime = Date()
+
+        do {
+            try await manager.cardService.copySecurityCode(forCard: id, singleUseToken: singleUseToken)
+
+            let logEvent = LogEvent.copyCVV(cardId: id, cardState: state)
+            manager.logger?.log(logEvent, startedAt: startTime)
+        } catch let error as CardNetworkError {
+            let logEvent = LogEvent.failure(
+                source: LogSource.copySecurityCode,
+                error: error,
+                networkError: error,
+                additionalInfo: [LogKey.cardId: id]
+            )
+            manager.logger?.log(logEvent, startedAt: startTime)
+            throw CardManagementError.from(error)
+        } catch {
+            let logEvent = LogEvent.failure(
+                source: LogSource.copySecurityCode,
+                error: error,
+                networkError: nil,
+                additionalInfo: [LogKey.cardId: id, LogKey.errorMessage: error.localizedDescription]
+            )
+            manager.logger?.log(logEvent, startedAt: startTime)
+
             throw CardManagementError.connectionIssue
         }
     }

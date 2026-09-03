@@ -14,6 +14,12 @@ public typealias CardExpiryDate = CheckoutCardNetwork.CardExpiryDate
 /// State for a card
 public typealias CardState = CheckoutCardNetwork.CardState
 
+/// The type of a card (physical or virtual)
+public typealias CardType = CheckoutCardNetwork.CardType
+
+/// The payment network scheme for a card (e.g., Mastercard, Visa)
+public typealias CardScheme = CheckoutCardNetwork.CardScheme
+
 /// Digitization state of a card
 public typealias CardDigitizationState = CheckoutCardNetwork.CardDigitizationState
 

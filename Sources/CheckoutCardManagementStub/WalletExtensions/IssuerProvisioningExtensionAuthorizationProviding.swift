@@ -1,6 +1,6 @@
 //
-//  IntentHandler.swift
-//  WalletExtension
+//  IssuerProvisioningExtensionAuthorizationProviding.swift
+//  CheckoutCardManagement
 //
 //  Created by Marian Enache on 14.02.2025.
 //

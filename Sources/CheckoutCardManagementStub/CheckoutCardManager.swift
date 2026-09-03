@@ -309,6 +309,10 @@ public final class CheckoutCardManager: CardManager {
     /// }
     /// ```
     ///
+    /// - Note: Cards configured through this method are titled with their last 4 PAN digits in
+    ///         Apple Wallet. To supply your own title, use the overload whose `walletCards` tuples
+    ///         carry a title alongside each card and its art.
+    ///
     /// - SeeAlso: ``ProvisioningConfiguration``, ``Card/provision(provisioningToken:viewController:)``
     /// - Since: 4.0.0
     public func configurePushProvisioning(
@@ -317,10 +321,73 @@ public final class CheckoutCardManager: CardManager {
         configuration: ProvisioningConfiguration,
         walletCards: [(Card, UIImage)]
     ) async throws {
-        let walletCardsList: [WalletCardDetails] = walletCards.map { card, uiImage in
+        let titledWalletCards: [(Card, UIImage, String?)] = walletCards.map { ($0.0, $0.1, nil) }
+        try await configurePushProvisioning(cardholderID: cardholderID,
+                                            appGroupId: appGroupId,
+                                            configuration: configuration,
+                                            walletCards: titledWalletCards)
+    }
+
+    /// Configures the push provisioning manager for Apple Wallet integration, with a title for each card.
+    ///
+    /// This async method behaves exactly like the `walletCards: [(Card, UIImage)]` overload, but each
+    /// card is accompanied by the title to display for it in Apple Wallet. Supply a title to identify
+    /// the card by its product name rather than by its last 4 PAN digits.
+    ///
+    /// **Important:** This configuration step is required only once during the provisioning setup process,
+    /// typically during app initialization or when the cardholder first sets up Apple Pay.
+    ///
+    /// - Parameters:
+    ///     - cardholderID: The unique identifier for the cardholder who owns the cards
+    ///     - appGroupId: The App Group identifier shared between your app and Wallet Extensions, enabling
+    ///                   data sharing for the provisioning process
+    ///     - configuration: The ``ProvisioningConfiguration`` containing provisioning settings and credentials
+    ///     - walletCards: An array of tuples containing ``Card`` objects, their corresponding card art images
+    ///                    (``UIImage``), and the title to display for the card in Apple Wallet. Pass `nil`
+    ///                    for the title to fall back to the card's last 4 PAN digits. Titles that are empty
+    ///                    or contain only whitespace fall back in the same way.
+    ///
+    /// - Throws: ``CardManagementError`` indicating the failure reason:
+    ///   - ``CardManagementError/pushProvisioningFailure(failure:)`` if the configuration fails
+    ///   - ``CardManagementError/configurationIssue(hint:)`` if the provided parameters are invalid
+    ///   - ``CardManagementError/connectionIssue`` if there are network connectivity problems
+    ///   - ``CardManagementError/authenticationFailure`` if authentication credentials are invalid
+    ///
+    /// ## Example
+    ///
+    /// ```swift
+    /// Task {
+    ///     do {
+    ///         let cards: [(Card, UIImage, String?)] = [
+    ///             (card1, cardArtImage1, "Everyday Spending"),
+    ///             (card2, cardArtImage2, nil) // titled with its last 4 PAN digits
+    ///         ]
+    ///
+    ///         try await cardManager.configurePushProvisioning(
+    ///             cardholderID: "cardholder_123",
+    ///             appGroupId: "group.com.example.app",
+    ///             configuration: provisioningConfig,
+    ///             walletCards: cards
+    ///         )
+    ///         print("Push provisioning configured successfully")
+    ///     } catch {
+    ///         print("Configuration failed: \(error)")
+    ///     }
+    /// }
+    /// ```
+    ///
+    /// - SeeAlso: ``ProvisioningConfiguration``, ``Card/provision(provisioningToken:viewController:)``
+    /// - Since: 4.2.0
+    public func configurePushProvisioning(
+        cardholderID: String,
+        appGroupId: String,
+        configuration: ProvisioningConfiguration,
+        walletCards: [(Card, UIImage, String?)]
+    ) async throws {
+        let walletCardsList: [WalletCardDetails] = walletCards.map { card, uiImage, cardTitle in
             return WalletCardDetails(
                 cardId: card.id,
-                cardTitle: card.panLast4Digits,
+                cardTitle: walletCardTitle(cardTitle, fallingBackTo: card.panLast4Digits),
                 cardArt: uiImage,
                 last4: card.panLast4Digits
             )
@@ -442,7 +509,6 @@ public final class CheckoutCardManager: CardManager {
     ///   - ``CardManagementError/unauthenticated`` if no session is active (logInSession not called or session token was rejected)
     ///   - ``CardManagementError/authenticationFailure`` if the session token has expired or is no longer valid
     ///   - ``CardManagementError/invalidRequestInput`` if the input is not valid
-    ///   - ``CardManagementError/connectionIssue`` if there are network connectivity problems or server communication errors
     ///   - ``CardManagementError/configurationIssue(hint:)`` if the SDK is misconfigured or the request parameters are invalid (check the hint property for guidance)
     ///
     /// ## Example
@@ -625,6 +691,15 @@ public final class CheckoutCardManager: CardManager {
                 completionHandler(.failure(error))
             }
         }
+    }
+
+    /// Resolves the title to display for a card in Apple Wallet.
+    ///
+    /// A missing, empty or whitespace-only title would leave the Wallet Extension card list entry blank,
+    /// which is worse than showing the digits, so all three fall back to the supplied value.
+    private func walletCardTitle(_ requested: String?, fallingBackTo fallback: String) -> String {
+        let trimmed = requested?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return trimmed.isEmpty ? fallback : trimmed
     }
 
     private func logInitialization() {
