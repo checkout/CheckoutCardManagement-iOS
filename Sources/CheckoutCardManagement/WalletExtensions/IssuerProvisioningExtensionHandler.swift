@@ -1,12 +1,11 @@
 //
-//  IntentHandler.swift
-//  WalletExtension
+//  IssuerProvisioningExtensionHandler.swift
+//  CheckoutCardManagement
 //
 //  Created by Marian Enache on 14.02.2025.
 //
 
 import CheckoutCardNetwork
-import CheckoutEventLoggerKit
 
 /// Base handler class for the Issuer Provisioning Extension.
 ///
@@ -19,7 +18,9 @@ import CheckoutEventLoggerKit
 /// target in your project.
 ///
 /// **Important:** You must subclass this handler and override the ``onError(_ error: CardManagementError.ProvisioningExtensionFailure)`` method to
-/// handle provisioning errors appropriately for your application.
+/// handle provisioning errors appropriately for your application. The overload taking
+/// `CardNetworkError.ProvisioningExtensionFailure` is `final` and cannot be overridden —
+/// always override the ``CardManagementError`` variant.
 ///
 /// ## Integration
 ///
@@ -51,22 +52,10 @@ import CheckoutEventLoggerKit
 /// }
 /// ```
 ///
-/// - Note: This class is only available on iOS 14.0 and later, as required by Apple's
-///   Issuer Provisioning Extension framework.
-///
-/// - SeeAlso: ``IssuerProvisioningExtensionAuthorizationProviding``, 
+/// - SeeAlso: ``IssuerProvisioningExtensionAuthorizationProviding``,
 ///   ``CardManagementError/ProvisioningExtensionFailure``,
 ///   ``CheckoutCardManager/configurePushProvisioning(cardholderID:appGroupId:configuration:walletCards:)``
-@available(iOS 14.0, *)
 open class IssuerProvisioningExtensionHandler: CKOIssuerProvisioningExtensionHandler {
-
-    /// Initializes the handler with built-in logging support.
-    public override init() {
-        super.init()
-        let eventLogger = CheckoutEventLogger(productName: Constants.productName)
-        let logger = CheckoutLogger(eventLogger: eventLogger)
-        initLogger(logger: logger)
-    }
 
     final public override func onError(_ error: CardNetworkError.ProvisioningExtensionFailure) {
         onError(.from(error))

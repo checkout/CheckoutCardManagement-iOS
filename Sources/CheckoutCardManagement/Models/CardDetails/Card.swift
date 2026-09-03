@@ -30,10 +30,11 @@ import CheckoutCardNetwork
 ///     print("Card ending in: \(card.panLast4Digits)")
 ///     print("Expires: \(card.expiryDate)")
 ///     print("Status: \(card.state)")
+///     print("Type: \(card.type)")  // .physical or .virtual
 /// }
 /// ```
 ///
-/// - SeeAlso: ``CheckoutCardManager``, ``CardState``, ``CardExpiryDate``
+/// - SeeAlso: ``CheckoutCardManager``, ``CardState``, ``CardType``, ``CardExpiryDate``
 public final class Card {
 
     /// The current state of the card.
@@ -71,6 +72,21 @@ public final class Card {
     /// in user interfaces when presenting card details.
     public let cardholderName: String
 
+    /// The type of the card, indicating whether it is a physical or virtual card.
+    ///
+    /// Use this property to conditionally enable or disable actions based on the card's form factor.
+    /// For example, Reveal PIN is typically only applicable to physical cards.
+    ///
+    /// - SeeAlso: ``CardType``
+    public let type: CardType
+
+    /// The payment network scheme for the card (e.g., Mastercard, Visa).
+    ///
+    /// This value is optional and may be `nil` if the scheme information is unavailable.
+    ///
+    /// - SeeAlso: ``CardScheme``
+    public let scheme: CardScheme?
+
     /// A unique identifier for this card.
     ///
     /// This identifier is used internally for card operations and API requests.
@@ -91,6 +107,8 @@ public final class Card {
         self.panLast4Digits = networkCard.panLast4Digits
         self.expiryDate = networkCard.expiryDate
         self.state = networkCard.state
+        self.type = networkCard.type
+        self.scheme = networkCard.scheme
         self.cardholderName = networkCard.displayName
         self.manager = manager
     }
@@ -100,12 +118,16 @@ public final class Card {
          expiryDate: CardExpiryDate,
          cardHolderName: String,
          state: CardState = .inactive,
+         type: CardType = .virtual,
+         scheme: CardScheme? = nil,
          manager: CardManager?) {
         self.id = id
         self.panLast4Digits = panLast4Digits
         self.expiryDate = expiryDate
         self.cardholderName = cardHolderName
         self.state = state
+        self.type = type
+        self.scheme = scheme
         self.manager = manager
     }
 

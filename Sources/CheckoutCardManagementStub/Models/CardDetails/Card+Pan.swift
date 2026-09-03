@@ -121,19 +121,19 @@ public extension Card {
             return panView
         } catch let error as CardNetworkError {
             manager.logger?.log(
-                .failure(source: "Get Pan",
+                .failure(source: LogSource.getPan,
                          error: error,
                          networkError: error,
-                         additionalInfo: ["cardId": id]),
+                         additionalInfo: [LogKey.cardId: id]),
                 startedAt: startTime
             )
             throw CardManagementError.from(error)
         } catch {
             manager.logger?.log(
-                .failure(source: "Get Pan",
+                .failure(source: LogSource.getPan,
                          error: error,
                          networkError: nil,
-                         additionalInfo: ["cardId": id, "errorMessage": error.localizedDescription]),
+                         additionalInfo: [LogKey.cardId: id, LogKey.errorMessage: error.localizedDescription]),
                 startedAt: startTime
             )
             
@@ -249,19 +249,19 @@ public extension Card {
             manager.logger?.log(logEvent, startedAt: startTime)
         } catch let error as CardNetworkError {
             let logEvent = LogEvent.failure(
-                source: "Copy Pan",
+                source: LogSource.copyPan,
                 error: error,
                 networkError: error,
-                additionalInfo: ["cardId": id]
+                additionalInfo: [LogKey.cardId: id]
             )
             manager.logger?.log(logEvent, startedAt: startTime)
             throw CardManagementError.from(error)
         } catch {
             let logEvent = LogEvent.failure(
-                source: "Copy Pan",
+                source: LogSource.copyPan,
                 error: error,
                 networkError: nil,
-                additionalInfo: ["cardId": id, "errorMessage": error.localizedDescription]
+                additionalInfo: [LogKey.cardId: id, LogKey.errorMessage: error.localizedDescription]
             )
             manager.logger?.log(logEvent, startedAt: startTime)
             
@@ -386,19 +386,19 @@ public extension Card {
             return views
         } catch let error as CardNetworkError {
             manager.logger?.log(
-                .failure(source: "Get Pan and SecurityCode",
+                .failure(source: LogSource.getPanAndSecurityCode,
                          error: error,
                          networkError: error,
-                         additionalInfo: ["cardId": id]),
+                         additionalInfo: [LogKey.cardId: id]),
                 startedAt: startTime
             )
             throw CardManagementError.from(error)
         } catch {
             manager.logger?.log(
-                .failure(source: "Get Pan and SecurityCode",
+                .failure(source: LogSource.getPanAndSecurityCode,
                          error: error,
                          networkError: nil,
-                         additionalInfo: ["cardId": id, "errorMessage": error.localizedDescription]),
+                         additionalInfo: [LogKey.cardId: id, LogKey.errorMessage: error.localizedDescription]),
                 startedAt: startTime
             )
             
