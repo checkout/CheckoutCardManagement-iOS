@@ -106,11 +106,16 @@ enum LogFormatter {
             dictionary = [
                 "cardholder": AnyCodable(cardholderId)
             ]
-        case .getCardDigitizationState(let cardId, let digitizationState):
+        case .getCardDigitizationState(let cardId, let digitizationState, let last4):
             dictionary = [
-                "card": AnyCodable(cardId),
                 "digitization_state": AnyCodable(digitizationState.rawValue)
             ]
+            if let cardId {
+                dictionary["card"] = AnyCodable(cardId)
+            }
+            if let last4 {
+                dictionary["last4"] = AnyCodable(last4)
+            }
         case .pushProvisioning(let cardId):
             dictionary = [
                 "cardId": AnyCodable(cardId)
@@ -215,6 +220,14 @@ enum LogFormatter {
             return "device_unsafe"
         case .unrecoverable(hint: let hint):
             return "unrecoverable_error_\(hint)"
+        case .notAuthorized:
+            return "not_authorized"
+        case .clientBindingFailure(let hint):
+            return "client_binding_failure \(hint)"
+        case .clientBindingCertificateExpired:
+            return "client_binding_certificate_expired"
+        @unknown default:
+            return "operation_failure"
         }
     }
 
@@ -235,6 +248,14 @@ enum LogFormatter {
             return "device_unsafe"
         case .unrecoverable:
             return "unrecoverable_error"
+        case .notAuthorized:
+            return "not_authorized"
+        case .clientBindingFailure:
+            return "client_binding_failure"
+        case .clientBindingCertificateExpired:
+            return "client_binding_certificate_expired"
+        @unknown default:
+            return "operation_failure"
         }
     }
 
