@@ -431,6 +431,52 @@ public final class CheckoutCardManager: CardManager {
         }
     }
 
+    /// Retrieves the current digitization state for a card using the last four digits of its PAN.
+    ///
+    /// Unlike ``Card/getDigitizationState(provisioningToken:)``, this lookup does not require a
+    /// provisioning token: push provisioning only needs to have been configured via
+    /// ``configurePushProvisioning(cardholderID:appGroupId:configuration:walletCards:)``.
+    ///
+    /// - Parameter last4: The last four digits of the card's PAN
+    ///
+    /// - Returns: ``DigitizationData`` describing the card's wallet digitization state
+    ///
+    /// - Throws: ``CardManagementError`` indicating the failure reason:
+    ///   - ``CardManagementError/fetchDigitizationStateFailure(failure:)`` if the state lookup fails
+    ///   - ``CardManagementError/connectionIssue`` if there are network connectivity problems
+    ///
+    /// ## Example
+    ///
+    /// ```swift
+    /// Task {
+    ///     do {
+    ///         let digitizationData = try await cardManager.getDigitizationState(withLast4: card.panLast4Digits)
+    ///         print("Digitization state: \(digitizationData.state)")
+    ///     } catch {
+    ///         print("Failed to fetch digitization state: \(error)")
+    ///     }
+    /// }
+    /// ```
+    ///
+    /// - SeeAlso: ``Card/getDigitizationState(provisioningToken:)``
+    /// - Since: 5.0.0
+    public func getDigitizationState(withLast4 last4: String) async throws -> DigitizationData {
+        let startTime = Date()
+
+        do {
+            let cardDigitizationData = try await cardService.getCardDigitizationState(withLast4: last4)
+            let digitizationData = DigitizationData.from(cardDigitizationData)
+
+            let event = LogEvent.getCardDigitizationState(cardId: nil, digitizationState: digitizationData.state, last4: last4)
+            logger?.log(event, startedAt: startTime)
+
+            return digitizationData
+        } catch let error as CardNetworkError {
+            throw CardManagementError.from(error)
+        } catch {
+            throw CardManagementError.connectionIssue
+        }
+    }
 
     /// Retrieves a list of all cards associated with the authenticated cardholder account.
     ///

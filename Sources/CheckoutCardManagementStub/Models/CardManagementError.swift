@@ -69,6 +69,48 @@ public enum CardManagementError: Error, Equatable {
         /// Review the configuration parameters and ensure they meet requirements.
         case configurationFailure
 
+        /// The card being provisioned could not be found.
+        ///
+        /// **Recovery:** Verify the card ID and ensure the card is available for provisioning.
+        case cardNotFound
+
+        /// The user is not logged in, or the login validity has expired.
+        ///
+        /// **Recovery:** Obtain a fresh provisioning token and retry the operation.
+        case notLoggedIn
+
+        /// The user is not authorized to perform this operation for the requested card.
+        ///
+        /// **Recovery:** Verify the provisioning token grants access to the requested card.
+        case notAuthorized
+
+        /// An unexpected core error occurred, typically caused by storage or network failure.
+        ///
+        /// **Recovery:** Ensure the device has internet connectivity and retry.
+        case core
+
+        /// The device environment has been compromised (jailbroken/rooted).
+        ///
+        /// **Recovery:** This error cannot be resolved on compromised devices. Inform the user
+        /// that provisioning is not available on their device.
+        case deviceEnvironmentUnsafe
+
+        /// An unrecoverable keychain failure occurred, typically because the device passcode is off.
+        ///
+        /// **Recovery:** Ask the user to enable a device passcode, then retry.
+        case unrecoverable(hint: String)
+
+        /// Client binding failed; use `hint` for details.
+        ///
+        /// **Recovery:** Retrying may succeed for transient causes such as the binding server
+        /// being unavailable.
+        case clientBindingFailure(hint: String)
+
+        /// The client binding certificate has expired.
+        ///
+        /// **Recovery:** Obtain new issuer access tokens with an updated binding hash and retry.
+        case clientBindingCertificateExpired
+
         /// The provisioning operation failed during execution.
         ///
         /// A general failure occurred during the provisioning flow. This may be due to
@@ -79,8 +121,16 @@ public enum CardManagementError: Error, Equatable {
             switch networkError {
             case .cancelled: return .cancelled
             case .configurationFailure: return .configurationFailure
+            case .cardNotFound: return .cardNotFound
+            case .notLoggedIn: return .notLoggedIn
+            case .notAuthorized: return .notAuthorized
+            case .core: return .core
+            case .deviceEnvironmentUnsafe: return .deviceEnvironmentUnsafe
+            case .unrecoverable(let hint): return .unrecoverable(hint: hint)
+            case .clientBindingFailure(let hint): return .clientBindingFailure(hint: hint)
+            case .clientBindingCertificateExpired: return .clientBindingCertificateExpired
             case .operationFailure: return .operationFailure
-            default: return .operationFailure
+            @unknown default: return .operationFailure
             }
         }
     }
@@ -129,12 +179,19 @@ public enum CardManagementError: Error, Equatable {
         /// and server status.
         case operationFailure
 
+        /// The user is not logged in, or the login validity has expired.
+        ///
+        /// **Recovery:** Log in from the host application (refresh the issuer token) and retry.
+        case notLoggedIn
+
         static func from(_ networkError: CardNetworkError.ProvisioningExtensionFailure) -> Self {
             switch networkError {
             case .walletExtensionAppGroupIDNotFound: return .walletExtensionAppGroupIDNotFound
             case .cardNotFound: return .cardNotFound
             case .deviceEnvironmentUnsafe: return .deviceEnvironmentUnsafe
+            case .notLoggedIn: return .notLoggedIn
             case .operationFailure: return .operationFailure
+            @unknown default: return .operationFailure
             }
         }
     }
@@ -155,6 +212,47 @@ public enum CardManagementError: Error, Equatable {
         /// has been properly configured.
         case configurationFailure
         
+        /// The card whose digitization state was requested could not be found.
+        ///
+        /// **Recovery:** Verify the card identifier (or last four digits) is correct.
+        case cardNotFound
+
+        /// An unrecoverable keychain failure occurred, typically because the device passcode is off.
+        ///
+        /// **Recovery:** Ask the user to enable a device passcode, then retry.
+        case unrecoverable
+
+        /// The user is not logged in, or the login validity has expired.
+        ///
+        /// **Recovery:** Obtain a fresh provisioning token and retry the operation.
+        case notLoggedIn
+
+        /// The user is not authorized to perform this operation for the requested card.
+        ///
+        /// **Recovery:** Verify the provisioning token grants access to the requested card.
+        case notAuthorized
+
+        /// An unexpected core error occurred, typically caused by storage or network failure.
+        ///
+        /// **Recovery:** Ensure the device has internet connectivity and retry.
+        case core
+
+        /// The device environment has been compromised (jailbroken/rooted).
+        ///
+        /// **Recovery:** This error cannot be resolved on compromised devices.
+        case deviceEnvironmentUnsafe
+
+        /// Client binding failed.
+        ///
+        /// **Recovery:** Retrying may succeed for transient causes such as the binding server
+        /// being unavailable.
+        case clientBindingFailure
+
+        /// The client binding certificate has expired.
+        ///
+        /// **Recovery:** Obtain new issuer access tokens with an updated binding hash and retry.
+        case clientBindingCertificateExpired
+
         /// The operation to retrieve digitization state failed.
         ///
         /// A failure occurred while attempting to query the card's digitization status.
@@ -166,8 +264,16 @@ public enum CardManagementError: Error, Equatable {
         static func from(_ networkError: CardNetworkError.DigitizationStateFailure) -> Self {
             switch networkError {
             case .configurationFailure: return .configurationFailure
+            case .cardNotFound: return .cardNotFound
+            case .unrecoverable: return .unrecoverable
+            case .notLoggedIn: return .notLoggedIn
+            case .notAuthorized: return .notAuthorized
+            case .core: return .core
+            case .deviceEnvironmentUnsafe: return .deviceEnvironmentUnsafe
+            case .clientBindingFailure: return .clientBindingFailure
+            case .clientBindingCertificateExpired: return .clientBindingCertificateExpired
             case .operationFailure: return .operationFailure
-            default: return .operationFailure
+            @unknown default: return .operationFailure
             }
         }
     }

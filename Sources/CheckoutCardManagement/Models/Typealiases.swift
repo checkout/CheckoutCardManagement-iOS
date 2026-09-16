@@ -29,6 +29,9 @@ public typealias CardSuspendReason = CheckoutCardNetwork.CardSuspendReason
 /// Reason for requesting to perform a Card Revoke operation on card
 public typealias CardRevokeReason = CheckoutCardNetwork.CardRevokeReason
 
+/// Public Card Model for preventing name collisions
+public typealias CheckoutCard = Card
+
 /// Configuration object used for Push Provisioning
 public typealias ProvisioningConfiguration = CheckoutCardNetwork.ProvisioningConfiguration
 

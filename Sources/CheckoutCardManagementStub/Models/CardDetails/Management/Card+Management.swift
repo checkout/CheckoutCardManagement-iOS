@@ -66,7 +66,7 @@ public extension Card {
                 token: provisioningToken
             )
             let digitizationData = DigitizationData.from(cardDigitizationData)
-            let event = LogEvent.getCardDigitizationState(cardId: self.id, digitizationState: digitizationData.state)
+            let event = LogEvent.getCardDigitizationState(cardId: self.id, digitizationState: digitizationData.state, last4: nil)
 
             manager.logger?.log(event, startedAt: startTime)
 

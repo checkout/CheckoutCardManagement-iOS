@@ -128,6 +128,60 @@ extension CardManagementError.PushProvisioningFailure {
             Review the configuration parameters and ensure they meet Apple Wallet requirements.
             """
             
+        case .cardNotFound:
+            """
+            [PushProvisioningFailure.cardNotFound] Card not found for provisioning. \
+            The card being provisioned does not exist or is unavailable. \
+            Verify the card ID and ensure the card is available for the current cardholder.
+            """
+
+        case .notLoggedIn:
+            """
+            [PushProvisioningFailure.notLoggedIn] User is not logged in. \
+            The login is missing or its validity has expired. \
+            Obtain a fresh provisioning token and retry the operation.
+            """
+
+        case .notAuthorized:
+            """
+            [PushProvisioningFailure.notAuthorized] Operation not authorized. \
+            The user is not authorized to perform this operation for the requested card. \
+            Verify the provisioning token grants access to the requested card.
+            """
+
+        case .core:
+            """
+            [PushProvisioningFailure.core] Core operation error. \
+            An unexpected error occurred, typically caused by storage or network failure. \
+            Ensure the device has internet connectivity and retry.
+            """
+
+        case .deviceEnvironmentUnsafe:
+            """
+            [PushProvisioningFailure.deviceEnvironmentUnsafe] Device environment is compromised. \
+            The device has been detected as jailbroken or rooted. \
+            Card provisioning is blocked for security reasons and cannot be performed on this device.
+            """
+
+        case .unrecoverable(let hint):
+            """
+            [PushProvisioningFailure.unrecoverable] Unrecoverable keychain failure: \(hint). \
+            This is typically caused by the device passcode being turned off. \
+            Ask the user to enable a device passcode, then retry.
+            """
+
+        case .clientBindingFailure(let hint):
+            """
+            [PushProvisioningFailure.clientBindingFailure] Client binding failed: \(hint). \
+            Retrying may succeed for transient causes such as the binding server being unavailable.
+            """
+
+        case .clientBindingCertificateExpired:
+            """
+            [PushProvisioningFailure.clientBindingCertificateExpired] Client binding certificate expired. \
+            Obtain new issuer access tokens with an updated binding hash and retry the operation.
+            """
+
         case .operationFailure:
             """
             [PushProvisioningFailure.operationFailure] Provisioning operation failed during execution. \
@@ -164,6 +218,13 @@ extension CardManagementError.ProvisioningExtensionFailure {
             Card provisioning is blocked for security reasons and cannot be performed on this device.
             """
             
+        case .notLoggedIn:
+            """
+            [ProvisioningExtensionFailure.notLoggedIn] User is not logged in. \
+            The login is missing or its validity has expired. \
+            Log in from the host application (refresh the issuer token) and retry.
+            """
+
         case .operationFailure:
             """
             [ProvisioningExtensionFailure.operationFailure] Wallet Extension provisioning operation failed. \
@@ -186,6 +247,60 @@ extension CardManagementError.DigitizationStateFailure {
             Review the card configuration and ensure push provisioning has been properly configured.
             """
             
+        case .cardNotFound:
+            """
+            [DigitizationStateFailure.cardNotFound] Card not found. \
+            The card whose digitization state was requested does not exist or is unavailable. \
+            Verify the card identifier (or last four digits) is correct.
+            """
+
+        case .unrecoverable:
+            """
+            [DigitizationStateFailure.unrecoverable] Unrecoverable keychain failure. \
+            This is typically caused by the device passcode being turned off. \
+            Ask the user to enable a device passcode, then retry.
+            """
+
+        case .notLoggedIn:
+            """
+            [DigitizationStateFailure.notLoggedIn] User is not logged in. \
+            The login is missing or its validity has expired. \
+            Obtain a fresh provisioning token and retry the operation.
+            """
+
+        case .notAuthorized:
+            """
+            [DigitizationStateFailure.notAuthorized] Operation not authorized. \
+            The user is not authorized to query digitization state for the requested card. \
+            Verify the provisioning token grants access to the requested card.
+            """
+
+        case .core:
+            """
+            [DigitizationStateFailure.core] Core operation error. \
+            An unexpected error occurred, typically caused by storage or network failure. \
+            Ensure the device has internet connectivity and retry.
+            """
+
+        case .deviceEnvironmentUnsafe:
+            """
+            [DigitizationStateFailure.deviceEnvironmentUnsafe] Device environment is compromised. \
+            The device has been detected as jailbroken or rooted. \
+            Digitization state queries are blocked for security reasons on this device.
+            """
+
+        case .clientBindingFailure:
+            """
+            [DigitizationStateFailure.clientBindingFailure] Client binding failed. \
+            Retrying may succeed for transient causes such as the binding server being unavailable.
+            """
+
+        case .clientBindingCertificateExpired:
+            """
+            [DigitizationStateFailure.clientBindingCertificateExpired] Client binding certificate expired. \
+            Obtain new issuer access tokens with an updated binding hash and retry the operation.
+            """
+
         case .operationFailure:
             """
             [DigitizationStateFailure.operationFailure] Failed to retrieve digitization state. \
