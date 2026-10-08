@@ -245,14 +245,12 @@ The [Mobile SDKs lifecycle policy](https://www.checkout.com/docs/developer-resou
 | --- | --- | --- | --- |
 | `5.0.0` | 2026-09-16 | Supported | Not applicable |
 | `4.2.0` | 2026-09-03 | Maintenance | 2027-03-16 |
-| `4.1.1` | 2026-03-20 | Not supported | 2026-09-16 |
+| `4.1.1` | 2026-03-20 | Maintenance | 2026-12-03 |
 | `4.1.0` | 2026-01-21 | Not supported | 2026-03-20 |
 | `4.0.0` | 2025-12-12 | Not supported | 2026-04-21 |
 | `3.3.1` down to `0.1.1` | 2022-11-18 to 2025-12-11 | Not supported | Passed |
 
 Maintenance versions receive critical security and bug fixes only. See [GitHub Releases](https://github.com/checkout/CheckoutCardManagement-iOS/releases) for the full version history.
-
-The minimum supported deployment target is iOS 14. Minimum platform requirements only change in major releases.
 
 ***
 # Contact
