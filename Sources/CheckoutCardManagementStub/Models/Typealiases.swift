@@ -29,8 +29,17 @@ public typealias CardSuspendReason = CheckoutCardNetworkStub.CardSuspendReason
 /// Reason for requesting to perform a Card Revoke operation on card
 public typealias CardRevokeReason = CheckoutCardNetworkStub.CardRevokeReason
 
+/// A card transaction, as returned by ``CheckoutCardManager/getTransactions(query:)``
+public typealias Transaction = CheckoutCardNetworkStub.Transaction
+
+/// Status of a transaction
+public typealias TransactionStatus = CheckoutCardNetworkStub.Transaction.TransactionStatus
+
 /// Public Card Model for preventing name collisions
 public typealias CheckoutCard = Card
+
+/// Public Transaction Model for preventing name collisions, e.g. with `SwiftUI.Transaction`
+public typealias CheckoutTransaction = Transaction
 
 /// Configuration object used for Push Provisioning
 public typealias ProvisioningConfiguration = CheckoutCardNetworkStub.ProvisioningConfiguration

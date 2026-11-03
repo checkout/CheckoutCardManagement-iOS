@@ -45,6 +45,7 @@ enum LogFormatter {
         case .copyPan: return "copy_pan"
         case .copyCVV: return "copy_cvv"
         case .cardDetails: return "card_details"
+        case .transactionList: return "transaction_list"
         }
     }
 
@@ -63,6 +64,7 @@ enum LogFormatter {
                 .copyPan,
                 .copyCVV,
                 .cardDetails,
+                .transactionList,
                 .pushProvisioning:
             return .info
         case .failure:
@@ -83,6 +85,12 @@ enum LogFormatter {
             dictionary = ["cardIds": AnyCodable(cardIds)]
         case .cardDetails(let cardID):
             dictionary = ["cardId": AnyCodable(cardID)]
+        case .transactionList(let cardID, let transactionCount, let pageSize):
+            dictionary = [
+                "cardId": AnyCodable(cardID),
+                "transactionCount": AnyCodable(transactionCount),
+                "pageSize": AnyCodable(pageSize)
+            ]
         case .getPin(let cardId, let state),
                 .getPan(let cardId, let state),
                 .getCVV(let cardId, let state),

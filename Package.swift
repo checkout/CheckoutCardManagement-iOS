@@ -49,16 +49,16 @@ let package = Package(
             ]),
         .binaryTarget(
         name: "CheckoutCardNetwork",
-        url: "https://github.com/checkout/CheckoutCardManagement-iOS/releases/download/5.0.0/CheckoutCardNetwork.xcframework.zip",
-        checksum: "d900f255ea9e9449c05268b994ed446a63d11a63202f9890d93bc59d874b4173"
+        url: "https://github.com/checkout/CheckoutCardManagement-iOS/releases/download/5.1.0/CheckoutCardNetwork.xcframework.zip",
+        checksum: "f75a422e3d373f1d0632939583d5ad98ad17b52bceb741485533272f51b6be94"
     ),
         .binaryTarget(
             name: "CheckoutCardNetworkStub",
             path: "SupportFrameworks/CheckoutCardNetworkStub.xcframework"),
         .binaryTarget(
         name: "CheckoutOOBSDK",
-        url: "https://github.com/checkout/CheckoutCardManagement-iOS/releases/download/5.0.0/CheckoutOOBSDK.xcframework.zip",
-        checksum: "782b29ad33610c62bab25875e0c945f6abd345d2ad5576872de776672ab36cca"
+        url: "https://github.com/checkout/CheckoutCardManagement-iOS/releases/download/5.1.0/CheckoutOOBSDK.xcframework.zip",
+        checksum: "84a0b0e99077103893eb4b1a5012d8b96a5fa22f89cf4a1f47ada0a1fc157903"
     ),
     ]
 )
