@@ -243,7 +243,8 @@ The [Mobile SDKs lifecycle policy](https://www.checkout.com/docs/developer-resou
 
 | Version | Released | Status | Not supported from |
 | --- | --- | --- | --- |
-| `5.0.0` | 2026-09-16 | Supported | Not applicable |
+| `5.1.0` | 2026-11-03 | Supported | Not applicable |
+| `5.0.0` | 2026-09-16 | Maintenance | 2027-02-03 |
 | `4.2.0` | 2026-09-03 | Maintenance | 2027-03-16 |
 | `4.1.1` | 2026-03-20 | Maintenance | 2026-12-03 |
 | `4.1.0` | 2026-01-21 | Not supported | 2026-03-20 |

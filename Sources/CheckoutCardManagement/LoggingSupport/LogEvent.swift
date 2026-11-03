@@ -21,6 +21,9 @@ enum LogEvent {
     /// Describe a successful retrieval of the card list
     case cardDetails(cardID: String)
 
+    /// Describe a successful retrieval of a page of transactions. Never carries transaction contents
+    case transactionList(cardID: String, transactionCount: Int, pageSize: Int)
+
     /// Describe a successful call to retrieve a pin
     case getPin(cardId: String, cardState: CardState)
 
